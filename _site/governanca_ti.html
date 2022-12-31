@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.2.242">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Concurso BRDE - Governança de TI</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1.6em;
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit"
+  }
+}</script>
+
+
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container">
+    <a class="navbar-brand" href="./index.html">
+    <span class="navbar-title">Concurso BRDE</span>
+    </a>
+  </div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="./index.html">
+ <span class="menu-text">Resumo</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./banco_dados.html">
+ <span class="menu-text">Banco de Dados</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link active" href="./governanca_ti.html" aria-current="page">
+ <span class="menu-text">Governança de TI</span></a>
+  </li>  
+</ul>
+              <div id="quarto-search" class="" title="Search"></div>
+          </div> <!-- /navcollapse -->
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#o-que-é-o-sistema-itil" id="toc-o-que-é-o-sistema-itil" class="nav-link active" data-scroll-target="#o-que-é-o-sistema-itil">O que é o Sistema ITIL</a>
+  <ul class="collapse">
+  <li><a href="#itil-v1" id="toc-itil-v1" class="nav-link" data-scroll-target="#itil-v1">ITIL v1</a></li>
+  <li><a href="#itil-v2" id="toc-itil-v2" class="nav-link" data-scroll-target="#itil-v2">ITIL v2</a></li>
+  <li><a href="#itil-v3" id="toc-itil-v3" class="nav-link" data-scroll-target="#itil-v3">ITIL v3</a></li>
+  <li><a href="#itil-4" id="toc-itil-4" class="nav-link" data-scroll-target="#itil-4">ITIL 4</a></li>
+  </ul></li>
+  <li><a href="#as-principais-mudanças-do-itil-4" id="toc-as-principais-mudanças-do-itil-4" class="nav-link" data-scroll-target="#as-principais-mudanças-do-itil-4">As principais mudanças do ITIL 4</a></li>
+  <li><a href="#os-princípios-do-itil-4" id="toc-os-princípios-do-itil-4" class="nav-link" data-scroll-target="#os-princípios-do-itil-4">Os princípios do ITIL 4</a></li>
+  <li><a href="#as-4-dimensões-do-itil-4" id="toc-as-4-dimensões-do-itil-4" class="nav-link" data-scroll-target="#as-4-dimensões-do-itil-4">As 4 dimensões do ITIL 4</a></li>
+  <li><a href="#as-34-práticas-do-itil-4" id="toc-as-34-práticas-do-itil-4" class="nav-link" data-scroll-target="#as-34-práticas-do-itil-4">As 34 práticas do ITIL 4</a>
+  <ul class="collapse">
+  <li><a href="#práticas-gerais-de-gestão" id="toc-práticas-gerais-de-gestão" class="nav-link" data-scroll-target="#práticas-gerais-de-gestão">1. Práticas gerais de gestão</a></li>
+  <li><a href="#práticas-de-gestão-de-serviço" id="toc-práticas-de-gestão-de-serviço" class="nav-link" data-scroll-target="#práticas-de-gestão-de-serviço">2. Práticas de gestão de serviço</a></li>
+  <li><a href="#práticas-de-gestão-técnica" id="toc-práticas-de-gestão-técnica" class="nav-link" data-scroll-target="#práticas-de-gestão-técnica">3. Práticas de gestão técnica</a></li>
+  </ul></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Governança de TI</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+</header>
+
+<p>g) <strong>Governança de TI</strong>: ITIL versão 4 (ITIL 4): Operação de Serviços (Gerenciamento de Eventos, Gerenciamento de Incidentes, Gerenciamento de Problemas, Cumprimento de Requisições, Gerenciamento de Acessos), Desenho de Serviços (Gerenciamento de Níveis de Serviço, Gerenciamento de Capacidade, Gerenciamento de Disponibilidade, Gerenciamento de Continuidade de Serviços de TI, Gerenciamento de Continuidade de Negócio), Transição de Serviços (Gerenciamento de Configuração e Ativos de Serviços de TI, Gerenciamento de Liberação e Implantação, Gerenciamento de Mudanças), Melhoria Contínua de Serviços, Métricas (Fatores Críticos de Sucesso - CSFs, Índices Chave de Performance - KPIs).</p>
+<section id="o-que-é-o-sistema-itil" class="level2">
+<h2 class="anchored" data-anchor-id="o-que-é-o-sistema-itil">O que é o Sistema ITIL</h2>
+<p>Fonte: https://posdigital.pucpr.br/blog/itil</p>
+<p>O Sistema ITIL é um conjunto de boas práticas de gerenciamento de serviços de tecnologia de informação. Ele está de acordo com a norma <a href="https://www.normas.com.br/visualizar/abnt-nbr-nm/26988/abnt-nbriso-iec20000-1-tecnologia-da-informacao-gestao-de-servicos-parte-1-requisitos-do-sistema-de-gestao-de-servicos">ISO/IEC 20000</a>, primeira padronização da<a href="https://posdigital.pucpr.br/blog/iso-27000#significado">International Organization for Standardization (ISO)</a> voltada exclusivamente para a gestão de TI.</p>
+<p>ITIL é a sigla para Information Technology Infrastructure Library – que pode ser traduzido para “biblioteca de infraestrutura de tecnologia da informação”.</p>
+<p>O sistema foi desenvolvido pela Agência Central de Computação e Telecomunicações (CCTA, na sigla em inglês) do Reino Unido na década de 1980, com o objetivo de estabelecer um padrão de segurança e confiabilidade na gestão de processos de TI, garantindo assim uma boa experiência para os usuários.</p>
+<p>Para isso, o modelo descreve boas práticas de infraestrutura, manutenção e operações. As orientações estão alinhadas aos <a href="https://posdigital.pucpr.br/blog/metodos-ageis">métodos ágeis</a>, ao <a href="https://posdigital.pucpr.br/blog/devops">DevOps</a> e ao <a href="https://posdigital.pucpr.br/blog/lean-thinking">Lean</a>, bastante utilizados por times de tecnologia.</p>
+<p>Desde que o ITIL foi proposto pela CCTA, o sistema passou por quatro grandes atualizações:</p>
+<section id="itil-v1" class="level3">
+<h3 class="anchored" data-anchor-id="itil-v1">ITIL v1</h3>
+<p>A primeira versão do ITIL era voltada para as agências governamentais, que começavam a se informatizar na década de 1980. Era, literalmente, uma biblioteca: uma coleção de livros físicos que chegou a mais de 30 volumes em 1996.</p>
+</section>
+<section id="itil-v2" class="level3">
+<h3 class="anchored" data-anchor-id="itil-v2">ITIL v2</h3>
+<p>Nos anos 2000 foi lançada a segunda versão do ITIL. Os 30 volumes foram condensados em 9, mas ainda eram voltados para entidades do governo britânico.</p>
+</section>
+<section id="itil-v3" class="level3">
+<h3 class="anchored" data-anchor-id="itil-v3">ITIL v3</h3>
+<p>Com a popularização do modelo em empresas e demais entidades privadas, foi lançada uma nova atualização em maio de 2007.</p>
+<p>O ITIL v3 era descrito em 5 livros, que reuniam 26 processos e 4 funções. A maior inovação foi o conceito do Ciclo de Vida de Serviço (CVS), que era composto por dois componentes básicos:</p>
+<ol type="1">
+<li><p><strong>Núcleo do ITIL:</strong> conjunto de melhores práticas que podem ser adotadas por todas as organizações que prestam serviços ao negócio;</p></li>
+<li><p><strong>Guias complementares do ITIL:</strong> boas práticas complementares reunidas em publicações específicas para diferentes setores da indústria, modelos operacionais e arquiteturas de TI.</p></li>
+</ol>
+<p>Em 2011, o<a href="https://www.portalgsti.com.br/2012/04/itil-v3-2011.html">ITIL v3</a> ganhou uma grande atualização para dar clareza a conceitos e adicionar novas práticas ao CVS.</p>
+<p>É nesse período também que a CCTA foi incorporada ao Escritório de Comércio Governamental (OGC, na sigla em inglês), entidade do Reino Unido responsável por promover a eficiência nos processos de negócios do Estado.</p>
+<p>O sistema ITIL passou a ser atualizado pelo OGC até 2013, quando uma joint venture entre o governo britânico e a empresa Capita, a <a href="https://www.axelos.com/">Axelos</a>, assumiu o framework. Em 2021, a Axelos passou a fazer parte do grupo <a href="https://www.peoplecert.org/">PeopleCert</a>.</p>
+</section>
+<section id="itil-4" class="level3">
+<h3 class="anchored" data-anchor-id="itil-4">ITIL 4</h3>
+<p>A quarta e última atualização do ITIL veio em fevereiro de 2019, com a publicação do livro <a href="https://www.axelos.com/about-axelos/news/axelos-launches-itil-4-foundation">"ITIL Foundations"</a>.</p>
+<p>O modelo de gestão de TI foi alterado para atender as <a href="https://www.axelos.com/certifications/itil-service-management/what-is-itil">necessidades da Era Digital</a>, com foco na criação de valor para os usuários, na condução de estratégias de negócios e na adaptação à transformação digital.</p>
+</section>
+</section>
+<section id="as-principais-mudanças-do-itil-4" class="level2">
+<h2 class="anchored" data-anchor-id="as-principais-mudanças-do-itil-4">As principais mudanças do ITIL 4</h2>
+<p>O ITIL 4 foi desenvolvido em conjunto entre a Axelos e a comunidade de profissionais de TI para adaptar o ITIL v3 às mudanças cada vez mais aceleradas da Era Digital.</p>
+<p>A principal mudança é a maior flexibilidade na execução dos processos. Na versão anterior, havia um certo engessamento no CVS, que dependia de uma série de estágios para ser executado.</p>
+<p>O ITIL 4 propõe o <a href="https://www.interop.com.br/blog/o-que-mudou-no-itil-v4/">Sistema de Valor de Serviço (SVS)</a> para alterar esse cenário. O SVS é um conjunto de componentes e atividades de uma empresa que possibilita a criação de valor.</p>
+<p>A flexibilidade vem da criação de um ecossistema entre organização, fornecedores, stakeholders e clientes. Todos devem atuar juntos para manter o sistema funcionando.</p>
+<p>Os componentes do SVS são:</p>
+<ul>
+<li><p>Cadeia de valor de serviço: modelo operacional flexível para a entrega e aprimoramento contínuo de serviços. Tem como atividades principais planejar, melhorar, engajar, desenhar, construir e entregar;</p></li>
+<li><p>34 práticas que atualizam os processos do ITIL v3;</p></li>
+<li><p><a href="https://posdigital.pucpr.br/blog/governanca-de-ti">Governança</a>: conjunto de normas e práticas que são a base para a definição de processos internos, de acordo com as exigências do setor e os valores da organização. Facilita a integração com outros frameworks como o <a href="https://posdigital.pucpr.br/blog/cobit">COBIT</a>.</p></li>
+<li><p>Melhoria contínua.</p></li>
+</ul>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://posdigital.pucpr.br/hubfs/itil-sistema-valor-servicos.webp" class="img-fluid figure-img" alt="Representação gráfica do Sistema de Valor de Serviços do ITIL 4."></p>
+<p></p><figcaption class="figure-caption">Representação gráfica do Sistema de Valor de Serviços do ITIL 4.</figcaption><p></p>
+</figure>
+</div>
+<p>Outra mudança importante é a inclusão de tecnologias emergentes, como <a href="https://posdigital.pucpr.br/blog/migracao-para-cloud-computing">Cloud Computing</a>, Infraestrutura como Serviço (IaaS), <a href="https://posdigital.pucpr.br/blog/exemplos-de-machine-learning">Machine Learning</a> e <a href="https://posdigital.pucpr.br/blog/smart-contracts#e-blockchain">blockchain</a>.</p>
+<p>O ITIL 4 também introduziu novos conceitos, que você vai conhecer em detalhes a seguir.</p>
+</section>
+<section id="os-princípios-do-itil-4" class="level2">
+<h2 class="anchored" data-anchor-id="os-princípios-do-itil-4">Os princípios do ITIL 4</h2>
+<p>São 7 princípios que devem orientar os profissionais de TI na adoção do SVS e, assim, adaptar o ITIL à realidade de suas empresas:</p>
+<ol type="1">
+<li><p>Concentrar-se no valor;</p></li>
+<li><p>Começar por onde você está;</p></li>
+<li><p>Avançar iterativamente com feedback;</p></li>
+<li><p>Colaborar e promover a visibilidade;</p></li>
+<li><p>Pensar e trabalhar pensando no todo;</p></li>
+<li><p>Manter os processos simples e práticos;</p></li>
+<li><p>Otimizar e automatizar constantemente.</p></li>
+</ol>
+</section>
+<section id="as-4-dimensões-do-itil-4" class="level2">
+<h2 class="anchored" data-anchor-id="as-4-dimensões-do-itil-4">As 4 dimensões do ITIL 4</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://posdigital.pucpr.br/hubfs/dimensoes-itil-4.webp" class="img-fluid figure-img" alt="Representação gráfica das dimensões do ITIL 4."></p>
+<p></p><figcaption class="figure-caption">Representação gráfica das dimensões do ITIL 4.</figcaption><p></p>
+</figure>
+</div>
+<p>As dimensões do ITIL são necessárias para a entrega de valor ao cliente, além de facilitar a visão holística da gestão de serviços. Todas são afetadas por fatores internos e externos à organização.</p>
+<p>As 4 dimensões são:</p>
+<ol type="1">
+<li><p>Organizações e pessoas;</p></li>
+<li><p>Informação e tecnologia;</p></li>
+<li><p>Parceiros e fornecedores;</p></li>
+<li><p>Fluxos de valor e processos.</p></li>
+</ol>
+</section>
+<section id="as-34-práticas-do-itil-4" class="level2">
+<h2 class="anchored" data-anchor-id="as-34-práticas-do-itil-4">As 34 práticas do ITIL 4</h2>
+<p>As <a href="https://www.itsmnapratica.com.br/tudo-sobre-itil/">práticas do ITIL 4</a> são “um conjunto de recursos necessários para realizar o trabalho ou cumprir um objetivo”. Elas têm como objetivo dar uma visão holística do sistema de serviços, ao considerar elementos como cultura, tecnologia, informações e gerenciamento de dados.</p>
+<p>A palavra "prática" também evita as ambiguidades do termo "processos", que é usado no dia a dia das empresas em todos os departamentos. Hoje, o ITIL considera um processo como "um conjunto de atividades que transformam entradas em saídas".</p>
+<p>As práticas são divididas em 3 grandes grupos:</p>
+<section id="práticas-gerais-de-gestão" class="level3">
+<h3 class="anchored" data-anchor-id="práticas-gerais-de-gestão">1. Práticas gerais de gestão</h3>
+<ul>
+<li><p>Gerenciamento da estratégia</p></li>
+<li><p>Gerenciamento da segurança da informação</p></li>
+<li><p>Gerenciamento de fornecedor</p></li>
+<li><p>Gerenciamento de mudança organizacional</p></li>
+<li><p>Gerenciamento de projetos</p></li>
+<li><p>Gerenciamento de relacionamento</p></li>
+<li><p>Gerenciamento de riscos</p></li>
+<li><p>Gerenciamento de talento e força de trabalho</p></li>
+<li><p>Gerenciamento do conhecimento</p></li>
+<li><p>Gerenciamento do portfólio</p></li>
+<li><p>Gerenciamento financeiro dos serviços</p></li>
+<li><p>Gestão da arquitetura</p></li>
+<li><p>Medição e reporte</p></li>
+<li><p>Melhoria contínua</p></li>
+</ul>
+</section>
+<section id="práticas-de-gestão-de-serviço" class="level3">
+<h3 class="anchored" data-anchor-id="práticas-de-gestão-de-serviço">2. Práticas de gestão de serviço</h3>
+<ul>
+<li><p>Análise de negócio</p></li>
+<li><p>Central de serviço</p></li>
+<li><p>Desenho de serviço</p></li>
+<li><p>Gerenciamento de ativos de TI</p></li>
+<li><p>Gerenciamento de capacidade e desempenho</p></li>
+<li><p>Gerenciamento do catálogo de serviços</p></li>
+<li><p>Gerenciamento de configuração de serviço</p></li>
+<li><p>Gerenciamento de continuidade de serviço</p></li>
+<li><p>Gerenciamento de disponibilidade</p></li>
+<li><p>Gerenciamento de incidente</p></li>
+<li><p>Gerenciamento de liberação</p></li>
+<li><p>Gerenciamento de nível de serviço</p></li>
+<li><p>Gerenciamento de problema</p></li>
+<li><p>Gerenciamento de requisição de serviço</p></li>
+<li><p>Habilitação de mudança</p></li>
+<li><p>Monitoramento e gerenciamento de evento</p></li>
+<li><p>Validação e teste de serviço</p></li>
+</ul>
+</section>
+<section id="práticas-de-gestão-técnica" class="level3">
+<h3 class="anchored" data-anchor-id="práticas-de-gestão-técnica">3. Práticas de gestão técnica</h3>
+<ul>
+<li><p>Desenvolvimento e gerenciamento de software</p></li>
+<li><p>Gerenciamento de implantação</p></li>
+<li><p>Gerenciamento de infraestrutura e plataforma</p></li>
+</ul>
+<p>Nenhuma prática está vinculada a um elemento do SVS nem é pré-requisito para a adoção de outras práticas. Não é obrigatório usar todas as 34 simultaneamente.</p>
+
+
+</section>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    target: function(trigger) {
+      return trigger.previousElementSibling;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+</body></html>
