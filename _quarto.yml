@@ -11,6 +11,13 @@ website:
         text: Banco de Dados
       - href: governanca_ti.qmd
         text: Governança de TI
+      - href: analise_dados.qmd
+        text: Análise de Dados e Informação
+      - menu:
+          - analise_dados1.qmd
+
+
+
 
 
 format:
