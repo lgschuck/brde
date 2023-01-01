@@ -2,7 +2,9 @@
 title: "Conceitos de BI"
 ---
 
-Conceitos, fundamentos, características, técnicas e métodos de Business Intelligence (BI)
+## Itens Edital:
+
+c\) **Análise de dados e informações**: Conceitos, fundamentos, características, técnicas e métodos de Business Intelligence (BI)
 
 ## [Brasil Escola](https://monografias.brasilescola.uol.com.br/computacao/business-intelligence--tecnicas-ferramentas.htm)
 

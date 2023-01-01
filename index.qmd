@@ -2,7 +2,7 @@
 title: "Resumo"
 ---
 
-Material de estudo para concurso do BRDE, cargo Analista de Sistemas -- Subárea **Ciência de Dados**.
+Material de estudo para [concurso do BRDE](https://www.fundatec.org.br/portal/concursos/index_concursos.php?concurso=706), cargo Analista de Sistemas -- Subárea **Ciência de Dados**.
 
 **Data da prova**: 12/03/2023
 

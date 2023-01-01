@@ -2,7 +2,9 @@
 title: "Conceitos de Data Warehouse"
 ---
 
-Conceitos de Data Warehouse
+## Itens Edital:
+
+c\) **Análise de dados e informações**: Conceitos de Data Warehouse
 
 ## [AWS](https://aws.amazon.com/pt/data-warehouse/)
 
@@ -225,7 +227,7 @@ Tendo como base o exemplo citado referente a venda de um determinado veículo, �
 
 Segundo Silva (2003), há um consenso sobre Data marts:
 
-"Há um consenso entre os fornecedores de soluções de Data Warehouse. A idéia é começar pequeno, mas pensando grande. E é o que está acontecendo. Na maioria dos casos, as empresas que optam pelo Data Warehouse iniciam o processo a partir de uma área específica da empresa para depois ir crescendo aos poucos. "
+"Há um consenso entre os fornecedores de soluções de Data Warehouse. A idéia é começar pequeno, mas pensando grande. E é o que está acontecendo. Na maioria dos casos, as empresas que optam pelo Data Warehouse iniciam o processo a partir de uma área específica da empresa para depois ir crescendo aos poucos."
 
 Barbieri (2001), nos elucida que, Data Mart é um depósito de dados que atende as áreas especificas da empresa, ou seja, separa por assuntos os dados coletados, Primak (2008) complementa dizendo que pode-se dividir um DW em vários Data Marts, com seus determinados assuntos e diminuindo o tempo de resposta e facilitando o acesso a essas informações, no cenário da venda de veículos, temos a tabela principal, que no caso é a "*fatovendas*" que tem todas as informações de vendas de determinado veículo, mas é possível também a criação de Data Marts específicos, como *"fatorh",* que terá as informações do recursos humanos da organização*, "fatofluxo",* responsável por catalogar o fluxo de clientes e assim por diante, mas ainda assim, possibilitando cruzar essas informações utilizando operações (ver seção 4.2.1), por exemplo, é possível emitir um *dashboard* das vendas pelo fluxo de clientes, podendo ter ideia de quantos clientes são necessários para finalizar uma venda, ou então traçar uma linha do tempo das vendas, pelo valor investido em marketing naquele período. Na figura 6, nota-se como se estrutura o Data Mart em um DW.
 
