@@ -21,7 +21,7 @@ website:
           - dado_info.qmd
           - conceitos_bi.qmd
           - olap.qmd
-          - datawarehouse.qmd
+          - data_warehouse.qmd
 
 format:
   html:
