@@ -6,7 +6,7 @@ title: "Conceitos de Data Warehouse"
 
 c\) **Análise de dados e informações**: Conceitos de Data Warehouse
 
-## [AWS](https://aws.amazon.com/pt/data-warehouse/)
+## [Data Warehouse - AWS](https://aws.amazon.com/pt/data-warehouse/)
 
 ### **O que é um data warehouse?**
 
@@ -117,7 +117,7 @@ Um data mart é um data warehouse que atende às necessidades de uma equipe ou u
 | Detalhes dos dados | Dados completos e detalhados                             | Pode manter dados resumidos                                                    |
 +--------------------+----------------------------------------------------------+--------------------------------------------------------------------------------+
 
-## [Brasil Escola](https://monografias.brasilescola.uol.com.br/computacao/business-intelligence--tecnicas-ferramentas.htm)
+## [Data Warehouse - Brasil Escola](https://monografias.brasilescola.uol.com.br/computacao/business-intelligence--tecnicas-ferramentas.htm)
 
 ### **5.1. DATA WAREHOUSE**
 
