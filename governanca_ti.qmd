@@ -4,11 +4,9 @@ title: "Governança de TI"
 
 g\) **Governança de TI**: ITIL versão 4 (ITIL 4): Operação de Serviços (Gerenciamento de Eventos, Gerenciamento de Incidentes, Gerenciamento de Problemas, Cumprimento de Requisições, Gerenciamento de Acessos), Desenho de Serviços (Gerenciamento de Níveis de Serviço, Gerenciamento de Capacidade, Gerenciamento de Disponibilidade, Gerenciamento de Continuidade de Serviços de TI, Gerenciamento de Continuidade de Negócio), Transição de Serviços (Gerenciamento de Configuração e Ativos de Serviços de TI, Gerenciamento de Liberação e Implantação, Gerenciamento de Mudanças), Melhoria Contínua de Serviços, Métricas (Fatores Críticos de Sucesso - CSFs, Índices Chave de Performance - KPIs).
 
-## O que é o Sistema ITIL
+## [O que é o Sistema ITIL](https://posdigital.pucpr.br/blog/itil)
 
-Fonte: https://posdigital.pucpr.br/blog/itil
-
-O Sistema ITIL é um conjunto de boas práticas de gerenciamento de serviços de tecnologia de informação. Ele está de acordo com a norma [ISO/IEC 20000](https://www.normas.com.br/visualizar/abnt-nbr-nm/26988/abnt-nbriso-iec20000-1-tecnologia-da-informacao-gestao-de-servicos-parte-1-requisitos-do-sistema-de-gestao-de-servicos), primeira padronização da[ International Organization for Standardization (ISO)](https://posdigital.pucpr.br/blog/iso-27000#significado) voltada exclusivamente para a gestão de TI.
+O Sistema ITIL é um conjunto de boas práticas de gerenciamento de serviços de tecnologia de informação. Ele está de acordo com a norma [ISO/IEC 20000](https://www.normas.com.br/visualizar/abnt-nbr-nm/26988/abnt-nbriso-iec20000-1-tecnologia-da-informacao-gestao-de-servicos-parte-1-requisitos-do-sistema-de-gestao-de-servicos), primeira padronização da [International Organization for Standardization (ISO)](https://posdigital.pucpr.br/blog/iso-27000#significado) voltada exclusivamente para a gestão de TI.
 
 ITIL é a sigla para Information Technology Infrastructure Library -- que pode ser traduzido para "biblioteca de infraestrutura de tecnologia da informação".
 
@@ -36,7 +34,7 @@ O ITIL v3 era descrito em 5 livros, que reuniam 26 processos e 4 funções. A ma
 
 2.  **Guias complementares do ITIL:** boas práticas complementares reunidas em publicações específicas para diferentes setores da indústria, modelos operacionais e arquiteturas de TI.
 
-Em 2011, o[ ITIL v3](https://www.portalgsti.com.br/2012/04/itil-v3-2011.html) ganhou uma grande atualização para dar clareza a conceitos e adicionar novas práticas ao CVS.
+Em 2011, o[ITIL v3](https://www.portalgsti.com.br/2012/04/itil-v3-2011.html) ganhou uma grande atualização para dar clareza a conceitos e adicionar novas práticas ao CVS.
 
 É nesse período também que a CCTA foi incorporada ao Escritório de Comércio Governamental (OGC, na sigla em inglês), entidade do Reino Unido responsável por promover a eficiência nos processos de negócios do Estado.
 
@@ -44,11 +42,11 @@ O sistema ITIL passou a ser atualizado pelo OGC até 2013, quando uma joint vent
 
 ### ITIL 4
 
-A quarta e última atualização do ITIL veio em fevereiro de 2019, com a publicação do livro [\"ITIL Foundations\"](https://www.axelos.com/about-axelos/news/axelos-launches-itil-4-foundation).
+A quarta e última atualização do ITIL veio em fevereiro de 2019, com a publicação do livro ["ITIL Foundations"](https://www.axelos.com/about-axelos/news/axelos-launches-itil-4-foundation).
 
 O modelo de gestão de TI foi alterado para atender as [necessidades da Era Digital](https://www.axelos.com/certifications/itil-service-management/what-is-itil), com foco na criação de valor para os usuários, na condução de estratégias de negócios e na adaptação à transformação digital.
 
-## As principais mudanças do ITIL 4
+### As principais mudanças do ITIL 4
 
 O ITIL 4 foi desenvolvido em conjunto entre a Axelos e a comunidade de profissionais de TI para adaptar o ITIL v3 às mudanças cada vez mais aceleradas da Era Digital.
 
@@ -68,13 +66,13 @@ Os componentes do SVS são:
 
 -   Melhoria contínua.
 
-![Representação gráfica do Sistema de Valor de Serviços do ITIL 4.](https://posdigital.pucpr.br/hubfs/itil-sistema-valor-servicos.webp){alt="Representação gráfica do Sistema de Valor de Serviços do ITIL 4."}
+![Representação gráfica do Sistema de Valor de Serviços do ITIL 4.](images/gov_ti1.PNG){alt="Representação gráfica do Sistema de Valor de Serviços do ITIL 4."}
 
 Outra mudança importante é a inclusão de tecnologias emergentes, como [Cloud Computing](https://posdigital.pucpr.br/blog/migracao-para-cloud-computing), Infraestrutura como Serviço (IaaS), [Machine Learning](https://posdigital.pucpr.br/blog/exemplos-de-machine-learning) e [blockchain](https://posdigital.pucpr.br/blog/smart-contracts#e-blockchain).
 
 O ITIL 4 também introduziu novos conceitos, que você vai conhecer em detalhes a seguir.
 
-## Os princípios do ITIL 4
+### Os princípios do ITIL 4
 
 São 7 princípios que devem orientar os profissionais de TI na adoção do SVS e, assim, adaptar o ITIL à realidade de suas empresas:
 
@@ -92,9 +90,9 @@ São 7 princípios que devem orientar os profissionais de TI na adoção do SVS 
 
 7.  Otimizar e automatizar constantemente.
 
-## As 4 dimensões do ITIL 4
+### As 4 dimensões do ITIL 4
 
-![Representação gráfica das dimensões do ITIL 4.](https://posdigital.pucpr.br/hubfs/dimensoes-itil-4.webp){alt="Representação gráfica das dimensões do ITIL 4."}
+![Representação gráfica das dimensões do ITIL 4.](images/gov_ti2.PNG){alt="Representação gráfica das dimensões do ITIL 4."}
 
 As dimensões do ITIL são necessárias para a entrega de valor ao cliente, além de facilitar a visão holística da gestão de serviços. Todas são afetadas por fatores internos e externos à organização.
 
@@ -108,11 +106,11 @@ As 4 dimensões são:
 
 4.  Fluxos de valor e processos.
 
-## As 34 práticas do ITIL 4
+### As 34 práticas do ITIL 4
 
 As [práticas do ITIL 4](https://www.itsmnapratica.com.br/tudo-sobre-itil/) são "um conjunto de recursos necessários para realizar o trabalho ou cumprir um objetivo". Elas têm como objetivo dar uma visão holística do sistema de serviços, ao considerar elementos como cultura, tecnologia, informações e gerenciamento de dados.
 
-A palavra \"prática\" também evita as ambiguidades do termo \"processos\", que é usado no dia a dia das empresas em todos os departamentos. Hoje, o ITIL considera um processo como \"um conjunto de atividades que transformam entradas em saídas\".
+A palavra "prática" também evita as ambiguidades do termo "processos", que é usado no dia a dia das empresas em todos os departamentos. Hoje, o ITIL considera um processo como "um conjunto de atividades que transformam entradas em saídas".
 
 As práticas são divididas em 3 grandes grupos:
 
@@ -191,3 +189,13 @@ As práticas são divididas em 3 grandes grupos:
 -   Gerenciamento de infraestrutura e plataforma
 
 Nenhuma prática está vinculada a um elemento do SVS nem é pré-requisito para a adoção de outras práticas. Não é obrigatório usar todas as 34 simultaneamente.
+
+## ITIL 4 - Prof. Gabriel Pacheco (Youtube)
+
+{{< video https://youtu.be/72cfBfdoGKM >}}
+
+{{< video https://youtu.be/mhamkwfIfzs >}}
+
+{{< video https://youtu.be/RrsxIn4pDg0 >}}
+
+{{< video https://youtu.be/aF64s-Tw0HU >}}

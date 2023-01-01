@@ -16,5 +16,17 @@
   },
   "analise_dados1.qmd": {
     "analise_dados1.html": "33b458c9"
+  },
+  "dado_info.qmd": {
+    "dado_info.html": "69e6e108"
+  },
+  "datawarehouse.qmd": {
+    "datawarehouse.html": "407a3ae7"
+  },
+  "conceitos_bi.qmd": {
+    "conceitos_bi.html": "673fd8da"
+  },
+  "olap.qmd": {
+    "olap.html": "843196bf"
   }
 }

@@ -1,0 +1,65 @@
+---
+title: "Conceitos de BI"
+---
+
+Conceitos, fundamentos, características, técnicas e métodos de Business Intelligence (BI)
+
+## [Brasil Escola](https://monografias.brasilescola.uol.com.br/computacao/business-intelligence--tecnicas-ferramentas.htm)
+
+## **4. BUSINESS INTELLIGENCE**
+
+O conceito de business Intelligence foi nomeado pelo Gartner Group, grupo com enfoque no uso de tecnologias para a tomada de decisão, nos anos 1990, porém, sua ideia base vem de muito antes. Quando se tem uma coleta de informações para a tomada de decisão, isso, a grosso modo, é business Intelligence. Mas a partir da nossa evolução no mundo tecnológico, o BI, vem sendo auxiliado e por inúmeras ferramentas, como o *Sistemas de Informações Executivas/EIS*, que começou a ser utilizado nos anos 1980, fornecendo informações a nível estratégicos das organizações, como relatórios dinâmicos e análise de tendências, sistema esse que mais tarde, juntamente com todas as suas ferramentas, seria chamado de soluções em BI.
+
+Em meados dos anos 1980, começou a surgir às primeiras soluções baseadas em gerenciamento de banco de dados com modelo relacional, isso implica que as informações geradas eram dispostas em tabelas com suas respectivas descrições, mesmo hoje é o modelo mais utilizado quando se diz respeito a banco de dados. Com essas novas ferramentas, se tornou mais viável o uso do sistema de informação *Enterprise Resource Planning/ERP*, que é a integração de todos os dados gerados pela organização.
+
+Segundo Davenport (1998), o ERP é definido como:
+
+Um software de negócio que permite à empresa automatizar e integrar a maioria de seus processos; compartilhar práticas de negócio e dados comuns pela empresa; e disponibilizar a informação em tempo real".
+
+É visto como a solução para acabar com os vários programas que funcionam no mesmo ambiente empresarial, sem integração, produzindo informações de pouca qualidade para o negócio. Sistemas dessa natureza são adquiridos com o intuito de tornar os processos empresariais mais ágeis e extrair informações mais acuradas da empresa.
+
+Mesmo sendo uma enorme vantagem o uso de softwares de ERP, o processo de análise de informações ainda era complicado, pois se utiliza um modelo relacional que, dependendo da sua arquitetura, não pode ser usado para a análise consistente de resultados. Os ERP são disponibilizados a partir de módulos, que se adaptam as necessidades das empresas, partindo disso e do problema em análise de dados, as empresas de ERP, passaram a incluir módulos específicos em BI.
+
+Como é citado pelo brasileiro Carlos Barbieri (2001, XX):
+
+No fundo, tudo relativo à nova era da economia da informação, dedicada à captura de dados, informações e conhecimentos que permitam às empresas competirem com maior eficiência num ring de disputas leoninas".
+
+Considerando a utilização dos ERP, e as suas estruturas de dados, ficou nítido a necessidade de um armazenamento de dados especifico para se gerar informações confiáveis, então, começou a se pensar na utilização de um armazenamento de dados, que foi introduzido inicialmente na década de 1960 pela International Business Machines/IBM, empresa americana voltada para a área de informática, modelo chamado de Data Warehouse/DW (inicialmente o modelo era chamado de Information Warehouse).
+
+O Data Warehouse, segundo DALFOVO e TAMBORLIN (2006),
+
+\[\...\] pode ser definido como um banco de dados especializado, que integra e gerencia o fluxo de informações a partir dos bancos de dados corporativos e fontes de dados externas à empresa, \[\...\]".
+
+Neste Sentido, o DW serve para criar uma visão centralizada e única dos dados que foram gerados em diversos outros bancos de dados. É a partir daí que o BI gera relatórios e informações, porém, ao contrário do ERP, podem ser utilizados por muitas outras pessoas na organização.
+
+*Mas afinal, qual o conceito de BI?*
+
+O BI não pode ser enquadrado como um sistema, nem como um produto e nem as suas ferramentas, mas pode ser compreendido como o uso de arquiteturas, aplicativos e banco de dados (ZAMAN, 2005)
+
+De acordo com Carlos Barbieri (2001, p.34), BI pode ser definido como "a utilização de variadas fontes de informação para se definir estratégias de competitividade nos negócios da empresa", várias fontes de informações, pois como o acesso à tecnologia se tornou mais viável à população, mais informações de diferentes fontes, como mídias sociais, telefone e e-mail, são geradas. Informações essas que em sua maioria não podem ser analisadas, pois não foram "higienizadas", ou estão em várias tabelas, onde se torna inviável a relação com outras tabelas, para gerar o que de fato é importante.
+
+## **5. ETAPAS, TÉCNICAS E CARACTERÍSTICAS DE BI**
+
+O BI, como em qualquer projeto a ser implementando possuem suas etapas, que nem sempre precisam ser seguidas a riscas, mas facilitam no processo, pois assim, um modelo de projeto possa ser utilizado por outras organizações ou em implementações futuras.
+
+Comumente, uma implementação de um projeto BI não se difere de outros projetos, no que diz respeito na forma como são levantadas as necessidades, porém, possuem suas particularidades. Abaixo, encontra-se um modelo para o desenvolvimento que pode ser a base para qualquer projeto.
+
+1.  Definição de requisitos
+
+Primeira etapa, onde se deve entender a forma como o desenvolvimento vai acontecer e o resultado a ser alcançado.
+
+2.  Estrutura do Data Warehouse
+
+Desenhar a estrutura necessária para o DW (ver seção 4.1), assim como a centralização das informações que são pertinentes, é onde também, se necessário, estruturar o Data Mart (ver seção 4.1.4).
+
+3.  Definição do ETL
+
+Após estruturar o DW, é necessário vincular a fonte de dados original, esse processo pode ser demorado então é de suma importância que sua implementação seja bastante consolidada (ver seção 4.1.6).
+
+4.  Estrutura do cubo OLAP
+
+Após a estrutura do DW pronta, o ETL carregando essas informações, é necessário a criação de um cubo OLAP, que tem como finalidade agilizar a criação de relatórios, os detalhes estão na seção 4.2.
+
+5.  Dashboards
+
+Após o projeto finalizado, irão ser utilizados softwares que serão conectados ao Cubo OLAP e que possuem a característica de gerar Dashboards, ou gráficos para a análise e tomada de decisão na organização.

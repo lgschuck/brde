@@ -14,11 +14,10 @@ website:
       - href: analise_dados.qmd
         text: Análise de Dados e Informação
       - menu:
-          - analise_dados1.qmd
-
-
-
-
+          - dado_info.qmd
+          - conceitos_bi.qmd
+          - olap.qmd
+          - datawarehouse.qmd
 
 format:
   html:
@@ -27,4 +26,3 @@ format:
     toc: true
 
 editor: visual
-

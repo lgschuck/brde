@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Concurso BRDE - Banco de Dados</title>
+<title>Concurso BRDE - Conceitos de BI</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -84,7 +84,7 @@ ul.task-list li input[type="checkbox"] {
  <span class="menu-text">Resumo</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./banco_dados.html" aria-current="page">
+    <a class="nav-link" href="./banco_dados.html">
  <span class="menu-text">Banco de Dados</span></a>
   </li>  
   <li class="nav-item">
@@ -129,14 +129,22 @@ ul.task-list li input[type="checkbox"] {
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#brasil-escola" id="toc-brasil-escola" class="nav-link active" data-scroll-target="#brasil-escola">Brasil Escola</a></li>
+  <li><a href="#business-intelligence" id="toc-business-intelligence" class="nav-link" data-scroll-target="#business-intelligence"><strong>4. BUSINESS INTELLIGENCE</strong></a></li>
+  <li><a href="#etapas-técnicas-e-características-de-bi" id="toc-etapas-técnicas-e-características-de-bi" class="nav-link" data-scroll-target="#etapas-técnicas-e-características-de-bi"><strong>5. ETAPAS, TÉCNICAS E CARACTERÍSTICAS DE BI</strong></a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Banco de Dados</h1>
+<h1 class="title">Conceitos de BI</h1>
 </div>
 
 
@@ -151,9 +159,55 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<p>a) <strong>Banco de Dados</strong>: Fundamentos de administração de dados: Segurança; Modelagem de dados: Modelo entidade-relacionamento (entidades, atributos, chaves e relacionamentos) e Normalização;</p>
+<p>Conceitos, fundamentos, características, técnicas e métodos de Business Intelligence (BI)</p>
+<section id="brasil-escola" class="level2">
+<h2 class="anchored" data-anchor-id="brasil-escola"><a href="https://monografias.brasilescola.uol.com.br/computacao/business-intelligence--tecnicas-ferramentas.htm">Brasil Escola</a></h2>
+</section>
+<section id="business-intelligence" class="level2">
+<h2 class="anchored" data-anchor-id="business-intelligence"><strong>4. BUSINESS INTELLIGENCE</strong></h2>
+<p>O conceito de business Intelligence foi nomeado pelo Gartner Group, grupo com enfoque no uso de tecnologias para a tomada de decisão, nos anos 1990, porém, sua ideia base vem de muito antes. Quando se tem uma coleta de informações para a tomada de decisão, isso, a grosso modo, é business Intelligence. Mas a partir da nossa evolução no mundo tecnológico, o BI, vem sendo auxiliado e por inúmeras ferramentas, como o <em>Sistemas de Informações Executivas/EIS</em>, que começou a ser utilizado nos anos 1980, fornecendo informações a nível estratégicos das organizações, como relatórios dinâmicos e análise de tendências, sistema esse que mais tarde, juntamente com todas as suas ferramentas, seria chamado de soluções em BI.</p>
+<p>Em meados dos anos 1980, começou a surgir às primeiras soluções baseadas em gerenciamento de banco de dados com modelo relacional, isso implica que as informações geradas eram dispostas em tabelas com suas respectivas descrições, mesmo hoje é o modelo mais utilizado quando se diz respeito a banco de dados. Com essas novas ferramentas, se tornou mais viável o uso do sistema de informação <em>Enterprise Resource Planning/ERP</em>, que é a integração de todos os dados gerados pela organização.</p>
+<p>Segundo Davenport (1998), o ERP é definido como:</p>
+<p>Um software de negócio que permite à empresa automatizar e integrar a maioria de seus processos; compartilhar práticas de negócio e dados comuns pela empresa; e disponibilizar a informação em tempo real”.</p>
+<p>É visto como a solução para acabar com os vários programas que funcionam no mesmo ambiente empresarial, sem integração, produzindo informações de pouca qualidade para o negócio. Sistemas dessa natureza são adquiridos com o intuito de tornar os processos empresariais mais ágeis e extrair informações mais acuradas da empresa.</p>
+<p>Mesmo sendo uma enorme vantagem o uso de softwares de ERP, o processo de análise de informações ainda era complicado, pois se utiliza um modelo relacional que, dependendo da sua arquitetura, não pode ser usado para a análise consistente de resultados. Os ERP são disponibilizados a partir de módulos, que se adaptam as necessidades das empresas, partindo disso e do problema em análise de dados, as empresas de ERP, passaram a incluir módulos específicos em BI.</p>
+<p>Como é citado pelo brasileiro Carlos Barbieri (2001, XX):</p>
+<p>No fundo, tudo relativo à nova era da economia da informação, dedicada à captura de dados, informações e conhecimentos que permitam às empresas competirem com maior eficiência num ring de disputas leoninas”.</p>
+<p>Considerando a utilização dos ERP, e as suas estruturas de dados, ficou nítido a necessidade de um armazenamento de dados especifico para se gerar informações confiáveis, então, começou a se pensar na utilização de um armazenamento de dados, que foi introduzido inicialmente na década de 1960 pela International Business Machines/IBM, empresa americana voltada para a área de informática, modelo chamado de Data Warehouse/DW (inicialmente o modelo era chamado de Information Warehouse).</p>
+<p>O Data Warehouse, segundo DALFOVO e TAMBORLIN (2006),</p>
+<p>[...] pode ser definido como um banco de dados especializado, que integra e gerencia o fluxo de informações a partir dos bancos de dados corporativos e fontes de dados externas à empresa, [...]“.</p>
+<p>Neste Sentido, o DW serve para criar uma visão centralizada e única dos dados que foram gerados em diversos outros bancos de dados. É a partir daí que o BI gera relatórios e informações, porém, ao contrário do ERP, podem ser utilizados por muitas outras pessoas na organização.</p>
+<p><em>Mas afinal, qual o conceito de BI?</em></p>
+<p>O BI não pode ser enquadrado como um sistema, nem como um produto e nem as suas ferramentas, mas pode ser compreendido como o uso de arquiteturas, aplicativos e banco de dados (ZAMAN, 2005)</p>
+<p>De acordo com Carlos Barbieri (2001, p.34), BI pode ser definido como “a utilização de variadas fontes de informação para se definir estratégias de competitividade nos negócios da empresa”, várias fontes de informações, pois como o acesso à tecnologia se tornou mais viável à população, mais informações de diferentes fontes, como mídias sociais, telefone e e-mail, são geradas. Informações essas que em sua maioria não podem ser analisadas, pois não foram “higienizadas”, ou estão em várias tabelas, onde se torna inviável a relação com outras tabelas, para gerar o que de fato é importante.</p>
+</section>
+<section id="etapas-técnicas-e-características-de-bi" class="level2">
+<h2 class="anchored" data-anchor-id="etapas-técnicas-e-características-de-bi"><strong>5. ETAPAS, TÉCNICAS E CARACTERÍSTICAS DE BI</strong></h2>
+<p>O BI, como em qualquer projeto a ser implementando possuem suas etapas, que nem sempre precisam ser seguidas a riscas, mas facilitam no processo, pois assim, um modelo de projeto possa ser utilizado por outras organizações ou em implementações futuras.</p>
+<p>Comumente, uma implementação de um projeto BI não se difere de outros projetos, no que diz respeito na forma como são levantadas as necessidades, porém, possuem suas particularidades. Abaixo, encontra-se um modelo para o desenvolvimento que pode ser a base para qualquer projeto.</p>
+<ol type="1">
+<li>Definição de requisitos</li>
+</ol>
+<p>Primeira etapa, onde se deve entender a forma como o desenvolvimento vai acontecer e o resultado a ser alcançado.</p>
+<ol start="2" type="1">
+<li>Estrutura do Data Warehouse</li>
+</ol>
+<p>Desenhar a estrutura necessária para o DW (ver seção 4.1), assim como a centralização das informações que são pertinentes, é onde também, se necessário, estruturar o Data Mart (ver seção 4.1.4).</p>
+<ol start="3" type="1">
+<li>Definição do ETL</li>
+</ol>
+<p>Após estruturar o DW, é necessário vincular a fonte de dados original, esse processo pode ser demorado então é de suma importância que sua implementação seja bastante consolidada (ver seção 4.1.6).</p>
+<ol start="4" type="1">
+<li>Estrutura do cubo OLAP</li>
+</ol>
+<p>Após a estrutura do DW pronta, o ETL carregando essas informações, é necessário a criação de um cubo OLAP, que tem como finalidade agilizar a criação de relatórios, os detalhes estão na seção 4.2.</p>
+<ol start="5" type="1">
+<li>Dashboards</li>
+</ol>
+<p>Após o projeto finalizado, irão ser utilizados softwares que serão conectados ao Cubo OLAP e que possuem a característica de gerar Dashboards, ou gráficos para a análise e tomada de decisão na organização.</p>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">

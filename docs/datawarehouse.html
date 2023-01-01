@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.2.242">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Concurso BRDE - Conceitos de Data Warehouse</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1.6em;
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit"
+  }
+}</script>
+
+
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container">
+    <a class="navbar-brand" href="./index.html">
+    <span class="navbar-title">Concurso BRDE</span>
+    </a>
+  </div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="./index.html">
+ <span class="menu-text">Resumo</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./banco_dados.html">
+ <span class="menu-text">Banco de Dados</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./governanca_ti.html">
+ <span class="menu-text">Governança de TI</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./analise_dados.html">
+ <span class="menu-text">Análise de Dados e Informação</span></a>
+  </li>  
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text"></span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-">    
+        <li>
+    <a class="dropdown-item" href="./dado_info.html">
+ <span class="dropdown-text">Dado, informação, conhecimento e Inteligência</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./conceitos_bi.html">
+ <span class="dropdown-text">Conceitos de BI</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./olap.html">
+ <span class="dropdown-text">Conceitos de OLAP</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./datawarehouse.html">
+ <span class="dropdown-text">Conceitos de Data Warehouse</span></a>
+  </li>  
+    </ul>
+  </li>
+</ul>
+              <div id="quarto-search" class="" title="Search"></div>
+          </div> <!-- /navcollapse -->
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#aws" id="toc-aws" class="nav-link active" data-scroll-target="#aws">AWS</a>
+  <ul class="collapse">
+  <li><a href="#o-que-é-um-data-warehouse" id="toc-o-que-é-um-data-warehouse" class="nav-link" data-scroll-target="#o-que-é-um-data-warehouse"><strong>O que é um data warehouse?</strong></a></li>
+  <li><a href="#como-um-data-warehouse-é-arquitetado" id="toc-como-um-data-warehouse-é-arquitetado" class="nav-link" data-scroll-target="#como-um-data-warehouse-é-arquitetado"><strong>Como um data warehouse é arquitetado?</strong></a></li>
+  <li><a href="#como-funciona-um-data-warehouse" id="toc-como-funciona-um-data-warehouse" class="nav-link" data-scroll-target="#como-funciona-um-data-warehouse"><strong>Como funciona um data warehouse?</strong></a></li>
+  <li><a href="#quais-são-os-benefícios-de-usar-um-data-warehouse" id="toc-quais-são-os-benefícios-de-usar-um-data-warehouse" class="nav-link" data-scroll-target="#quais-são-os-benefícios-de-usar-um-data-warehouse"><strong>Quais são os benefícios de usar um data warehouse?</strong></a></li>
+  <li><a href="#como-os-data-warehouses-os-bancos-de-dados-e-data-lakes-funcionam-juntos" id="toc-como-os-data-warehouses-os-bancos-de-dados-e-data-lakes-funcionam-juntos" class="nav-link" data-scroll-target="#como-os-data-warehouses-os-bancos-de-dados-e-data-lakes-funcionam-juntos"><strong>Como os data warehouses, os bancos de dados e data lakes funcionam juntos?</strong></a></li>
+  <li><a href="#comparação-entre-data-warehouses-e-data-lakes" id="toc-comparação-entre-data-warehouses-e-data-lakes" class="nav-link" data-scroll-target="#comparação-entre-data-warehouses-e-data-lakes"><strong>Comparação entre data warehouses e data lakes</strong></a></li>
+  <li><a href="#comparação-entre-data-warehouses-e-bancos-de-dados" id="toc-comparação-entre-data-warehouses-e-bancos-de-dados" class="nav-link" data-scroll-target="#comparação-entre-data-warehouses-e-bancos-de-dados"><strong>Comparação entre data warehouses e bancos de dados</strong></a></li>
+  <li><a href="#como-um-data-mart-se-compara-a-um-data-warehouse" id="toc-como-um-data-mart-se-compara-a-um-data-warehouse" class="nav-link" data-scroll-target="#como-um-data-mart-se-compara-a-um-data-warehouse"><strong>Como um data mart se compara a um data warehouse?</strong></a></li>
+  <li><a href="#comparação-entre-data-warehouses-e-data-marts" id="toc-comparação-entre-data-warehouses-e-data-marts" class="nav-link" data-scroll-target="#comparação-entre-data-warehouses-e-data-marts"><strong>Comparação entre data warehouses e data marts</strong></a></li>
+  </ul></li>
+  <li><a href="#brasil-escola" id="toc-brasil-escola" class="nav-link" data-scroll-target="#brasil-escola">Brasil Escola</a>
+  <ul class="collapse">
+  <li><a href="#data-warehouse" id="toc-data-warehouse" class="nav-link" data-scroll-target="#data-warehouse"><strong>5.1. DATA WAREHOUSE</strong></a></li>
+  </ul></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Conceitos de Data Warehouse</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+</header>
+
+<p>Conceitos de Data Warehouse</p>
+<section id="aws" class="level2">
+<h2 class="anchored" data-anchor-id="aws"><a href="https://aws.amazon.com/pt/data-warehouse/">AWS</a></h2>
+<section id="o-que-é-um-data-warehouse" class="level3">
+<h3 class="anchored" data-anchor-id="o-que-é-um-data-warehouse"><strong>O que é um data warehouse?</strong></h3>
+<p>Um data warehouse é um repositório central de informações que podem ser analisadas para tomar decisões mais adequadas. Os dados fluem de sistemas transacionais, <a href="https://aws.amazon.com/pt/relational-database/">bancos de dados relacionais</a> e de outras fontes para o data warehouse, normalmente com uma cadência regular. Analistas de negócios, engenheiros de dados, cientistas de dados e tomadores de decisões acessam os dados por meio de <a href="https://aws.amazon.com/pt/quicksight/">ferramentas de inteligência de negócios (BI)</a>, clientes SQL e outros aplicativos de análise.</p>
+<p>Dados e análises se tornaram indispensáveis para que as empresas se mantenham competitivas. Os usuários corporativos contam com relatórios, painéis e análises para extrair insights dos dados, monitorar a performance dos negócios e apoiar a tomada de decisões. Os data warehouses alimentam esses relatórios, painéis e ferramentas de análise armazenando dados de maneira eficiente para minimizar a entrada e saída (E/S) dos dados e fornecer resultados de consulta rapidamente para centenas e milhares de usuários simultaneamente.</p>
+</section>
+<section id="como-um-data-warehouse-é-arquitetado" class="level3">
+<h3 class="anchored" data-anchor-id="como-um-data-warehouse-é-arquitetado"><strong>Como um data warehouse é arquitetado?</strong></h3>
+<p>Uma arquitetura de data warehouses é composta de camadas. A camada superior é o cliente de front-end, que apresenta os resultados por meio de ferramentas de relatórios, análises e mineração de dados. A camada intermediária consiste no mecanismo de análises, usado para acessar e analisar os dados. A camada inferior da arquitetura é o servidor de banco de dados, onde os dados são carregados e armazenados. Os dados são armazenados de dois modos diferentes: 1) os dados acessados com frequência são armazenados em armazenamento muito rápido (como unidades SSD) e 2) os dados acessados com pouca frequência são armazenados em um armazenamento de objetos barato, como o Amazon S3. O data warehouse garantirá automaticamente que os dados acessados com frequência sejam movidos para o armazenamento “rápido”, para otimizar a velocidade da consulta.<br>
+</p>
+</section>
+<section id="como-funciona-um-data-warehouse" class="level3">
+<h3 class="anchored" data-anchor-id="como-funciona-um-data-warehouse"><strong>Como funciona um data warehouse?</strong></h3>
+<p>Um data warehouse pode conter vários bancos de dados. Dentro de cada banco de dados, os dados são organizados em tabelas e colunas. Dentro de cada coluna, você pode definir uma descrição dos dados, como número inteiro, campo de dados ou sequência. As tabelas podem ser organizadas dentro de esquemas, que você pode considerar como pastas. Quando os dados são consumidos, eles são armazenados em várias tabelas descritas pelo esquema. As ferramentas de consulta usam o esquema para determinar as tabelas de dados que serão acessadas e analisadas.<br>
+</p>
+</section>
+<section id="quais-são-os-benefícios-de-usar-um-data-warehouse" class="level3">
+<h3 class="anchored" data-anchor-id="quais-são-os-benefícios-de-usar-um-data-warehouse"><strong>Quais são os benefícios de usar um data warehouse?</strong></h3>
+<p>Os benefícios de um data warehouse incluem o seguinte:</p>
+<ul>
+<li><p>Tomada de decisão adequada</p></li>
+<li><p>Dados consolidados de várias fontes</p></li>
+<li><p>Análise de dados históricos</p></li>
+<li><p>Qualidade, consistência e precisão de dados</p></li>
+<li><p>Separação do processamento analítico dos bancos de dados transacionais, o que melhora o desempenho dos dois sistemas</p></li>
+</ul>
+</section>
+<section id="como-os-data-warehouses-os-bancos-de-dados-e-data-lakes-funcionam-juntos" class="level3">
+<h3 class="anchored" data-anchor-id="como-os-data-warehouses-os-bancos-de-dados-e-data-lakes-funcionam-juntos"><strong>Como os data warehouses, os bancos de dados e data lakes funcionam juntos?</strong></h3>
+<p>Normalmente, as empresas usam uma combinação de banco de dados, data lake e data warehouse para armazenar e analisar dados. A <a href="https://aws.amazon.com/redshift/lake-house-architecture/">arquitetura de lake house</a> do Amazon Redshift facilita essa integração.</p>
+<p>À medida que o volume e a variedade de dados aumentam, é vantajoso seguir um ou mais padrões comuns para trabalhar com dados em seu banco de dados, data lake e data warehouse:<br>
+</p>
+<p><img src="images/dw1.png" class="img-fluid"></p>
+<p>Imagem (acima):&nbsp;armazenar os dados em um banco de dados ou datalake, preparar os dados, mover os dados selecionados para um data warehouse e executar relatórios.</p>
+<p><img src="images/dw2.png" class="img-fluid"></p>
+<p>Image (acima):&nbsp;armazenar os dados em uma data warehouse, analisar os dados e compartilhá-los para usar com outros serviços de análise e machine learning.</p>
+<p>Um data warehouse é projetado especificamente para análises de dados, que envolvem a leitura de grandes quantidades de dados para compreender relações e tendências entre os dados. Um banco de dados é usado para capturar e armazenar dados, como o registro de detalhes de uma transação.</p>
+<p>Ao contrário de um data warehouse, um data lake é um repositório centralizado para todos os dados, incluindo estruturados, semiestruturados e não estruturados. Um data warehouse exige que os dados sejam organizados em um formato tabular, onde o esquema torna-se necessário. O formato tabular é necessário para que o SQL possa ser usado para consultar os dados, mas nem todos os aplicativos exigem que os dados estejam em formato de tabela. Alguns aplicativos, como análise de big data, pesquisa de texto completo e machine learning, podem acessar dados mesmo que sejam “semiestruturados” ou completamente não estruturados.<br>
+</p>
+</section>
+<section id="comparação-entre-data-warehouses-e-data-lakes" class="level3">
+<h3 class="anchored" data-anchor-id="comparação-entre-data-warehouses-e-data-lakes"><strong>Comparação entre data warehouses e data lakes</strong></h3>
+<table class="table">
+<colgroup>
+<col style="width: 7%">
+<col style="width: 41%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Características</th>
+<th style="text-align: left;">Data warehouse</th>
+<th style="text-align: left;">Data lake</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Dados</td>
+<td style="text-align: left;">Dados relacionais de sistemas transacionais, bancos de dados operacionais e aplicativos de linha de negócios</td>
+<td style="text-align: left;">Todos os dados, incluindo estruturados, semiestruturados e não estruturados</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Esquema</td>
+<td style="text-align: left;"><p>Geralmente projetado antes da implementação do data warehouse, mas também pode ser gravado no momento da análise</p>
+<p>(esquema na gravação ou esquema na leitura)</p></td>
+<td style="text-align: left;">Gravado no momento da análise (esquema na leitura)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Preço/performance</td>
+<td style="text-align: left;">Resultados de consulta mais rápidos, usando armazenamento local</td>
+<td style="text-align: left;">Resultados da consulta cada vez mais rápidos usando armazenamento de baixo custo e desacoplamento de computação e armazenamento</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Qualidade dos dados</td>
+<td style="text-align: left;">Dados altamente organizados, que representam a versão central da verdade</td>
+<td style="text-align: left;">Quaisquer dados, organizados ou não (ou seja, dados brutos)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Usuários</td>
+<td style="text-align: left;">Analistas de negócios, cientistas de dados e desenvolvedores de dados</td>
+<td style="text-align: left;">Analistas de negócios (usando dados organizados), cientistas de dados, desenvolvedores de dados, engenheiros de dados e arquitetos de dados</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Análises</td>
+<td style="text-align: left;">Geração de relatórios em lote, BI e visualizações</td>
+<td style="text-align: left;">Machine learning, análise exploratória, descoberta de dados, streaming, análise operacional, big data e criação de perfil</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="comparação-entre-data-warehouses-e-bancos-de-dados" class="level3">
+<h3 class="anchored" data-anchor-id="comparação-entre-data-warehouses-e-bancos-de-dados"><strong>Comparação entre data warehouses e bancos de dados</strong></h3>
+<table class="table">
+<colgroup>
+<col style="width: 11%">
+<col style="width: 37%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Características</th>
+<th style="text-align: left;">Data warehouse</th>
+<th style="text-align: left;">Banco de dados transacional</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Cargas de trabalho adequadas</td>
+<td style="text-align: left;">Análises, relatórios e big data</td>
+<td style="text-align: left;">Processamento de transações</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Fonte de dados</td>
+<td style="text-align: left;">Dados coletados e normalizados de diversas fontes</td>
+<td style="text-align: left;">Dados capturados no estado em que se encontram, de uma única fonte, como um sistema transacional</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Captura de dados</td>
+<td style="text-align: left;">Operações de gravação em massa, executadas normalmente em uma programação de lotes pré-determinada</td>
+<td style="text-align: left;">Otimizado para operações contínuas de gravação à medida que novos dados são disponibilizados para maximizar o throughput das transações</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Normalização de dados</td>
+<td style="text-align: left;">Esquemas desnormalizados, como Star ou Snowflake</td>
+<td style="text-align: left;">Esquemas estáticos altamente normalizados</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Armazenamento de dados</td>
+<td style="text-align: left;">Otimizado para simplicidade de acesso e alto desempenho de consultas usando armazenamento colunar</td>
+<td style="text-align: left;">Otimizado para operações de gravação de alto throughput em um único bloco físico orientado a linhas</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Acesso aos dados</td>
+<td style="text-align: left;">Otimizado para minimizar a E/S e maximizar o throughput de dados</td>
+<td style="text-align: left;">Grandes volumes de pequenas operações de leitura</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="como-um-data-mart-se-compara-a-um-data-warehouse" class="level3">
+<h3 class="anchored" data-anchor-id="como-um-data-mart-se-compara-a-um-data-warehouse"><strong>Como um data mart se compara a um data warehouse?</strong></h3>
+<p>Um data mart é um data warehouse que atende às necessidades de uma equipe ou unidade de negócios específica, como finanças, marketing ou vendas. O data mart é menor, mais focado e pode conter resumos de dados para atender melhor à comunidade de usuários. Um data mart também pode ser uma parte de um data warehouse.<br>
+</p>
+</section>
+<section id="comparação-entre-data-warehouses-e-data-marts" class="level3">
+<h3 class="anchored" data-anchor-id="comparação-entre-data-warehouses-e-data-marts"><strong>Comparação entre data warehouses e data marts</strong></h3>
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Características</th>
+<th style="text-align: left;">Data warehouse</th>
+<th style="text-align: left;">Data mart</th>
+</tr>
+</thead>
+<tbody>
+</tbody>
+</table>
+<table class="table">
+<colgroup>
+<col style="width: 12%">
+<col style="width: 36%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Características</th>
+<th style="text-align: left;">Data warehouse</th>
+<th style="text-align: left;">Data mart</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Escopo</td>
+<td style="text-align: left;">Várias áreas centralizadas e integradas</td>
+<td style="text-align: left;">Uma área específica e descentralizada</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Usuários</td>
+<td style="text-align: left;">De toda a organização</td>
+<td style="text-align: left;">Uma única comunidade ou departamento</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Fonte de dados</td>
+<td style="text-align: left;">Muitas fontes</td>
+<td style="text-align: left;">Uma ou poucas fontes, ou uma parte dos dados já coletados em um data warehouse</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Tamanho</td>
+<td style="text-align: left;">Grande, pode variar de centenas de gigabytes a petabytes</td>
+<td style="text-align: left;">Pequeno, normalmente até algumas dezenas de gigabytes</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Projeto</td>
+<td style="text-align: left;">De cima para baixo</td>
+<td style="text-align: left;">De baixo para cima</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Detalhes dos dados</td>
+<td style="text-align: left;">Dados completos e detalhados</td>
+<td style="text-align: left;">Pode manter dados resumidos</td>
+</tr>
+</tbody>
+</table>
+</section>
+</section>
+<section id="brasil-escola" class="level2">
+<h2 class="anchored" data-anchor-id="brasil-escola"><a href="https://monografias.brasilescola.uol.com.br/computacao/business-intelligence--tecnicas-ferramentas.htm">Brasil Escola</a></h2>
+<section id="data-warehouse" class="level3">
+<h3 class="anchored" data-anchor-id="data-warehouse"><strong>5.1. DATA WAREHOUSE</strong></h3>
+<p>O conceito de Data Warehouse surgiu da necessidade das organizações em integrar os dados de diferentes servidores e máquinas em apenas um local e que essas informações servissem para que fossem gerados relatórios para as análises da empresa. O DW usa um modelo relacional dimensional, isto é, as informações estão dispostas de formas intuitivas, facilitando o acesso e a geração de resultados.</p>
+<p>Outro fator determinante para o desenvolvimento de um armazém de dados é o fato de que os modelos tradicionais, gerados pelos sistemas ERP, estão estruturados de forma transacional, o que dificulta gerar informações para as análises de resultados. De acordo com Singh, 2001: “O DW é a área de armazenamento de dados históricos e integrados destinados a sistemas de suporte à decisão”.</p>
+<p>Assim, Barbieri, 2001, conclui que:</p>
+<p>Pode ser definido como um banco de dados, destinado a sistemas de apoio à tomada de decisão e cujos dados foram armazenados em estruturas lógicas dimensionais, possibilitando o seu processamento analítico por ferramentas especiais”.</p>
+<p>As decisões para a utilização de um DW, parte do princípio que as informações precisam ser confiáveis para que as decisões não sejam tomadas de forma errônea. Como afirma Kimball, 2002: “Queremos que as pessoas usem informações para apoiar decisões mais baseadas em fatos”. As consultas e relatórios são acessados diretamente no DW, evitando dados sem confiabilidade dos provedores de informações originais.</p>
+<section id="características" class="level4">
+<h4 class="anchored" data-anchor-id="características"><strong>5.1.1. Características</strong></h4>
+</section>
+<section id="orientado-por-assunto" class="level4">
+<h4 class="anchored" data-anchor-id="orientado-por-assunto"><strong>5.1.2. Orientado por Assunto</strong></h4>
+<p>Os bancos de dados transacionais, comumente possuem todos os dados das organizações dispostas em tabelas, isso faz com que os dados nem sempre serão de fácil análise. Os DW, por sua vez são orientados aos assuntos mais pertinentes para as empresas, como a análise de mercado de determinado produto ou veículo. Na figura 1, nota-se a diferença entre sistemas operacionais comum e após a criação do DW.</p>
+<p>Figura 1: Orientada por assunto</p>
+<p><img src="images/dw4.jpeg" class="img-fluid" alt=""></p>
+<p>Fonte: INMON, 2005.</p>
+<p>Barbieri, 2001, nos alerta que a falta e objetivo, são primordiais para o fracasso de qualquer projeto, mas isso ainda é mais agravante no que diz respeito ao DW. É preciso também pensar no futuro, se necessário uma expansão no mesmo isso deve acontecer de forma relativamente fácil, pois se o projeto for mal estrutura, pode ser que o projeto futuramente tenha que partir do zero.</p>
+</section>
+<section id="integrado" class="level4">
+<h4 class="anchored" data-anchor-id="integrado"><strong>5.1.3. Integrado</strong></h4>
+<p>É comum as organizações possuírem mais de uma representante, ou filial, sendo para desenvolver as mesmas ações ou de diferente tipo, fazendo com que em certos momentos as informações serão escritas de formas diferentes a qual está na matriz, ou representante principal. Ou então o sistema ERP é diferente, isso gera inconsistência nos dados, já que as informações são provenientes de mais de uma fonte.</p>
+<p>Uma das características mais importantes do DW é a capacidade de ler essas informações e armazená-las de forma confiável. Independe de onde vem as informações, ou da data em que foi criado, a integração no DW sempre será consistente, por exemplo. Na inserção do CPF de clientes de um grupo de empresas, na organização X o CPF é inserido da seguinte forma: 999.999.999-99 já na empresa Y insere assim: 99999999999, a princípio pode ser uma questão simples, mas no momento em que for cruzar as informações, não será possível “linkar” um CPF com o outro. O DW irá transformar essas informações num modelo único.</p>
+</section>
+<section id="histórico" class="level4">
+<h4 class="anchored" data-anchor-id="histórico"><strong>5.1.4. Histórico</strong></h4>
+<p>O que influência o tamanho do DW é principalmente as informações históricas das organizações, a forma mais eficaz de análise de tendência é tendo informações de anos anteriores para a comparação. Os dados históricos dos DW podem ter facilmente mais de 5 anos. Nos sistemas tradicionais, as informações remetem a posição atual dos dados no momento da pesquisa, ou num curto período de tempo, não sendo possível uma análise mais a fundo. É comum nos sistemas tradicionais a remoção de dados antigos para a liberação de espaço no banco de dados, isso não ocorre no DW pois as informações sempre serão importantes para as análises e projeção do futuro.</p>
+</section>
+<section id="não-volátil" class="level4">
+<h4 class="anchored" data-anchor-id="não-volátil"><strong>5.1.5. Não Volátil</strong></h4>
+<p>Há apenas duas operações executadas no DW, a primeira delas é a transação de carga dos dados provenientes dos sistemas provedores de informações e a segunda é o processo de leitura dos dados para a geração de relatórios. Não é possível a escrita de dados nas dimensões do DW diretamente como acontece nos bancos de dados tradicionais, sendo apenas para a leitura, fazendo com que as informações permaneçam estáveis mesmo após longos períodos de tempo.</p>
+</section>
+<section id="modelos" class="level4">
+<h4 class="anchored" data-anchor-id="modelos"><strong>5.1.6. Modelos</strong></h4>
+<p>Todas as características do DW, bem como suas diferenças aos sistemas tradicionais passam inteiramente pelos modelos a serem usados para a construção do novo repositório de dados. Os modelos, a grosso modo é a forma como os dados serão organizados e estruturados, como as entidades serão conectadas e como irão interagir entre si.</p>
+<p>As opções de estrutura no DW variam das necessidades de cada caso, as mais comuns atualmente são o Modelo Estrela (Star Schema) e o Modelo Floco de Neve (Snow Flake), cada um com sua característica e limitação referente ao outro.</p>
+</section>
+<section id="modelo-estrela" class="level4">
+<h4 class="anchored" data-anchor-id="modelo-estrela"><strong>5.1.7. Modelo Estrela</strong></h4>
+<p>O modelo estrela foi proposto por Ralph Kimball, para ser um modelo altamente redundante, onde todas as descrições seriam repetidas em cada dimensão. Sua estrutura é composta por uma tabela central de Fatos e um conjunto de tabelas ligadas a ela, que são chamadas de dimensões. As dimensões são compostas por eventos ou características do mesmo, enquanto a tabela fato, como o próprio nome diz, armazena os fatos ocorridos, por exemplo, o Fato é a venda de um veículo, as dimensões são as informações dessa venda, como a data que ocorreu, veículo vendido, valor da venda e assim por diante. Na figura 2 pode se verificar a estrutura do modelo estrela.</p>
+<p>Figura 2: Modelo Estrela.</p>
+<p><img src="images/dw5.jpeg" class="img-fluid" alt=""></p>
+<p>&nbsp;Fonte: MACHADO, 2004.</p>
+<p>Segundo Singh (2001) uma característica importante desse modelo é fato de suas dimensões serem desnormalizadas, isto gera várias duplicidades no banco, mas também garante confiabilidade nas consultas. Barbieri, 2001, cita como desvantagem do modelo estrela o fato de ele não ter uma perfeita coesão entre os Data Marts e um esforço redobrado na extração de dados, já que várias informações são duplicadas.</p>
+</section>
+<section id="modelo-floco-de-neve" class="level4">
+<h4 class="anchored" data-anchor-id="modelo-floco-de-neve"><strong>5.1.8. Modelo Floco de Neve</strong></h4>
+<p>O modelo floco de neve também possui uma tabela Fatos ligada as entidades de dimensões, porém, ao contrário do que ocorre com o modelo estrela, há entidades relacionando entre si, isto diminui drasticamente o tamanho do DW, porém as consultas podem se tornar um pouco complicadas. Na figura 3 observa-se a estrutura do modelo Floco de neve.</p>
+<p>Figura 3: Modelo Floco de neve</p>
+<p><img src="images/dw6.jpeg" class="img-fluid" alt=""></p>
+<p>Fonte: MACHADO, 2004.</p>
+<p>Segundo Machado (2004), O modelo floco de neve é o resultado da decomposição de uma ou mais dimensões que possuem hierarquias entre seus membros. O que difere também do modelo estrela é o fato das dimensões serem normalizadas, não ocorrendo as duplicidades que ocorre no modelo estrela, SINGH (2001) completa dizendo que normalizando os dados das tabelas dimensionais de um modelo estrela transforma o mesmo em um modelo floco de neve.</p>
+</section>
+<section id="estrutura-do-data-warehouse" class="level4">
+<h4 class="anchored" data-anchor-id="estrutura-do-data-warehouse"><strong>5.1.9. Estrutura Do Data Warehouse</strong></h4>
+<p>Segundo o Kimball group, grupo especializado na concepção de Data Warehouse para Business Intelligence, a estrutura base para um Data warehouse seria, composta por três componentes, Data Sources, Data Staging Area e Data Presentation Area. Na figura 4 observa-se a organização básica de um DW.</p>
+<p>Figura 4: DW</p>
+<p><img src="images/dw7.PNG" class="img-fluid" alt="" width="826"></p>
+<p>Fonte: kimballgroup, 2002</p>
+</section>
+<section id="data-source" class="level4">
+<h4 class="anchored" data-anchor-id="data-source"><strong>5.1.10. Data Source</strong></h4>
+<p>São De Onde As Informações Serão Extraídas, A Fonte Dos Dados, Independentemente do servidor que está em uso, por exemplo, uma organização possui duas fontes de dados, uma baseada em SGBD Oracle e a outra em SQL server, o DW tem por função integrar esses dados em apenas um local de forma que possam ser cruzadas informações.</p>
+</section>
+<section id="data-staging" class="level4">
+<h4 class="anchored" data-anchor-id="data-staging"><strong>5.1.11. Data Staging</strong></h4>
+<p>É onde estão armazenados os dados, é um meio termo entre o sistema operacional e a camada de apresentação, fazendo uso de conjuntos de processos chamados de ETL (Extração, Transformação e carregamento), ver seção 4.1.6 É onde ocorre a “higienização” dos dados, onde são definidas as estruturas, os fatos e as dimensões do DW. O Data Staging, não é de acesso livre aos usuários, pois não gera relatórios e nem consultas, ficando a cargo do Data Presentation Area.</p>
+<p>KIMBALL (2002), indica o requisito do Data Staging:</p>
+<p>O requisito de arquitetura chave para a Data Staging é que ela esteja fora do alcance dos usuários de negócios, não fornecendo serviços de consulta e apresentação.”</p>
+<p>Figura 5: Staging area</p>
+<p><img src="images/dw8.jpeg" class="img-fluid" alt=""></p>
+<p>Fonte: MACHADO, 2004.</p>
+</section>
+<section id="data-presentation-area" class="level4">
+<h4 class="anchored" data-anchor-id="data-presentation-area"><strong>5.1.12. Data Presentation Area</strong></h4>
+<p>É onde os dados estão organizados e prontos para serem acessados pelos usuários. Com base num modelo dimensional, os dados são acessados de forma intuitiva e as informações são consistentes. As ferramentas que possuem essa finalidade são conectadas ao cubo OLAP (ver seção 4.2) e com auxílio das operações apresentam os relatórios para o usuário final.</p>
+</section>
+<section id="data-mart" class="level4">
+<h4 class="anchored" data-anchor-id="data-mart"><strong>5.1.13. Data Mart</strong></h4>
+<p>Tendo como base o exemplo citado referente a venda de um determinado veículo, é possível extrair as informações dessa venda, porém se necessário obter várias vendas, com vários filtros essas informações tendem a se tornarem complexas para se analisar e consequentemente para tomar decisões, em razão disso, a ideia de um diretório exclusivo a determinado assunto dentro do próprio DW, ou extraindo informações diretamente das fontes de dados, acabou se tornando bastante necessário.</p>
+<p>Segundo Silva (2003), há um consenso sobre Data marts:</p>
+<p>“Há um consenso entre os fornecedores de soluções de Data Warehouse. A idéia é começar pequeno, mas pensando grande. E é o que está acontecendo. Na maioria dos casos, as empresas que optam pelo Data Warehouse iniciam o processo a partir de uma área específica da empresa para depois ir crescendo aos poucos.”</p>
+<p>Barbieri (2001), nos elucida que, Data Mart é um depósito de dados que atende as áreas especificas da empresa, ou seja, separa por assuntos os dados coletados, Primak (2008) complementa dizendo que pode-se dividir um DW em vários Data Marts, com seus determinados assuntos e diminuindo o tempo de resposta e facilitando o acesso a essas informações, no cenário da venda de veículos, temos a tabela principal, que no caso é a “<em>fatovendas</em>” que tem todas as informações de vendas de determinado veículo, mas é possível também a criação de Data Marts específicos, como <em>“fatorh”,</em> que terá as informações do recursos humanos da organização<em>, “fatofluxo”,</em> responsável por catalogar o fluxo de clientes e assim por diante, mas ainda assim, possibilitando cruzar essas informações utilizando operações (ver seção 4.2.1), por exemplo, é possível emitir um <em>dashboard</em> das vendas pelo fluxo de clientes, podendo ter ideia de quantos clientes são necessários para finalizar uma venda, ou então traçar uma linha do tempo das vendas, pelo valor investido em marketing naquele período. Na figura 6, nota-se como se estrutura o Data Mart em um DW.</p>
+<p>Figura 6: Organização do Data Mart</p>
+<p><img src="images/dw9.jpeg" class="img-fluid" alt=""></p>
+<p>Fonte: NERY, 2007.</p>
+</section>
+<section id="data-mining" class="level4">
+<h4 class="anchored" data-anchor-id="data-mining"><strong>5.1.14. Data Mining</strong></h4>
+<p>A diferença básica do BI para o Data mining se refere a quem é direcionado a atuação. O BI tem como base fornecer as informações para o nível estratégico da organização, onde se tomam as decisões a níveis gerenciais, já o Data mining fornece as informações em níveis menores, são usadas principalmente na área de atuação, ou no plano tático da empresa.</p>
+<p>O DM é constituído por um conjunto de 3 conceitos básicos para o seu sucesso, são eles:</p>
+<ol type="1">
+<li><p>Estatística</p></li>
+<li><p>Inteligencia artificial</p></li>
+<li><p>Machine learning</p></li>
+</ol>
+<p>O Machine Learning nada mais é que a combinação dos dois primeiros conceitos, é a grosso modo o fato do DM “aprender com os dados”, com cálculos estatísticos e com uma boa inteligência artificial é possível que o software trace caminhos sozinhos para a obtenção de resultados.</p>
+</section>
+<section id="etl-extract-transform-and-load" class="level4">
+<h4 class="anchored" data-anchor-id="etl-extract-transform-and-load"><strong>5.1.15. ETL – Extract, Transform And Load</strong></h4>
+<p>É o processo de extração dos dados de fontes externas para o Data Warehouse, transformando suas tabelas e informações em dimensões e fatos no DW e carregando todas as informações de forma “limpa” e consistente no banco em questão.</p>
+<p>Figura 7: ETL</p>
+<p><img src="images/dw10.jpeg" class="img-fluid" alt=""></p>
+<p>FONTE: CANALTECH, 2014.</p>
+<p>Segundo KIMBALL (1998), ETL é o Conjunto de processos pelos quais os dados de origem operacional são preparados para o Data Warehouse. KIMBALL (1998) completa, é o processo mais crítico e demorado na construção de um DW, podendo levar até 60% do total de horas da implementação do projeto. Pois os modelos relacionais, nem sempre dispõe de uma arquitetura que facilite isso, possuindo também o fator de quantidade de dados que o sistema possui.</p>
+<p>Barbieri, 2001, diz que o conceito do processo ETL, pode ser dividido em:</p>
+<ol type="1">
+<li>Filtro de dados</li>
+</ol>
+<p>Os bancos de dados comuns não são normalizados, isto faz com que os dados possam ter informações indesejáveis, o papel do ETL nessa etapa é filtrar e não carregar no DW essas informações.</p>
+<ol start="2" type="1">
+<li>Integração de dados</li>
+</ol>
+<p>Fazer com que todas as informações a determinado assunto sejam correlacionadas, independente se ela está num sistema no banco de dados, ou em planilhas locais.</p>
+<ol start="3" type="1">
+<li>Condensação de dados</li>
+</ol>
+<p>É condensar as informações de forma sumariada, ou seja, as vendas de determinado dia, precisam sempre estar presentes juntamente com as outras vendas do mesmo dia.</p>
+<ol start="4" type="1">
+<li>Conversão de dados</li>
+</ol>
+<p>Cada banco de dados apresentam as informações de formas distintas, podendo ser uma virgula ao invés de um ponto, ou até o símbolo de moeda ser diferente, o ETL converte esse modelo em um outro modelo padrão do DW.</p>
+<ol start="5" type="1">
+<li>Derivação de dados</li>
+</ol>
+<p>Continuação da conversão de dados, mas atuando apenas nas informações, não em como o modelo é empregado.</p>
+<p>Uma boa ferramenta de ETL deve ser capaz de se adaptar as mais formas de banco de dados, suas linguagens e seus formatos. Atualmente a oferta de ferramentas de ETL é bastante elevada, empresas que possuem ferramentas de BI, ou ferramentas para a construção de um DW normalmente disponibilizam um software especifico para a função, como é o caso SQL Server Integration Services e do Pentaho Data Integration, Ferramentas ETL dos softwares da Microsoft e da Pentaho, respectivamente.</p>
+
+
+</section>
+</section>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    target: function(trigger) {
+      return trigger.previousElementSibling;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+</body></html>
