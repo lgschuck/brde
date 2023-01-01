@@ -1,0 +1,7 @@
+---
+title: "Fundamentos de Banco de Dados"
+---
+
+## Itens do Edital:
+
+b\) **Fundamentos de Banco de Dados**: Conceitos: Sistemas de gerência de banco de dados (SGBD), Arquitetura, modelos lógicos e representação física; Organização física e métodos de acesso; Conceito de transação, concorrência, recuperação, integridade; Linguagens de definição (DDL) e manipulação de dados (DML) em SGBDs relacionais; Procedimentos (stored procedures), funções (functions), visões (views), visões materializadas (materialized views) e gatilhos (triggers), Linguagem de consulta estruturada (SQL, Avaliação de modelos de dados, Técnicas de engenharia reversa para criação e atualização de modelos de dados, Integração dos dados (ETL, Transferência de Arquivos e Integração via Base de Dados, Data Lakes e Soluções para Big Data, Diferenciação entre bancos relacionais, multidimensionais, documentos e grafos.

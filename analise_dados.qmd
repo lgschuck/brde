@@ -2,6 +2,6 @@
 title: "Análise de Dados e Informações"
 ---
 
-## Itens Edital:
+## Itens do Edital:
 
 c\) **Análise de dados e informações**: Dado, informação, conhecimento e inteligência; Conceitos, fundamentos, características, técnicas e métodos de Business Intelligence (BI); Mapeamento de fontes de dados, Dados estruturados e dados não estruturados, Conceitos de OLAP e suas operações, Conceitos de Data Warehouse. Técnicas de modelagem e otimização de bases de dados multidimensionais, Construção de relatórios e dashboards interativos em ferramentas de BI, Manipulação de dados em planilhas, Geração de insights a partir de relatórios e dashboards, BI como suporte a processos de tomada decisão, Conceitos Básicos em Séries Temporais, Conceitos Básicos de estatística descritiva, probabilística e testes de hipótese, Manipulação, tratamento e visualização de dados, Tratamento de dados faltantes, Tratamento de dados categóricos, Normalização numérica, Detecção e tratamento de outliers

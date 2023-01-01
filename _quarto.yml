@@ -9,6 +9,10 @@ website:
       - href: index.qmd
       - href: banco_dados.qmd
         text: Banco de Dados
+      - href: fundamentos_bd.qmd
+        text: Fundamentos de Banco de Dados
+      - menu:
+          - integracao_dados.qmd
       - href: governanca_ti.qmd
         text: Governança de TI
       - href: analise_dados.qmd

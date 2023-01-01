@@ -2,7 +2,7 @@
 title: "Conceitos de BI"
 ---
 
-## Itens Edital:
+## Itens do Edital:
 
 c\) **Análise de dados e informações**: Conceitos, fundamentos, características, técnicas e métodos de Business Intelligence (BI)
 

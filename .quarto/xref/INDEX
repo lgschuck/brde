@@ -28,5 +28,14 @@
   },
   "olap.qmd": {
     "olap.html": "843196bf"
+  },
+  "fundamentos_bd.qmd": {
+    "fundamentos_bd.html": "98b4acb5"
+  },
+  "integraco_dados.qmd": {
+    "integraco_dados.html": "6447489c"
+  },
+  "integracao_dados.qmd": {
+    "integracao_dados.html": "5d332a66"
   }
 }

@@ -2,7 +2,7 @@
 title: "Conceitos de OLAP"
 ---
 
-## Itens Edital:
+## Itens do Edital:
 
 c\) **Análise de dados e informações**: Conceitos de OLAP
 
