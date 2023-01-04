@@ -1,0 +1,29 @@
+---
+title: "Conceitos de Transação, concorrência..."
+---
+
+## Itens do Edital:
+
+b\) **Fundamentos de Banco de Dados**: Conceito de transação, concorrência, recuperação, integridade
+
+### Transação
+
+Coleções de operações que formam uma única unidade lógica de trabalho são chamadas transações. Um sistema de banco de dados precisa garantir a execução apropriada de transações apesar das falhas -- a transação inteira é executada ou nenhuma parte dela é executada. Além do mais, ele precisa gerenciar a execução simultânea de transações de modo a evitar a introdução da inconsistência.
+
+**Conceito de transação:** Uma transação é uma unidade de execução do programa que acessa e, possivelmente, atualiza vários itens de dados. Uma transação é delimitada pelas instruções (ou chamadas de função) na forma begin transaction e end transaction. A transação consiste em todas as operações executadas entre o **begin transaction e o end transaction**.
+
+Esse conjunto de operações precisa aparecer ao usuário como uma única unidade, indivisível. Como uma transação é indivisível, ela é executada em sua totalidade ou não é executada. Assim, se uma transação começa a ser executada, mas falha por um motivo qualquer, quaisquer mudanças no banco de dados que a transação possa ter feito são desfeitas. Essa propriedade "tudo ou nada" é conhecida como atomicidade.
+
+É necessário que o sistema de banco de dados mantenha as seguintes propriedades das transações:
+
+•**Atomicidade.** Todas as operações da transação são refletidas corretamente no banco de dados, ou nenhuma delas.
+
+•**Consistência.** A execução de uma transação isolada (ou seja, sem nenhuma outra transação executando simultaneamente) preserva a consistência do banco de dados.
+
+•**Isolamento.** Embora várias transações possam ser executadas simultaneamente, o sistema garante que, para cada par de transações Ti e Tj, parece para Ti ou Tj terminou a execução antes que Ti começasse, ou Tj iniciou a execução depois que Ti terminou. Assim, cada transação não está ciente das outras transações sendo executadas simultaneamente no sistema.
+
+•**Durabilidade**. Depois que uma transação for completada com sucesso, as mudanças que ela fez no banco de dados persistem, mesmo se houver falhas no sistema.
+
+------------------------------------------------------------------------
+
+Fontes: Sistema de Banco de Dados - Abraham Silberschatz

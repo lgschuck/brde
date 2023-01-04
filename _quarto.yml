@@ -12,6 +12,7 @@ website:
       - href: fundamentos_bd.qmd
         text: Fundamentos de Banco de Dados
       - menu:
+          - bd_transacao.qmd
           - integracao_dados.qmd
       - href: governanca_ti.qmd
         text: Governança de TI
