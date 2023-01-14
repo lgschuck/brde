@@ -1,0 +1,63 @@
+---
+title: "Metodologia SCRUM"
+---
+
+## Itens do Edital:
+
+f\) **Gerenciamento de Projetos**: Metodologia SCRUM;
+
+## [Glossário Scrum](https://www.scrum.org/resources/scrum-glossary)
+
+## Resumo Scrum
+
+[![](images/scrum_framework.png){fig-alt="https://www.scrum.org/resources/scrum-framework-poster"}](https://www.scrum.org/resources/scrum-framework-poster)
+
+### 3 Funções:
+
+Product Owner
+
+Scrum Master
+
+Integrante de Equipe
+
+### 5 Eventos:
+
+Sprint
+
+Planejamento do Sprint
+
+**Daily Scrum:** reunião diária de 15 minutos, no mesmo horário e local.
+
+Revisão do Sprint
+
+Retrospectiva do Sprint
+
+### 3 Artefatos:
+
+Backlog do produto
+
+Backlog do sprint
+
+Incrementos
+
+### 5 Valores:
+
+Comprometimento
+
+Coragem
+
+Foco
+
+Respeito
+
+Transparência
+
+------------------------------------------------------------------------
+
+**Fontes:**
+
+https://www.scrum.org/resources/what-is-scrum
+
+https://pt.wikipedia.org/wiki/Scrum
+
+Scrum Guia Prático - J.J. Sutherland, editora Sextante, 2020.

@@ -14,8 +14,6 @@ website:
       - menu:
           - bd_transacao.qmd
           - integracao_dados.qmd
-      - href: governanca_ti.qmd
-        text: Governança de TI
       - href: analise_dados.qmd
         text: Análise de Dados e Informação
       - menu:
@@ -23,6 +21,13 @@ website:
           - conceitos_bi.qmd
           - olap.qmd
           - data_warehouse.qmd
+      - href: gerenciamento_projetos.qmd
+        text: Gerenciamento de Projetos
+      - menu:
+          - scrum.qmd
+      - href: governanca_ti.qmd
+        text: Governança de TI
+
 
 format:
   html:
@@ -31,3 +36,4 @@ format:
     toc: true
 
 editor: visual
+

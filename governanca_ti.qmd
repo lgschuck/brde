@@ -201,3 +201,17 @@ Nenhuma prática está vinculada a um elemento do SVS nem é pré-requisito para
 {{< video https://youtu.be/RrsxIn4pDg0 >}}
 
 {{< video https://youtu.be/aF64s-Tw0HU >}}
+
+## ITIL 4 - Prof. Adriano Martins Antonio (Youtube)
+
+[Princípios Orientadores da ITIL 4 (Preparatório para o exame ITIL 4 Foundation)](https://youtu.be/5FzNS7XsrVw)
+
+[Sistema de Valor de Serviços da ITIL 4 - ITSM](https://youtu.be/n_P8WmYMdFs)
+
+[Simulado 1 Comentado da ITIL 4 Foundation (40 Perguntas - Parte 1)](https://youtu.be/QUjw2QKEuF8)
+
+[Simulado 1 Comentado da ITIL 4 Foundation (40 Perguntas - Parte 2)](https://youtu.be/3Xm6eGzJoM4)
+
+[Simulado 2 Comentado da ITIL 4 Foundation (40 Perguntas - Parte 1)](https://youtu.be/n_P8WmYMdFs)
+
+[Simulado 2 Comentado da ITIL 4 Foundation (40 Perguntas - Parte 2)](https://youtu.be/m9YbzbOfr24)

@@ -1,0 +1,7 @@
+---
+title: "Gerenciamento de Projetos"
+---
+
+## Itens do Edital:
+
+f\) **Gerenciamento de Projetos**: Conceitos básicos do PMBOK 7ª Edição, Metodologia SCRUM;
