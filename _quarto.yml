@@ -6,7 +6,6 @@ website:
   title: "Concurso BRDE"
   navbar:
     left:
-      - href: index.qmd
       - href: banco_dados.qmd
         text: Banco de Dados
       - href: fundamentos_bd.qmd
