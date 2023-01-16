@@ -4,11 +4,13 @@ title: "Resumo"
 
 Material de estudo para [concurso do BRDE](https://www.fundatec.org.br/portal/concursos/index_concursos.php?concurso=706), cargo Analista de Sistemas -- Subárea **Ciência de Dados**.
 
+**REQUISITO**: Diploma de graduação, devidamente registrado, em pelo menos um dos seguintes cursos de nível superior: Análise de Sistemas; Tecnologia da Informação; Sistemas de Informação; Processamento de Dados; Ciência da Computação; Engenharia da Computação; Engenharia de Sistemas; Bacharelado em Informática; Administração com Ênfase em Análise de Sistemas.
+
 [Edital](https://concursos-publicacoes.s3.amazonaws.com/706/publico/edital_abertura/edital_abertura_70663adfb8c23442.pdf?id=63c4a1e97437f)
 
 **Data da prova**: 12/03/2023
 
-**REQUISITO**: Diploma de graduação, devidamente registrado, em pelo menos um dos seguintes cursos de nível superior: Análise de Sistemas; Tecnologia da Informação; Sistemas de Informação; Processamento de Dados; Ciência da Computação; Engenharia da Computação; Engenharia de Sistemas; Bacharelado em Informática; Administração com Ênfase em Análise de Sistemas.
+![](images/prova.PNG)
 
 ## Conhecimentos Específicos
 
