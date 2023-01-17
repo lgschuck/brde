@@ -14,6 +14,13 @@
     "text": "a) Banco de Dados: Fundamentos de administração de dados: Segurança; Modelagem de dados: Modelo entidade-relacionamento (entidades, atributos, chaves e relacionamentos) e Normalização;"
   },
   {
+    "objectID": "banco_dados.html#normalização",
+    "href": "banco_dados.html#normalização",
+    "title": "Banco de Dados",
+    "section": "Normalização",
+    "text": "Normalização"
+  },
+  {
     "objectID": "bd_transacao.html",
     "href": "bd_transacao.html",
     "title": "Conceitos de Transação, concorrência…",
@@ -187,6 +194,13 @@
     "title": "Práticas ITIL",
     "section": "",
     "text": "g) Governança de TI: ITIL versão 4 (ITIL 4): Operação de Serviços (Gerenciamento de Eventos, Gerenciamento de Incidentes, Gerenciamento de Problemas, Cumprimento de Requisições, Gerenciamento de Acessos), Desenho de Serviços (Gerenciamento de Níveis de Serviço, Gerenciamento de Capacidade, Gerenciamento de Disponibilidade, Gerenciamento de Continuidade de Serviços de TI, Gerenciamento de Continuidade de Negócio), Transição de Serviços (Gerenciamento de Configuração e Ativos de Serviços de TI, Gerenciamento de Liberação e Implantação, Gerenciamento de Mudanças), Melhoria Contínua de Serviços, Métricas (Fatores Críticos de Sucesso - CSFs, Índices Chave de Performance - KPIs)."
+  },
+  {
+    "objectID": "itil_praticas.html#section",
+    "href": "itil_praticas.html#section",
+    "title": "Práticas ITIL",
+    "section": "",
+    "text": "Introdução as práticas da ITIL4"
   },
   {
     "objectID": "itil_praticas.html#what-are-the-itil-4-management-practices",
