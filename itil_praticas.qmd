@@ -1,0 +1,201 @@
+---
+title: "Práticas ITIL"
+---
+
+## Itens do Edital:
+
+g\) **Governança de TI**: ITIL versão 4 (ITIL 4): Operação de Serviços (Gerenciamento de Eventos, Gerenciamento de Incidentes, Gerenciamento de Problemas, Cumprimento de Requisições, Gerenciamento de Acessos), Desenho de Serviços (Gerenciamento de Níveis de Serviço, Gerenciamento de Capacidade, Gerenciamento de Disponibilidade, Gerenciamento de Continuidade de Serviços de TI, Gerenciamento de Continuidade de Negócio), Transição de Serviços (Gerenciamento de Configuração e Ativos de Serviços de TI, Gerenciamento de Liberação e Implantação, Gerenciamento de Mudanças), Melhoria Contínua de Serviços, Métricas (Fatores Críticos de Sucesso - CSFs, Índices Chave de Performance - KPIs).
+
+## [What are the ITIL 4 Management Practices?](https://www.itgovernance.co.uk/blog/what-are-the-itil-4-management-practices)
+
+[ITIL^®^ 4](https://www.itgovernance.co.uk/itil) contains 34 management practices to help organisations provide effective service delivery across the value chain.
+
+While previous versions of ITIL focused on IT services, ITIL 4 expands its management practices to also include culture, technology and data management. This reflects an overall change in ITIL 4, away from process-dominant thinking and towards a diverse and dynamic way of operating.
+
+There are three categories of ITIL 4 management practices, which we will look at in-depth in this blog:
+
+-   **General management practices**, which apply across the organisation for the success of the business and the services it provides.
+
+-   **Service management practices**, which apply to specific services that are being developed, deployed, delivered and supported.
+
+-   **Technical management practices**, which are adapted from technology management domains for service management purposes.
+
+### **General management practices**
+
+This section contains 14 management practices:
+
+#### **1. Architecture management**
+
+This practice helps organisations manage the often complex way in which their organisational architecture relates to various parts of the business.
+
+It provides the principles, standards and tools to help manage changes in a structured and agile way.
+
+#### **2. Continual improvement**
+
+Organisations must be able to align their processes and services with changing business needs.
+
+The continual improvement practice helps them achieve this. It ensures that organisations identify opportunities for improvement within services, service components, practices or other parts of service management.
+
+#### **3. Information security management**
+
+This practice relates to the way an organisation protects its sensitive information from misuse. Specifically, information security management looks at ways to prevent breaches of the confidentiality, integrity and availability of data.
+
+In this context, confidentiality refers to information being viewed by only by authorised parties, integrity to information being accurate, and availability to information being accessible when necessary.
+
+#### **4. Knowledge management**
+
+This practice helps organisations improve the way that they use data. It focuses on the convenience, effectiveness and efficiency of knowledge and data use.
+
+#### **5. Measurement and reporting**
+
+To make good decisions and continually improve systems, organisations must conduct evidence-based research.
+
+This practice provides a framework for doing that, recommending risk assessments and the collection of relevant data.
+
+#### **6. Organisational change management**
+
+This practice helps organisations implement the changes recommended during the continual improvement process.
+
+It emphasises the human aspect of change management and the lasting benefits that can be had if the challenges and opportunities of individuals are accounted for.
+
+#### **7. Portfolio management**
+
+This practice ensures that the organisation has the right combination of programs, products and services to achieve its goals.
+
+It also accounts for the organisation's funding and resource constraints.
+
+#### **8. Project management**
+
+This practice helps organisations oversee their ongoing projects and ensure that they are delivered successfully.
+
+It addresses the way projects are planned, delegated, monitored and maintained. It also addresses the relationships between stakeholders and aims to keep those involved in the project motivated.
+
+#### **9. Relationship management**
+
+For projects to be successful, organisations must establish and nurture the relationships between stakeholders. This practice does do by helping organisations identify, analyse, monitor and continually improve relationships.
+
+#### **10. Risk management**
+
+This practice helps organisations understand and address risks. There are countless ways that problems could materialise, and it's essential that they are spotted as soon as possible to prevent disruption, financial consequences and sustainability issues.
+
+#### **11. Service financial management**
+
+This practice supports the organisation's strategies and plans by ensuring that financial resources and investments are used efficiently.
+
+#### **12. Strategy management**
+
+This practice helps organisations define specific goals and ways to achieve them. It also ensures that necessary resources are allocated to meet those goals and clarifies the organisation's priorities.
+
+#### **13. Supplier management**
+
+Organisations must manage their suppliers effectively if they are to ensure the smooth production and delivery of products and services.
+
+This practice helps foster those relationships, focusing on creating opportunities for collaboration and identifying ways to make improvements.
+
+#### **14. Workforce talent management**
+
+This practice helps organisations put talented and skilled people in the right roles. It focuses on the planning, recruiting, onboarding and training of employees.
+
+It also looks at the way organisations evaluate the performance of employees and how to develop succession planning.
+
+### **Service management practices**
+
+This section contains a further 17 management practices:
+
+#### **15. Availability management**
+
+With this practice, organisations can ensure that the availability of products and services meets the customer's needs. Those needs should have been agreed upon at the outset of the project.
+
+#### **16. Business analysis**
+
+This practice helps organisations analyse their business processes or elements within them. It's intended to help solve specific issues and improve value creation for stakeholders.
+
+#### **17. Capacity and performance management**
+
+This practice helps organisations ensure that their products and services meet expected performance levels. It also addresses current and future demands, helping organisations identify any changes that could affect their capacity.
+
+#### **18. Change enablement**
+
+This practice ensures that organisations maximise successful IT changes. It does so by ensuring that risk assessments are conducted, that proper authorisations are in place for implementing change and that changes are managed efficiently.
+
+#### **19. Incident management**
+
+The objective of this practice is to mitigate the negative impact of disruptive incidents. It helps organisations identify ways of restoring normal service operation as quickly as possible.
+
+#### **20. IT asset management**
+
+This practice helps organisations manage the complete lifecycle of their IT assets. It's based on value maximisation, cost control, risk management, decision making, asset reuse management and retirement.
+
+It also addresses the regulatory and contractual requirements related to IT assets.
+
+#### **21. Monitoring and event management**
+
+With this practice, organisations can systematically observe services and service components, and record and report selected changes.
+
+They can do this by identifying and prioritising infrastructure, services, business processes and information security events. The practice also establishes the responses to these events.
+
+#### **22. Problem management**
+
+This practice helps organisations mitigate the impact and likelihood of disruptive events. It does so by focusing on the identification of potential causes of incidents and the ways to navigate them.
+
+#### **23. Release management**
+
+This practice focuses on the way services are deployed. It addresses both new and changed services and features.
+
+#### **24. Service catalogue management**
+
+This practice ensures that organisations have a single source of consistent information for all their services. It guarantees that information is available for relevant audiences whenever it is required.
+
+#### **25. Service configuration management**
+
+This practice ensures that information about the configuration of an organisation's services remains available and accurate. It also addresses the configuration items that support those services.
+
+#### **26. Service continuity management**
+
+This practice provides a framework for building organisational resilience. It helps organisations protect services in the event of a disruptive incident and ensure that their availability and performance remain at a sufficient level.
+
+#### **27. Service design**
+
+This practice helps organisations design products and services that are fit for use and in line with their defined purpose. It also ensures that services can be successfully delivered by the organisation in its current ecosystem.
+
+The practice focuses on product and service planning, as well as the management of people, partners, suppliers, information, communication networks and technology.
+
+#### **28. Service desk**
+
+This practice helps organisations capture demand for incident resolution and service requests. It should also be the contact point for the service provider and its users.
+
+#### **29. Service level management**
+
+This practice sets business targets for the performance of services. It ensures that service delivery can be properly assessed, enabling the organisation to identify issues and improve its practices.
+
+#### **30. Service request management**
+
+With this practice, organisations can support the agreed quality of service by handling all pre-defined, user-initiated service requests in an effective and user-friendly manner.
+
+#### **31. Service validation and testing**
+
+This practice ensures that new or changes products and services meet their defined requirements.
+
+Organisations should do this by measuring service value based on input from customers, business objectives and regulatory requirements.
+
+### **Technical management practices**
+
+This section contains the final three management practices:
+
+#### **32. Deployment management**
+
+Deployment management practices help organisations move new or changed hardware, software, documentation and processes from a production to a live environment.
+
+It also helps them move those components to other environments for testing or staging.
+
+#### **33. Infrastructure and platform management**
+
+This practice helps organisations oversee their infrastructure and platforms, enabling them to monitor technologies that are deployed internally and by service providers.
+
+#### **34. Software development and management**
+
+This practice ensures that applications meet the needs of stakeholders. It addresses software functionality, reliability, maintenance, compliance and their ability to be audited.
+
+------------------------------------------------------------------------
+
+Fontes: https://www.itgovernance.co.uk/blog/what-are-the-itil-4-management-practices

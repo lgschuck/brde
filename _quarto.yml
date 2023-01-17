@@ -26,7 +26,9 @@ website:
           - scrum.qmd
       - href: governanca_ti.qmd
         text: Governança de TI
-
+      - menu:
+          - itil.qmd
+          - itil_praticas.qmd
 
 format:
   html:

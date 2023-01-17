@@ -1,0 +1,792 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.2.242">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Concurso BRDE - ITIL 4</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1.6em;
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit"
+  }
+}</script>
+
+
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container">
+    <a class="navbar-brand" href="./index.html">
+    <span class="navbar-title">Concurso BRDE</span>
+    </a>
+  </div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="./banco_dados.html">
+ <span class="menu-text">Banco de Dados</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./fundamentos_bd.html">
+ <span class="menu-text">Fundamentos de Banco de Dados</span></a>
+  </li>  
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text"></span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-">    
+        <li>
+    <a class="dropdown-item" href="./bd_transacao.html">
+ <span class="dropdown-text">Conceitos de Transação, concorrência…</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./integracao_dados.html">
+ <span class="dropdown-text">Integração de Dados</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="./analise_dados.html">
+ <span class="menu-text">Análise de Dados e Informação</span></a>
+  </li>  
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu--1" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text"></span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu--1">    
+        <li>
+    <a class="dropdown-item" href="./dado_info.html">
+ <span class="dropdown-text">Dado, informação, conhecimento e Inteligência</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./conceitos_bi.html">
+ <span class="dropdown-text">Conceitos de BI</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./olap.html">
+ <span class="dropdown-text">Conceitos de OLAP</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./data_warehouse.html">
+ <span class="dropdown-text">Conceitos de Data Warehouse</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="./gerenciamento_projetos.html">
+ <span class="menu-text">Gerenciamento de Projetos</span></a>
+  </li>  
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu--2" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text"></span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu--2">    
+        <li>
+    <a class="dropdown-item" href="./scrum.html">
+ <span class="dropdown-text">Metodologia SCRUM</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="./governanca_ti.html">
+ <span class="menu-text">Governança de TI</span></a>
+  </li>  
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu--3" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text"></span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu--3">    
+        <li>
+    <a class="dropdown-item" href="./itil.html">
+ <span class="dropdown-text">ITIL 4</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./itil_praticas.html">
+ <span class="dropdown-text">Práticas ITIL</span></a>
+  </li>  
+    </ul>
+  </li>
+</ul>
+              <div id="quarto-search" class="" title="Search"></div>
+          </div> <!-- /navcollapse -->
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#itens-do-edital" id="toc-itens-do-edital" class="nav-link active" data-scroll-target="#itens-do-edital">Itens do Edital:</a></li>
+  <li><a href="#o-que-é-o-sistema-itil" id="toc-o-que-é-o-sistema-itil" class="nav-link" data-scroll-target="#o-que-é-o-sistema-itil">O que é o Sistema ITIL</a>
+  <ul class="collapse">
+  <li><a href="#itil-v1" id="toc-itil-v1" class="nav-link" data-scroll-target="#itil-v1">ITIL v1</a></li>
+  <li><a href="#itil-v2" id="toc-itil-v2" class="nav-link" data-scroll-target="#itil-v2">ITIL v2</a></li>
+  <li><a href="#itil-v3" id="toc-itil-v3" class="nav-link" data-scroll-target="#itil-v3">ITIL v3</a></li>
+  <li><a href="#itil-4" id="toc-itil-4" class="nav-link" data-scroll-target="#itil-4">ITIL 4</a></li>
+  <li><a href="#as-principais-mudanças-do-itil-4" id="toc-as-principais-mudanças-do-itil-4" class="nav-link" data-scroll-target="#as-principais-mudanças-do-itil-4">As principais mudanças do ITIL 4</a></li>
+  <li><a href="#os-princípios-do-itil-4" id="toc-os-princípios-do-itil-4" class="nav-link" data-scroll-target="#os-princípios-do-itil-4">Os princípios do ITIL 4</a></li>
+  <li><a href="#as-4-dimensões-do-itil-4" id="toc-as-4-dimensões-do-itil-4" class="nav-link" data-scroll-target="#as-4-dimensões-do-itil-4">As 4 dimensões do ITIL 4</a></li>
+  <li><a href="#as-34-práticas-do-itil-4" id="toc-as-34-práticas-do-itil-4" class="nav-link" data-scroll-target="#as-34-práticas-do-itil-4">As 34 práticas do ITIL 4</a></li>
+  <li><a href="#práticas-gerais-de-gestão" id="toc-práticas-gerais-de-gestão" class="nav-link" data-scroll-target="#práticas-gerais-de-gestão">1. Práticas gerais de gestão</a></li>
+  <li><a href="#práticas-de-gestão-de-serviço" id="toc-práticas-de-gestão-de-serviço" class="nav-link" data-scroll-target="#práticas-de-gestão-de-serviço">2. Práticas de gestão de serviço</a></li>
+  <li><a href="#práticas-de-gestão-técnica" id="toc-práticas-de-gestão-técnica" class="nav-link" data-scroll-target="#práticas-de-gestão-técnica">3. Práticas de gestão técnica</a></li>
+  </ul></li>
+  <li><a href="#itil-4---prof.-gabriel-pacheco-youtube" id="toc-itil-4---prof.-gabriel-pacheco-youtube" class="nav-link" data-scroll-target="#itil-4---prof.-gabriel-pacheco-youtube">ITIL 4 - Prof.&nbsp;Gabriel Pacheco (Youtube)</a></li>
+  <li><a href="#itil-4---prof.-adriano-martins-antonio-youtube" id="toc-itil-4---prof.-adriano-martins-antonio-youtube" class="nav-link" data-scroll-target="#itil-4---prof.-adriano-martins-antonio-youtube">ITIL 4 - Prof.&nbsp;Adriano Martins Antonio (Youtube)</a></li>
+  <li><a href="#section" id="toc-section" class="nav-link" data-scroll-target="#section"></a>
+  <ul class="collapse">
+  <li><a href="#o-que-é-itil" id="toc-o-que-é-itil" class="nav-link" data-scroll-target="#o-que-é-itil"><strong>O que é ITIL?</strong></a></li>
+  <li><a href="#qual-é-a-finalidade-e-a-importância-do-itil" id="toc-qual-é-a-finalidade-e-a-importância-do-itil" class="nav-link" data-scroll-target="#qual-é-a-finalidade-e-a-importância-do-itil">Qual é a finalidade e a importância do ITIL?</a></li>
+  <li><a href="#quem-usa-o-itil" id="toc-quem-usa-o-itil" class="nav-link" data-scroll-target="#quem-usa-o-itil">Quem usa o ITIL?</a></li>
+  <li><a href="#origens-do-itil" id="toc-origens-do-itil" class="nav-link" data-scroll-target="#origens-do-itil"><strong>Origens do ITIL</strong></a></li>
+  <li><a href="#o-que-há-de-novo-no-itil4" id="toc-o-que-há-de-novo-no-itil4" class="nav-link" data-scroll-target="#o-que-há-de-novo-no-itil4"><strong>O que há de novo no ITIL4?</strong></a></li>
+  <li><a href="#quais-os-elementos-chave-do-itil4" id="toc-quais-os-elementos-chave-do-itil4" class="nav-link" data-scroll-target="#quais-os-elementos-chave-do-itil4"><strong>Quais os elementos chave do ITIL4?</strong></a></li>
+  <li><a href="#sistema-de-valor-de-serviço" id="toc-sistema-de-valor-de-serviço" class="nav-link" data-scroll-target="#sistema-de-valor-de-serviço"><strong>Sistema de valor de serviço</strong></a></li>
+  <li><a href="#os-componentes-chave-do-svs-são" id="toc-os-componentes-chave-do-svs-são" class="nav-link" data-scroll-target="#os-componentes-chave-do-svs-são">Os componentes chave do SVS são:</a></li>
+  <li><a href="#cadeia-de-valor-de-serviço" id="toc-cadeia-de-valor-de-serviço" class="nav-link" data-scroll-target="#cadeia-de-valor-de-serviço"><strong>Cadeia de Valor de Serviço</strong></a></li>
+  <li><a href="#as-quatro-dimensões-do-gerenciamento-de-serviços" id="toc-as-quatro-dimensões-do-gerenciamento-de-serviços" class="nav-link" data-scroll-target="#as-quatro-dimensões-do-gerenciamento-de-serviços"><strong>As quatro dimensões do gerenciamento de serviços</strong></a></li>
+  <li><a href="#princípios-orientadores" id="toc-princípios-orientadores" class="nav-link" data-scroll-target="#princípios-orientadores"><strong>Princípios orientadores</strong></a></li>
+  <li><a href="#de-processos-à-práticas" id="toc-de-processos-à-práticas" class="nav-link" data-scroll-target="#de-processos-à-práticas"><strong>De processos à práticas</strong></a></li>
+  <li><a href="#veja-a-seguir-a-lista-das-práticas-do-itil4" id="toc-veja-a-seguir-a-lista-das-práticas-do-itil4" class="nav-link" data-scroll-target="#veja-a-seguir-a-lista-das-práticas-do-itil4">Veja a seguir a lista das práticas do ITIL4:</a></li>
+  <li><a href="#práticas-gerais-de-gerenciamento" id="toc-práticas-gerais-de-gerenciamento" class="nav-link" data-scroll-target="#práticas-gerais-de-gerenciamento">P<strong>ráticas gerais de gerenciamento</strong>:</a></li>
+  <li><a href="#práticas-de-gerenciamento-de-serviço" id="toc-práticas-de-gerenciamento-de-serviço" class="nav-link" data-scroll-target="#práticas-de-gerenciamento-de-serviço">P<strong>ráticas de gerenciamento de serviço:</strong></a></li>
+  <li><a href="#práticas-de-gerenciamento-técnico" id="toc-práticas-de-gerenciamento-técnico" class="nav-link" data-scroll-target="#práticas-de-gerenciamento-técnico">P<strong>ráticas de gerenciamento técnico</strong>:</a></li>
+  <li><a href="#quais-os-benefícios-do-itil-para-o-negócio" id="toc-quais-os-benefícios-do-itil-para-o-negócio" class="nav-link" data-scroll-target="#quais-os-benefícios-do-itil-para-o-negócio"><strong>Quais os benefícios do ITIL para o negócio?</strong></a></li>
+  <li><a href="#conclusão" id="toc-conclusão" class="nav-link" data-scroll-target="#conclusão"><strong>Conclusão</strong></a></li>
+  </ul></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">ITIL 4</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+</header>
+
+<section id="itens-do-edital" class="level2">
+<h2 class="anchored" data-anchor-id="itens-do-edital">Itens do Edital:</h2>
+<p>g) <strong>Governança de TI</strong>: ITIL versão 4 (ITIL 4): Operação de Serviços (Gerenciamento de Eventos, Gerenciamento de Incidentes, Gerenciamento de Problemas, Cumprimento de Requisições, Gerenciamento de Acessos), Desenho de Serviços (Gerenciamento de Níveis de Serviço, Gerenciamento de Capacidade, Gerenciamento de Disponibilidade, Gerenciamento de Continuidade de Serviços de TI, Gerenciamento de Continuidade de Negócio), Transição de Serviços (Gerenciamento de Configuração e Ativos de Serviços de TI, Gerenciamento de Liberação e Implantação, Gerenciamento de Mudanças), Melhoria Contínua de Serviços, Métricas (Fatores Críticos de Sucesso - CSFs, Índices Chave de Performance - KPIs).</p>
+</section>
+<section id="o-que-é-o-sistema-itil" class="level2">
+<h2 class="anchored" data-anchor-id="o-que-é-o-sistema-itil"><a href="https://posdigital.pucpr.br/blog/itil">O que é o Sistema ITIL</a></h2>
+<p>O Sistema ITIL é um conjunto de boas práticas de gerenciamento de serviços de tecnologia de informação. Ele está de acordo com a norma <a href="https://www.normas.com.br/visualizar/abnt-nbr-nm/26988/abnt-nbriso-iec20000-1-tecnologia-da-informacao-gestao-de-servicos-parte-1-requisitos-do-sistema-de-gestao-de-servicos">ISO/IEC 20000</a>, primeira padronização da <a href="https://posdigital.pucpr.br/blog/iso-27000#significado">International Organization for Standardization (ISO)</a> voltada exclusivamente para a gestão de TI.</p>
+<p>ITIL é a sigla para Information Technology Infrastructure Library – que pode ser traduzido para “biblioteca de infraestrutura de tecnologia da informação”.</p>
+<p>O sistema foi desenvolvido pela Agência Central de Computação e Telecomunicações (CCTA, na sigla em inglês) do Reino Unido na década de 1980, com o objetivo de estabelecer um padrão de segurança e confiabilidade na gestão de processos de TI, garantindo assim uma boa experiência para os usuários.</p>
+<p>Para isso, o modelo descreve boas práticas de infraestrutura, manutenção e operações. As orientações estão alinhadas aos <a href="https://posdigital.pucpr.br/blog/metodos-ageis">métodos ágeis</a>, ao <a href="https://posdigital.pucpr.br/blog/devops">DevOps</a> e ao <a href="https://posdigital.pucpr.br/blog/lean-thinking">Lean</a>, bastante utilizados por times de tecnologia.</p>
+<p>Desde que o ITIL foi proposto pela CCTA, o sistema passou por quatro grandes atualizações:</p>
+<section id="itil-v1" class="level3">
+<h3 class="anchored" data-anchor-id="itil-v1">ITIL v1</h3>
+<p>A primeira versão do ITIL era voltada para as agências governamentais, que começavam a se informatizar na década de 1980. Era, literalmente, uma biblioteca: uma coleção de livros físicos que chegou a mais de 30 volumes em 1996.</p>
+</section>
+<section id="itil-v2" class="level3">
+<h3 class="anchored" data-anchor-id="itil-v2">ITIL v2</h3>
+<p>Nos anos 2000 foi lançada a segunda versão do ITIL. Os 30 volumes foram condensados em 9, mas ainda eram voltados para entidades do governo britânico.</p>
+</section>
+<section id="itil-v3" class="level3">
+<h3 class="anchored" data-anchor-id="itil-v3">ITIL v3</h3>
+<p>Com a popularização do modelo em empresas e demais entidades privadas, foi lançada uma nova atualização em maio de 2007.</p>
+<p>O ITIL v3 era descrito em 5 livros, que reuniam 26 processos e 4 funções. A maior inovação foi o conceito do Ciclo de Vida de Serviço (CVS), que era composto por dois componentes básicos:</p>
+<ol type="1">
+<li><p><strong>Núcleo do ITIL:</strong> conjunto de melhores práticas que podem ser adotadas por todas as organizações que prestam serviços ao negócio;</p></li>
+<li><p><strong>Guias complementares do ITIL:</strong> boas práticas complementares reunidas em publicações específicas para diferentes setores da indústria, modelos operacionais e arquiteturas de TI.</p></li>
+</ol>
+<p>Em 2011, o<a href="https://www.portalgsti.com.br/2012/04/itil-v3-2011.html">ITIL v3</a> ganhou uma grande atualização para dar clareza a conceitos e adicionar novas práticas ao CVS.</p>
+<p>É nesse período também que a CCTA foi incorporada ao Escritório de Comércio Governamental (OGC, na sigla em inglês), entidade do Reino Unido responsável por promover a eficiência nos processos de negócios do Estado.</p>
+<p>O sistema ITIL passou a ser atualizado pelo OGC até 2013, quando uma joint venture entre o governo britânico e a empresa Capita, a <a href="https://www.axelos.com/">Axelos</a>, assumiu o framework. Em 2021, a Axelos passou a fazer parte do grupo <a href="https://www.peoplecert.org/">PeopleCert</a>.</p>
+</section>
+<section id="itil-4" class="level3">
+<h3 class="anchored" data-anchor-id="itil-4">ITIL 4</h3>
+<p>A quarta e última atualização do ITIL veio em fevereiro de 2019, com a publicação do livro <a href="https://www.axelos.com/about-axelos/news/axelos-launches-itil-4-foundation">“ITIL Foundations”</a>.</p>
+<p>O modelo de gestão de TI foi alterado para atender as <a href="https://www.axelos.com/certifications/itil-service-management/what-is-itil">necessidades da Era Digital</a>, com foco na criação de valor para os usuários, na condução de estratégias de negócios e na adaptação à transformação digital.</p>
+</section>
+<section id="as-principais-mudanças-do-itil-4" class="level3">
+<h3 class="anchored" data-anchor-id="as-principais-mudanças-do-itil-4">As principais mudanças do ITIL 4</h3>
+<p>O ITIL 4 foi desenvolvido em conjunto entre a Axelos e a comunidade de profissionais de TI para adaptar o ITIL v3 às mudanças cada vez mais aceleradas da Era Digital.</p>
+<p>A principal mudança é a maior flexibilidade na execução dos processos. Na versão anterior, havia um certo engessamento no CVS, que dependia de uma série de estágios para ser executado.</p>
+<p>O ITIL 4 propõe o <a href="https://www.interop.com.br/blog/o-que-mudou-no-itil-v4/">Sistema de Valor de Serviço (SVS)</a> para alterar esse cenário. O SVS é um conjunto de componentes e atividades de uma empresa que possibilita a criação de valor.</p>
+<p>A flexibilidade vem da criação de um ecossistema entre organização, fornecedores, stakeholders e clientes. Todos devem atuar juntos para manter o sistema funcionando.</p>
+<p>Os componentes do SVS são:</p>
+<ul>
+<li><p>Cadeia de valor de serviço: modelo operacional flexível para a entrega e aprimoramento contínuo de serviços. Tem como atividades principais planejar, melhorar, engajar, desenhar, construir e entregar;</p></li>
+<li><p>34 práticas que atualizam os processos do ITIL v3;</p></li>
+<li><p><a href="https://posdigital.pucpr.br/blog/governanca-de-ti">Governança</a>: conjunto de normas e práticas que são a base para a definição de processos internos, de acordo com as exigências do setor e os valores da organização. Facilita a integração com outros frameworks como o <a href="https://posdigital.pucpr.br/blog/cobit">COBIT</a>.</p></li>
+<li><p>Melhoria contínua.</p></li>
+</ul>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/gov_ti1.PNG" class="img-fluid figure-img" alt="Representação gráfica do Sistema de Valor de Serviços do ITIL 4."></p>
+<p></p><figcaption class="figure-caption">Representação gráfica do Sistema de Valor de Serviços do ITIL 4.</figcaption><p></p>
+</figure>
+</div>
+<p>Outra mudança importante é a inclusão de tecnologias emergentes, como <a href="https://posdigital.pucpr.br/blog/migracao-para-cloud-computing">Cloud Computing</a>, Infraestrutura como Serviço (IaaS), <a href="https://posdigital.pucpr.br/blog/exemplos-de-machine-learning">Machine Learning</a> e <a href="https://posdigital.pucpr.br/blog/smart-contracts#e-blockchain">blockchain</a>.</p>
+<p>O ITIL 4 também introduziu novos conceitos, que você vai conhecer em detalhes a seguir.</p>
+</section>
+<section id="os-princípios-do-itil-4" class="level3">
+<h3 class="anchored" data-anchor-id="os-princípios-do-itil-4">Os princípios do ITIL 4</h3>
+<p>São 7 princípios que devem orientar os profissionais de TI na adoção do SVS e, assim, adaptar o ITIL à realidade de suas empresas:</p>
+<ol type="1">
+<li><p>Concentrar-se no valor;</p></li>
+<li><p>Começar por onde você está;</p></li>
+<li><p>Avançar iterativamente com feedback;</p></li>
+<li><p>Colaborar e promover a visibilidade;</p></li>
+<li><p>Pensar e trabalhar pensando no todo;</p></li>
+<li><p>Manter os processos simples e práticos;</p></li>
+<li><p>Otimizar e automatizar constantemente.</p></li>
+</ol>
+</section>
+<section id="as-4-dimensões-do-itil-4" class="level3">
+<h3 class="anchored" data-anchor-id="as-4-dimensões-do-itil-4">As 4 dimensões do ITIL 4</h3>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/gov_ti2.PNG" class="img-fluid figure-img" alt="Representação gráfica das dimensões do ITIL 4."></p>
+<p></p><figcaption class="figure-caption">Representação gráfica das dimensões do ITIL 4.</figcaption><p></p>
+</figure>
+</div>
+<p>As dimensões do ITIL são necessárias para a entrega de valor ao cliente, além de facilitar a visão holística da gestão de serviços. Todas são afetadas por fatores internos e externos à organização.</p>
+<p>As 4 dimensões são:</p>
+<ol type="1">
+<li><p>Organizações e pessoas;</p></li>
+<li><p>Informação e tecnologia;</p></li>
+<li><p>Parceiros e fornecedores;</p></li>
+<li><p>Fluxos de valor e processos.</p></li>
+</ol>
+</section>
+<section id="as-34-práticas-do-itil-4" class="level3">
+<h3 class="anchored" data-anchor-id="as-34-práticas-do-itil-4">As 34 práticas do ITIL 4</h3>
+<p>As <a href="https://www.itsmnapratica.com.br/tudo-sobre-itil/">práticas do ITIL 4</a> são “um conjunto de recursos necessários para realizar o trabalho ou cumprir um objetivo”. Elas têm como objetivo dar uma visão holística do sistema de serviços, ao considerar elementos como cultura, tecnologia, informações e gerenciamento de dados.</p>
+<p>A palavra “prática” também evita as ambiguidades do termo “processos”, que é usado no dia a dia das empresas em todos os departamentos. Hoje, o ITIL considera um processo como “um conjunto de atividades que transformam entradas em saídas”.</p>
+<p>As práticas são divididas em 3 grandes grupos:</p>
+</section>
+<section id="práticas-gerais-de-gestão" class="level3">
+<h3 class="anchored" data-anchor-id="práticas-gerais-de-gestão">1. Práticas gerais de gestão</h3>
+<ul>
+<li><p>Gerenciamento da estratégia</p></li>
+<li><p>Gerenciamento da segurança da informação</p></li>
+<li><p>Gerenciamento de fornecedor</p></li>
+<li><p>Gerenciamento de mudança organizacional</p></li>
+<li><p>Gerenciamento de projetos</p></li>
+<li><p>Gerenciamento de relacionamento</p></li>
+<li><p>Gerenciamento de riscos</p></li>
+<li><p>Gerenciamento de talento e força de trabalho</p></li>
+<li><p>Gerenciamento do conhecimento</p></li>
+<li><p>Gerenciamento do portfólio</p></li>
+<li><p>Gerenciamento financeiro dos serviços</p></li>
+<li><p>Gestão da arquitetura</p></li>
+<li><p>Medição e reporte</p></li>
+<li><p>Melhoria contínua</p></li>
+</ul>
+</section>
+<section id="práticas-de-gestão-de-serviço" class="level3">
+<h3 class="anchored" data-anchor-id="práticas-de-gestão-de-serviço">2. Práticas de gestão de serviço</h3>
+<ul>
+<li><p>Análise de negócio</p></li>
+<li><p>Central de serviço</p></li>
+<li><p><strong>Desenho de serviço</strong></p></li>
+<li><p><strong>Gerenciamento de ativos de TI</strong></p></li>
+<li><p><strong>Gerenciamento de capacidade e desempenho</strong></p></li>
+<li><p>Gerenciamento do catálogo de serviços</p></li>
+<li><p><strong>Gerenciamento de configuração de serviço</strong></p></li>
+<li><p><strong>Gerenciamento de continuidade de serviço</strong></p></li>
+<li><p><strong>Gerenciamento de disponibilidade</strong></p></li>
+<li><p><strong>Gerenciamento de incidente</strong></p></li>
+<li><p><strong>Gerenciamento de liberação</strong></p></li>
+<li><p>Gerenciamento de nível de serviço</p></li>
+<li><p><strong>Gerenciamento de problema</strong></p></li>
+<li><p>Gerenciamento de requisição de serviço</p></li>
+<li><p><strong>Habilitação de mudança</strong></p></li>
+<li><p><strong>Monitoramento e gerenciamento de evento</strong></p></li>
+<li><p>Validação e teste de serviço</p></li>
+</ul>
+</section>
+<section id="práticas-de-gestão-técnica" class="level3">
+<h3 class="anchored" data-anchor-id="práticas-de-gestão-técnica">3. Práticas de gestão técnica</h3>
+<ul>
+<li><p>Desenvolvimento e gerenciamento de software</p></li>
+<li><p><strong>Gerenciamento de implantação</strong></p></li>
+<li><p>Gerenciamento de infraestrutura e plataforma</p></li>
+</ul>
+<p>Nenhuma prática está vinculada a um elemento do SVS nem é pré-requisito para a adoção de outras práticas. Não é obrigatório usar todas as 34 simultaneamente.</p>
+<div class="callout-note callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Em negrito itens citados no edital.</p>
+</div>
+</div>
+</section>
+</section>
+<section id="itil-4---prof.-gabriel-pacheco-youtube" class="level2">
+<h2 class="anchored" data-anchor-id="itil-4---prof.-gabriel-pacheco-youtube">ITIL 4 - Prof.&nbsp;Gabriel Pacheco (Youtube)</h2>
+<div class="quarto-video ratio ratio-16x9"><iframe src="https://www.youtube.com/embed/72cfBfdoGKM" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
+<div class="quarto-video ratio ratio-16x9"><iframe src="https://www.youtube.com/embed/mhamkwfIfzs" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
+<div class="quarto-video ratio ratio-16x9"><iframe src="https://www.youtube.com/embed/RrsxIn4pDg0" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
+<div class="quarto-video ratio ratio-16x9"><iframe src="https://www.youtube.com/embed/aF64s-Tw0HU" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
+</section>
+<section id="itil-4---prof.-adriano-martins-antonio-youtube" class="level2">
+<h2 class="anchored" data-anchor-id="itil-4---prof.-adriano-martins-antonio-youtube">ITIL 4 - Prof.&nbsp;Adriano Martins Antonio (Youtube)</h2>
+<p><a href="https://youtu.be/5FzNS7XsrVw">Princípios Orientadores da ITIL 4 (Preparatório para o exame ITIL 4 Foundation)</a></p>
+<p><a href="https://youtu.be/n_P8WmYMdFs">Sistema de Valor de Serviços da ITIL 4 - ITSM</a></p>
+<p><a href="https://youtu.be/QUjw2QKEuF8">Simulado 1 Comentado da ITIL 4 Foundation (40 Perguntas - Parte 1)</a></p>
+<p><a href="https://youtu.be/3Xm6eGzJoM4">Simulado 1 Comentado da ITIL 4 Foundation (40 Perguntas - Parte 2)</a></p>
+<p><a href="https://youtu.be/n_P8WmYMdFs">Simulado 2 Comentado da ITIL 4 Foundation (40 Perguntas - Parte 1)</a></p>
+<p><a href="https://youtu.be/m9YbzbOfr24">Simulado 2 Comentado da ITIL 4 Foundation (40 Perguntas - Parte 2)</a></p>
+</section>
+<section id="section" class="level2">
+<h2 class="anchored" data-anchor-id="section"></h2>
+<p><a href="https://www.itsmnapratica.com.br/tudo-sobre-itil/">ITIL®: o que é, para que serve e como tirar a certificação</a></p>
+<p>O ITIL tem sido um dos mais populares frameworks dos últimos 20 anos, servindo como uma referência para as empresas gerenciarem melhor seus serviços habilitados por tecnologia.</p>
+<p>Atualmente é difícil encontrar alguém que nunca tenha ouvido falar sobre ITIL. Seja em um artigo, um comentário na empresa ou uma vaga de TI.&nbsp;</p>
+<p>Mas se você está procurando um conteúdo mais completo sobre este tema, especialmente sobre a versão mais recente do ITIL, então está no lugar certo.&nbsp;</p>
+<section id="o-que-é-itil" class="level3">
+<h3 class="anchored" data-anchor-id="o-que-é-itil"><strong>O que é ITIL?</strong></h3>
+<p>O acrônimo ITIL se refere à Information Technology Infrastructure Library ou Biblioteca de Infraestrutura de Tecnologia da Informação.&nbsp;</p>
+<p>Este acrônimo há algum tempo <strong>não representa mais</strong> o que a ITIL significa nos dias de hoje. Portanto, podemos considerar que o nome foi mantido mais por uma questão de marca e reconhecimento do que pelo significado do acrônimo.&nbsp;</p>
+<p>De maneira simples, o ITIL pode ser considerado como um conjunto de práticas detalhadas para se fazer um bom gerenciamento de serviços habilitados pela tecnologia da informação.&nbsp;</p>
+<p>Mas dada a sua evolução através dos anos e a sua popularidade gigantesca, podemos considerar que o ITIL é hoje a principal referência para <a href="https://www.itsmnapratica.com.br/gerenciamento-de-servicos-de-ti-x-boas-praticas-uma-questao-de-habito/">gerenciamento de serviços de TI</a>.&nbsp;</p>
+</section>
+<section id="qual-é-a-finalidade-e-a-importância-do-itil" class="level3">
+<h3 class="anchored" data-anchor-id="qual-é-a-finalidade-e-a-importância-do-itil">Qual é a finalidade e a importância do ITIL?</h3>
+<p>Desde 1989, em mais de 180 países, ITIL® tem sido reconhecida mundialmente como líder em Gerenciamento de Serviço de TI&nbsp; (IT Service Management – ITSM).</p>
+<p>O propósito da ITIL 4 é oferecer às organizações uma estrutura prática e flexível como suporte na jornada rumo ao novo mundo da transformação digital, ajudando a alinhar os recursos humanos, digitais e físicos para competir em um cenário moderno e complexo.</p>
+<p>O ITIL4 foi construído com base neste guia por meio da reformulação das <a href="https://www.itsmnapratica.com.br/abc-do-itsm-como-adotar-a-pratica-de-gerenciamento-de-incidentes/">práticas de ITSM</a> estabelecidas no contexto mais amplo da experiência do cliente, dos fluxos de valor, da transformação digital e do pensamento sistêmico. Também adota novas formas de trabalho, como Lean, Agile e DevOps.</p>
+<p>Além disso, a nova versão do ITIL também trás orientações para as organizações navegarem na nova era tecnológica, mais conhecida como a Quarta Revolução Industrial, marcada por tecnologias emergentes, como: inteligência artificial, Internet das Coisas, nanotecnologia e muito mais.</p>
+<p>Por fim, o <a href="https://www.itsmnapratica.com.br/por-que-investir-em-uma-certificacao-em-ti-e-como-investir-na-certificacao-certa/">ITIL também é a qualificação de TI imprescindível para profissionais que buscam atingir todo o seu potencial</a>, dar um salto na carreira e entregar uma mudança poderosa a organizações ambiciosas.</p>
+<p>Para marcas mundiais de grande importância, como IBM, NASA, Shell, HP, British Airways e Disney, os profissionais com certificação ITIL são a força que mantém a continuidade das operações de negócio.</p>
+<p>E para quem deseja construir (e reconstruir) as bases do mundo digital, tudo começa com <a href="https://www.itsmnapratica.com.br/curso-itil4-online/">treinamento e certificação.</a></p>
+</section>
+<section id="quem-usa-o-itil" class="level3">
+<h3 class="anchored" data-anchor-id="quem-usa-o-itil">Quem usa o ITIL?</h3>
+<p>O ITIL pode beneficiar qualquer organização que forneça um produto ou serviço habilitado (ou não) por TI.&nbsp; Ele é usado por organizações em todo o mundo em todas as indústrias e setores:</p>
+<ul>
+<li><p>Grandes, médias e pequenas empresas</p></li>
+<li><p>Governos nacionais, estaduais e locais.</p></li>
+<li><p>Universidades e instituições de educação</p></li>
+<li><p>Organizações não governamentais</p></li>
+</ul>
+<p>Embora o ITIL seja usado em todo o mundo, é difícil encontrar uma lista definitiva e oficial de organizações que o utilizam. No entanto, A <a href="http://axelos.com/">Axelos</a> (quem atualmente cuida do desenvolvimento do ITIL ) publica regularmente informações sobre empresas que usam ITIL através de artigos, estudos de caso, white papers e webinarios (todos em inglês, infelizmente).</p>
+</section>
+<section id="origens-do-itil" class="level3">
+<h3 class="anchored" data-anchor-id="origens-do-itil"><strong>Origens do ITIL</strong></h3>
+<p><strong>ITIL4 (e não ITIL v4)</strong></p>
+<p>Em 18 de fevereiro de 2019, é lançada a quarta versão, que deixa de usar o acrônimo “v”, passando a se chamar simplesmente ITIL4.&nbsp;</p>
+<p>Há dois motivos para a ausência do “v”.&nbsp;</p>
+<ol type="1">
+<li>Uma referência à quarta revolução industrial, ou indústria 4.0.</li>
+</ol>
+<!-- -->
+<ol start="2" type="1">
+<li>A estrutura sugere que as publicações não serão tão centralizadas quanto eram na versão anterior.</li>
+</ol>
+<p>No ITIL v3 haviam 5 publicações core, cada uma com algumas centenas de páginas. Qualquer atualização nesta estrutura geraria um grande esforço.</p>
+<p>No ITIL4 os arquitetos parecem ter incorporado os princípios dos quais descrevem na própria literatura, como o de progredir iterativamente com feedback.</p>
+<p>Isso significa que, ao que tudo indica, teremos publicações mais específicas e um volume maior de atualizações independentes nas publicações, que não afetam a publicação core – <a href="https://www.axelos.com/store/book/itil-foundation-itil-4-edition">ITIL4 Foundation</a>.&nbsp;</p>
+</section>
+<section id="o-que-há-de-novo-no-itil4" class="level3">
+<h3 class="anchored" data-anchor-id="o-que-há-de-novo-no-itil4"><strong>O que há de novo no ITIL4?</strong></h3>
+<p><strong>Um novo modelo conceitual</strong></p>
+<p>O ITIL4 traz agora uma nova forma de contextualizar e fornecer serviços, de forma muito mais adaptável, rápida e totalmente transparente.</p>
+<p>Muito diferente da versão anterior, a primeira quebra de conceitos e paradigmas é a forma de conceber o serviço como um todo.&nbsp;</p>
+<p>O conceito de ciclo de vida do serviço descrito na versão anterior, mesmo que não intencionalmente, sugeria uma sequência de estágios e processos que descreviam a vida do serviço desde a sua concepção até a sua descontinuação.&nbsp;</p>
+<p>Por exemplo, para que um serviço estivesse num momento de codificação (Transição), teoricamente ele deveria ter passado pelos ciclos de Estratégia e Desenho.&nbsp;</p>
+<p>A nova versão baseia-se agora em um fluxo de valor flexível, conhecido como Service Value System (Sistema de Valor de Serviço).&nbsp;</p>
+<p>Este novo modelo conceitual é mais robusto e não se concentra apenas em processos, mas também em outro componentes de vital importância para o gerenciamento de serviços e a entrega de valor, como a governança e princípios orientadores, que veremos com mais detalhes ao longo deste artigo.</p>
+</section>
+<section id="quais-os-elementos-chave-do-itil4" class="level3">
+<h3 class="anchored" data-anchor-id="quais-os-elementos-chave-do-itil4"><strong>Quais os elementos chave do ITIL4?</strong></h3>
+<p>O modelo conceitual do ITIL4 apresenta 5 elementos principais. São eles:</p>
+<ul>
+<li><p>O Sistema de Valor de Serviço (SVS)</p></li>
+<li><p>A Cadeia de Valor de Serviço (CVS)</p></li>
+<li><p>As quatro dimensões do gerenciamento de serviços</p></li>
+<li><p>Os princípios orientadores</p></li>
+<li><p>As práticas ITIL</p></li>
+</ul>
+</section>
+<section id="sistema-de-valor-de-serviço" class="level3">
+<h3 class="anchored" data-anchor-id="sistema-de-valor-de-serviço"><strong>Sistema de valor de serviço</strong></h3>
+<p>O sistema de valor de serviço (SVS) é um componente chave do ITIL4 que facilita a cocriação de valor. Ele descreve como todos os componentes e atividades de uma organização trabalham juntos para permitir a criação de valor.</p>
+<p>Como o SVS tem interfaces com outras organizações, ele forma um ecossistema e também pode criar valor para essas organizações, seus clientes e partes interessadas.</p>
+<p>Os componentes do sistema de valor de serviço podem ser combinados de uma forma flexível, o que requer integração e coordenação para manter a organização consistente.</p>
+</section>
+<section id="os-componentes-chave-do-svs-são" class="level3">
+<h3 class="anchored" data-anchor-id="os-componentes-chave-do-svs-são">Os componentes chave do SVS são:</h3>
+<ul>
+<li><p>A cadeia de valor de serviço;</p></li>
+<li><p>As práticas da ITIL (uma modernização dos antigos “processos” do ITILv3);</p></li>
+<li><p>Os princípios orientadores;</p></li>
+<li><p>Governança (abrindo espaço para integração com frameworks como o <a href="https://www.itsmnapratica.com.br/cobit-2019-e-itil4-uma-comparacao/">COBIT 2019</a>;</p></li>
+<li><p>Melhoria contínua.</p></li>
+</ul>
+<p>No vídeo abaixo você pode aprender mais sobre o conceito do Sistema de Valor de Serviço (SVS)</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<figure class="figure">
+<img src="images/ITIL4_SVS-450x318.png" title="Sistema de Valor de Serviço do ITIL4" class="img-fluid figure-img" alt="Sistema de Valor de Serviço do ITIL4" width="429">
+</figure>
+<p></p><figcaption class="figure-caption">Sistema de Valor de Serviço do ITIL4</figcaption><p></p>
+</figure>
+</div>
+</section>
+<section id="cadeia-de-valor-de-serviço" class="level3">
+<h3 class="anchored" data-anchor-id="cadeia-de-valor-de-serviço"><strong>Cadeia de Valor de Serviço</strong></h3>
+<p>No centro da SVS está a cadeia de valor de serviços – um modelo operacional flexível para a criação, entrega e melhoria contínua dos serviços. A cadeia de valor do serviço define seis atividades principais:</p>
+<ul>
+<li><p>Planejar;</p></li>
+<li><p>Melhorar;</p></li>
+<li><p>Engajar;</p></li>
+<li><p>Desenho e transição;</p></li>
+<li><p>Obter / construir;</p></li>
+<li><p>Entregar e suportar.&nbsp;</p></li>
+</ul>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<figure class="figure">
+<img src="images/Cadeia-de-valor-de-Serviço-do-ITIL4-545x313.png" title="Cadeia de Valor de Serviço do ITIL4" class="img-fluid figure-img" alt="Cadeia de Valor de Serviço do ITIL4">
+</figure>
+<p></p><figcaption class="figure-caption">Cadeia de Valor de Serviço do ITIL4</figcaption><p></p>
+</figure>
+</div>
+<p>Eles podem ser combinados em muitas sequências diferentes, o que significa que a cadeia de valor de serviço permite que uma organização defina um número de variantes de fluxos de valor, por ex. o ciclo de vida do serviço v3.</p>
+<p>A flexibilidade da cadeia de valor do serviço permite que uma organização reaja de forma efetiva e eficiente às demandas mutáveis ​​das partes interessadas.</p>
+<p>No vídeo a seguir explico um pouco mais sobre a Cadeia de Valor de Serviço (CVS):</p>
+</section>
+<section id="as-quatro-dimensões-do-gerenciamento-de-serviços" class="level3">
+<h3 class="anchored" data-anchor-id="as-quatro-dimensões-do-gerenciamento-de-serviços"><strong>As quatro dimensões do gerenciamento de serviços</strong></h3>
+<p><img src="images/4-Dimensions-of-Service-Management_v2.png" title="Dimensões do gerenciamento de serviços do ITIL4" class="img-fluid" alt=""></p>
+<p>Uma abordagem holística para o gerenciamento de serviços é fundamental no ITIL 4. Ele define quatro dimensões que são críticas para a facilitação bem-sucedida de valor para os clientes e outras partes interessadas.</p>
+<p>As quatro dimensões são:</p>
+<ul>
+<li><p><strong>Organizações e pessoas:</strong> Uma organização precisa de uma cultura que apoie seus objetivos e o nível certo de capacidade e competência entre sua força de trabalho.</p></li>
+<li><p><strong>Informação e tecnologia:</strong> No contexto da SVS, isso inclui as informações e o conhecimento, bem como as tecnologias necessárias para o gerenciamento de serviços.</p></li>
+<li><p><strong>Parceiros e fornecedores:</strong> refere-se aos relacionamentos de uma organização com as outras empresas envolvidas no design, na implantação, na entrega, no suporte e na melhoria contínua dos serviços.</p></li>
+<li><p><strong>Fluxos e processos de valor:</strong> Como as várias partes da organização trabalham de forma integrada e coordenada é importante para permitir a criação de valor através de produtos e serviços.</p></li>
+</ul>
+<p>É essencial que seja dada uma quantidade adequada de foco a cada uma dessas dimensões, para que o SVS permaneça equilibrado e eficaz.</p>
+</section>
+<section id="princípios-orientadores" class="level3">
+<h3 class="anchored" data-anchor-id="princípios-orientadores"><strong>Princípios orientadores</strong></h3>
+<p>O ITIL4 apresenta sete princípios orientadores. Estes princípios não são novos, e visam ajudar os profissionais de TI a adotar e adaptar as orientações da ITIL às suas próprias necessidades e circunstâncias específicas.</p>
+<p>Os princípios orientadores são:</p>
+<ul>
+<li><p>Concentre-se no valor</p></li>
+<li><p>Comece por onde você está</p></li>
+<li><p>Progrida iterativamente com feedback</p></li>
+<li><p>Colabore e promova a visibilidade</p></li>
+<li><p>Pense e trabalhe de forma holística</p></li>
+<li><p>Mantenha simples e prático</p></li>
+<li><p>Otimize e automatize</p></li>
+</ul>
+<p>Os princípio orientadores devem ser avaliados em todas as etapas da prestação de serviços e, quando relevantes, podem ser empregados de maneira individual ou agrupada, independentemente do nível ou das circunstâncias.&nbsp;</p>
+<p>O foco do ITIL4 em colaboração, automação e simplicidade refletem os princípios encontrados nas metodologias Ágil, DevOps e Lean.</p>
+<p>Neste outro vídeo falo com um pouco mais de detalhes sobre os princípios orientadores:</p>
+</section>
+<section id="de-processos-à-práticas" class="level3">
+<h3 class="anchored" data-anchor-id="de-processos-à-práticas"><strong>De processos à práticas</strong></h3>
+<p>O ITIL até agora utilizou “processos” para gerenciar serviços de TI. A atualização expande os processos para que elementos como cultura, tecnologia, informações e gerenciamento de dados também sejam considerados para promover assim uma visão holística das formas de trabalho.</p>
+<p>Isso é conhecido como “práticas”, uma parte fundamental do novo framework. O SVS inclui 34 práticas de gerenciamento, que são conjuntos de recursos organizacionais para executar o trabalho ou realizar um objetivo.</p>
+<p>As práticas compartilham o mesmo valor e importância dos processos, mas seguem uma abordagem mais holística.</p>
+<p>O ITIL4 inclui 34 práticas de gerenciamento como “conjuntos de recursos organizacionais projetados para realizar trabalho ou cumprir um objetivo”. Para cada prática, há vários tipos de orientação, como termos e conceitos-chave, fatores de sucesso, atividades-chave, objetos de informação, etc.</p>
+</section>
+<section id="veja-a-seguir-a-lista-das-práticas-do-itil4" class="level3">
+<h3 class="anchored" data-anchor-id="veja-a-seguir-a-lista-das-práticas-do-itil4">Veja a seguir a lista das práticas do ITIL4:</h3>
+<p>As 34 práticas são agrupadas em três categorias:</p>
+<ul>
+<li><p><strong>Práticas gerais de gerenciamento</strong></p></li>
+<li><p><strong>Práticas de gerenciamento de serviço</strong></p></li>
+<li><p><strong>Práticas de gerenciamento técnico</strong></p></li>
+</ul>
+</section>
+<section id="práticas-gerais-de-gerenciamento" class="level3">
+<h3 class="anchored" data-anchor-id="práticas-gerais-de-gerenciamento">P<strong>ráticas gerais de gerenciamento</strong>:</h3>
+<ul>
+<li><p>Gerenciamento da estratégia</p></li>
+<li><p>Gerenciamento do portfólio</p></li>
+<li><p>Gestão da arquitetura</p></li>
+<li><p>Gerenciamento financeiro dos serviços</p></li>
+<li><p>Gerenciamento de talento e força de trabalho</p></li>
+<li><p>Melhoria contínua</p></li>
+<li><p>Medição e reporte</p></li>
+<li><p>Gerenciamento de riscos</p></li>
+<li><p>Gerenciamento da segurança da informação</p></li>
+<li><p>Gerenciamento do conhecimento</p></li>
+<li><p>Gerenciamento de mudança organizacional</p></li>
+<li><p>Gerenciamento de projetos</p></li>
+<li><p>Gerenciamento de relacionamento</p></li>
+<li><p>Gerenciamento de fornecedor</p></li>
+</ul>
+</section>
+<section id="práticas-de-gerenciamento-de-serviço" class="level3">
+<h3 class="anchored" data-anchor-id="práticas-de-gerenciamento-de-serviço">P<strong>ráticas de gerenciamento de serviço:</strong></h3>
+<ul>
+<li><p>Análise de negócio</p></li>
+<li><p>Gerenciamento do catálogo de serviços</p></li>
+<li><p>Desenho de serviço</p></li>
+<li><p>Gerenciamento de nível de serviço</p></li>
+<li><p>Gerenciamento de disponibilidade</p></li>
+<li><p>Gerenciamento de capacidade e desempenho</p></li>
+<li><p>Gerenciamento de continuidade de serviço</p></li>
+<li><p>Monitoramento e gerenciamento de evento</p></li>
+<li><p>Central de serviço</p></li>
+<li><p>Gerenciamento de incidente</p></li>
+<li><p>Gerenciamento de requisição de serviço</p></li>
+<li><p>Gerenciamento de problema</p></li>
+<li><p>Gerenciamento de liberação</p></li>
+<li><p>Habilitação de mudança</p></li>
+<li><p>Validação e teste de serviço</p></li>
+<li><p>Gerenciamento de configuração de serviço</p></li>
+<li><p>Gerenciamento de ativos de TI</p></li>
+</ul>
+</section>
+<section id="práticas-de-gerenciamento-técnico" class="level3">
+<h3 class="anchored" data-anchor-id="práticas-de-gerenciamento-técnico">P<strong>ráticas de gerenciamento técnico</strong>:</h3>
+<ul>
+<li><p>Gerenciamento de implantação</p></li>
+<li><p>Gerenciamento de infraestrutura e plataforma</p></li>
+<li><p>Desenvolvimento e gerenciamento de software</p></li>
+</ul>
+<p>Se você quer entender um pouco mais sobre as práticas do ITIL4, recomendo este vídeo:</p>
+</section>
+<section id="quais-os-benefícios-do-itil-para-o-negócio" class="level3">
+<h3 class="anchored" data-anchor-id="quais-os-benefícios-do-itil-para-o-negócio"><strong>Quais os benefícios do ITIL para o negócio?</strong></h3>
+<p>Do ponto de vista de negócios, a adoção de práticas ITIL por</p>
+<p>Os provedores de serviços de TI – sejam fornecedores internos ou externos – garantem muitos benefícios, incluindo:</p>
+<ul>
+<li><p>&nbsp;Serviços de TI que se alinham melhor com as prioridades e objetivos do negócio, o que significa que o negócio alcança mais em termos de seus objetivos estratégicos.</p></li>
+<li><p>Custos de TI conhecidos e gerenciáveis, garantindo que a empresa planeje melhor suas finanças.</p></li>
+<li><p>Aumento da produtividade, eficiência e eficácia dos negócios, porque os serviços de TI são mais confiáveis ​​e funcionam melhor para os usuários de negócios.</p></li>
+<li><p>Economias financeiras de gerenciamento aprimorado de recursos e redução do retrabalho.</p></li>
+<li><p>Gerenciamento de mudanças mais eficaz, permitindo que a empresa acompanhe as mudanças e impulsione as mudanças nos negócios a seu favor.</p></li>
+<li><p>Maior satisfação do usuário e do cliente com a TI.</p></li>
+<li><p>Melhor percepção do cliente final e imagem da marca.</p></li>
+</ul>
+</section>
+<section id="conclusão" class="level3">
+<h3 class="anchored" data-anchor-id="conclusão"><strong>Conclusão</strong></h3>
+<p>O ITIL padronizou o “idioma” do gerenciamento de serviços. Os termos que a maior parte das empresas utilizam, como SLA, Incidente, Mudança, Problema, Requisição de Serviço e Service Desk surgiram ou foram popularizados pelo ITIL.</p>
+<p>Empresas de todos os portes e formatos podem se beneficiar de ITIL. Sendo assim, as ferramentas práticas, visões e percepções que você adquire por meio do guia ITIL, mas elas sempre devem ser adaptadas para atender às necessidades específicas da sua organização.</p>
+
+
+</section>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    target: function(trigger) {
+      return trigger.previousElementSibling;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+</body></html>
