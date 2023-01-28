@@ -13,6 +13,7 @@ website:
       - menu:
           - bd_transacao.qmd
           - integracao_dados.qmd
+          - bd_diferenciacao.qmd
       - href: analise_dados.qmd
         text: Análise de Dados e Informação
       - menu:

@@ -1,0 +1,68 @@
+---
+title: "Diferenciação entre bancos..."
+---
+
+## Itens do Edital:
+
+b\) **Fundamentos de Banco de Dados**: Diferenciação entre bancos relacionais, multidimensionais, documentos e grafos.
+
+### [**O que é um banco de dados de documentos?**](https://aws.amazon.com/pt/nosql/document/)
+
+Um banco de dados de documentos é um tipo de banco de dados não relacional projetado para armazenar e consultar dados como documentos do tipo JSON. Os bancos de dados de documentos facilitam para que os desenvolvedores armazenem e consultem dados usando o mesmo formato de modelo de documento que usam no código do aplicativo. A natureza flexível, semiestruturada e hierárquica dos documentos e dos bancos de dados de documentos permite que eles evoluam conforme as necessidades dos aplicativos. O modelo de documentos funciona bem com casos de uso como catálogos, perfis de usuários e sistemas de gerenciamento de conteúdo, onde cada documento é único e evolui com o passar do tempo. Os bancos de dados de documentos possibilitam uma indexação flexível, consultas ad hoc eficientes e análises de dados em grupos de documentos.
+
+No exemplo a seguir, um documento semelhante ao JSON descreve um livro.
+
+``` json
+[
+    {
+        "year" : 2013,
+        "title" : "Turn It Down, Or Else!",
+        "info" : {
+            "directors" : [ "Alice Smith", "Bob Jones"],
+            "release_date" : "2013-01-18T00:00:00Z",
+            "rating" : 6.2,
+            "genres" : ["Comedy", "Drama"],
+            "image_url" : "http://ia.media-imdb.com/images/N/O9ERWAU7FS797AJ7LU8HN09AMUP908RLlo5JF90EWR7LJKQ7@@._V1_SX400_.jpg",
+            "plot" : "A rock band plays their music at high volumes, annoying the neighbors.",
+            "actors" : ["David Matthewman", "Jonathan G. Neff"]
+        }
+    },
+    {
+        "year": 2015,
+        "title": "The Big New Movie",
+        "info": {
+            "plot": "Nothing happens at all.",
+            "rating": 0
+        }
+    }
+]
+```
+
+### [**O que é um banco de dados de grafos?**](https://aws.amazon.com/pt/nosql/graph/)
+
+#### **Definição do banco de dados de grafos**
+
+Os bancos de dados de grafos foram criados especificamente para possibilitar o armazenamento de relacionamentos e a navegação por eles. Os relacionamentos são elementos distintos que agregam a maior parte do valor para os bancos de dados de grafos. Os bancos de dados de grafos usam nós para armazenar entidades de dados e arestas para armazenar os relacionamentos entre as entidades. Uma aresta tem sempre um nó inicial, um nó final, um tipo e um direcionamento, o que possibilita a descrição dos relacionamentos entre pais e filhos, das ações, das propriedades e assim por diante. A quantidade e os tipos de relacionamentos que um nó pode ter são ilimitados.\
+
+Um grafo em um banco de dados de grafos pode ser cruzado com tipos de arestas específicos ou por todo o grafo. Nos bancos de dados de grafos, o cruzamento das associações ou dos relacionamentos ocorre muito rapidamente, uma vez que os relacionamentos entre os nós não são calculados no momento das consultas, mas persistem no banco de dados. Os bancos de dados de grafos são vantajosos em casos de uso como redes sociais, mecanismos de recomendação e detecção de fraudes, em que é necessário criar relacionamentos entre os dados e consultar rapidamente esses relacionamentos.
+
+O grafo a seguir é um exemplo de grafo de rede social. Considerando as pessoas (nós) e seus relacionamentos (arestas), é possível descobrir quem são os \"amigos dos amigos\" de uma pessoa específica, por exemplo, os amigos dos amigos de Howard. 
+![](images/bd_grafos.png){width="440"}
+
+**Casos de uso**
+
+**Detecção de fraudes**
+
+Os bancos de dados de grafos podem fazer uma prevenção sofisticada contra fraudes. Com os bancos de dados de grafos, você pode usar relacionamentos para processar transações financeiras e de compras praticamente em tempo real. Com consultas de grafos rápidas, você pode detectar, por exemplo, se um possível comprador está usando o mesmo endereço de e-mail e cartão de crédito que o usado em um caso de fraude conhecido. Os bancos de dados de grafos também podem ajudá-lo a detectar facilmente padrões de relacionamento, como várias pessoas associadas a um endereço de e-mail pessoal ou várias pessoas compartilhando o mesmo endereço IP, mas residentes em endereços físicos diferentes. 
+
+**Mecanismos de recomendação**
+
+Os bancos de dados de grafos são uma boa opção para aplicativos de recomendação. Com os bancos de dados de grafos, você pode armazenar em um grafo os relacionamentos entre as categorias de informação, como os interesses, os amigos e o histórico de compras dos clientes. Você pode usar um banco de dados de grafos altamente disponível para fazer recomendações de produtos a um usuário com base em quais produtos foram comprados por outras pessoas que seguem o mesmo esporte e têm histórico de compras similar. Além disso, é possível identificar pessoas com um amigo em comum, mas que ainda não se conhecem, para fazer uma recomendação de amizade. 
+
+------------------------------------------------------------------------
+
+Fontes:
+
+https://aws.amazon.com/pt/nosql/document/
+
+https://aws.amazon.com/pt/nosql/graph/
