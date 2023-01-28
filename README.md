@@ -6,7 +6,7 @@
 
 <!-- badges: end -->
 
-Material de estudo para concurso do BRDE, cargo Analista de Sistemas -- Subárea Ciência de Dados.
+Material de estudo para concurso do BRDE, cargo Analista de Sistemas - Subárea Ciência de Dados.
 
 https://lgschuck.github.io/brde/
 

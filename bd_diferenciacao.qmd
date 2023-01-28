@@ -6,7 +6,7 @@ title: "Diferenciação entre bancos..."
 
 b\) **Fundamentos de Banco de Dados**: Diferenciação entre bancos relacionais, multidimensionais, documentos e grafos.
 
-### [**O que é um banco de dados de documentos?**](https://aws.amazon.com/pt/nosql/document/)
+## [**O que é um banco de dados de documentos?**](https://aws.amazon.com/pt/nosql/document/)
 
 Um banco de dados de documentos é um tipo de banco de dados não relacional projetado para armazenar e consultar dados como documentos do tipo JSON. Os bancos de dados de documentos facilitam para que os desenvolvedores armazenem e consultem dados usando o mesmo formato de modelo de documento que usam no código do aplicativo. A natureza flexível, semiestruturada e hierárquica dos documentos e dos bancos de dados de documentos permite que eles evoluam conforme as necessidades dos aplicativos. O modelo de documentos funciona bem com casos de uso como catálogos, perfis de usuários e sistemas de gerenciamento de conteúdo, onde cada documento é único e evolui com o passar do tempo. Os bancos de dados de documentos possibilitam uma indexação flexível, consultas ad hoc eficientes e análises de dados em grupos de documentos.
 
@@ -38,7 +38,17 @@ No exemplo a seguir, um documento semelhante ao JSON descreve um livro.
 ]
 ```
 
-### [**O que é um banco de dados de grafos?**](https://aws.amazon.com/pt/nosql/graph/)
+#### **Casos de uso**
+
+**Gerenciamento de conteúdo**
+
+Um banco de dados de documentos é uma ótima opção para aplicativos de gerenciamento de conteúdo, como blogs e plataformas de vídeo. Com um banco de dados de documentos, cada entidade que o aplicativo rastrear pode ser armazenado como um documento único. Um desenvolvedor consegue atualizar um aplicativo de maneira mais intuitiva no banco de dados de documentos, à medida que as exigências evoluem. Além disso, se o modelo de dados precisar mudar, somente os documentos afetados precisarão ser atualizados. Nenhuma atualização de esquema é exigida e nenhum tempo de inatividade de banco de dados é necessário para fazer as alterações. 
+
+**Catálogos**
+
+Bancos de dados de documentos são eficientes e eficazes para o armazenamento de informações de catálogo. Por exemplo, em um aplicativo de comércio eletrônico, diferentes produtos costumam ter números de atributos diferentes. Gerenciar milhares de atributos em bancos de dados relacionais é ineficiente e afeta a performance de leitura. Ao usar um banco de dados de documentos, os atributos de cada produto podem ser descritos em um único documento para gerenciamento fácil e maior velocidade de leitura. Alterar os atributos de um produto não afetará os outros.
+
+## [**O que é um banco de dados de grafos?**](https://aws.amazon.com/pt/nosql/graph/)
 
 #### **Definição do banco de dados de grafos**
 
@@ -46,8 +56,7 @@ Os bancos de dados de grafos foram criados especificamente para possibilitar o a
 
 Um grafo em um banco de dados de grafos pode ser cruzado com tipos de arestas específicos ou por todo o grafo. Nos bancos de dados de grafos, o cruzamento das associações ou dos relacionamentos ocorre muito rapidamente, uma vez que os relacionamentos entre os nós não são calculados no momento das consultas, mas persistem no banco de dados. Os bancos de dados de grafos são vantajosos em casos de uso como redes sociais, mecanismos de recomendação e detecção de fraudes, em que é necessário criar relacionamentos entre os dados e consultar rapidamente esses relacionamentos.
 
-O grafo a seguir é um exemplo de grafo de rede social. Considerando as pessoas (nós) e seus relacionamentos (arestas), é possível descobrir quem são os \"amigos dos amigos\" de uma pessoa específica, por exemplo, os amigos dos amigos de Howard. 
-![](images/bd_grafos.png){width="440"}
+O grafo a seguir é um exemplo de grafo de rede social. Considerando as pessoas (nós) e seus relacionamentos (arestas), é possível descobrir quem são os "amigos dos amigos" de uma pessoa específica, por exemplo, os amigos dos amigos de Howard.  ![](images/bd_grafos.png){width="440"}
 
 **Casos de uso**
 

@@ -245,11 +245,9 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#itens-do-edital" id="toc-itens-do-edital" class="nav-link active" data-scroll-target="#itens-do-edital">Itens do Edital:</a>
-  <ul class="collapse">
+  <li><a href="#itens-do-edital" id="toc-itens-do-edital" class="nav-link active" data-scroll-target="#itens-do-edital">Itens do Edital:</a></li>
   <li><a href="#o-que-é-um-banco-de-dados-de-documentos" id="toc-o-que-é-um-banco-de-dados-de-documentos" class="nav-link" data-scroll-target="#o-que-é-um-banco-de-dados-de-documentos"><strong>O que é um banco de dados de documentos?</strong></a></li>
   <li><a href="#o-que-é-um-banco-de-dados-de-grafos" id="toc-o-que-é-um-banco-de-dados-de-grafos" class="nav-link" data-scroll-target="#o-que-é-um-banco-de-dados-de-grafos"><strong>O que é um banco de dados de grafos?</strong></a></li>
-  </ul></li>
   </ul>
 </nav>
     </div>
@@ -276,8 +274,9 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <section id="itens-do-edital" class="level2">
 <h2 class="anchored" data-anchor-id="itens-do-edital">Itens do Edital:</h2>
 <p>b) <strong>Fundamentos de Banco de Dados</strong>: Diferenciação entre bancos relacionais, multidimensionais, documentos e grafos.</p>
-<section id="o-que-é-um-banco-de-dados-de-documentos" class="level3">
-<h3 class="anchored" data-anchor-id="o-que-é-um-banco-de-dados-de-documentos"><a href="https://aws.amazon.com/pt/nosql/document/"><strong>O que é um banco de dados de documentos?</strong></a></h3>
+</section>
+<section id="o-que-é-um-banco-de-dados-de-documentos" class="level2">
+<h2 class="anchored" data-anchor-id="o-que-é-um-banco-de-dados-de-documentos"><a href="https://aws.amazon.com/pt/nosql/document/"><strong>O que é um banco de dados de documentos?</strong></a></h2>
 <p>Um banco de dados de documentos é um tipo de banco de dados não relacional projetado para armazenar e consultar dados como documentos do tipo JSON. Os bancos de dados de documentos facilitam para que os desenvolvedores armazenem e consultem dados usando o mesmo formato de modelo de documento que usam no código do aplicativo. A natureza flexível, semiestruturada e hierárquica dos documentos e dos bancos de dados de documentos permite que eles evoluam conforme as necessidades dos aplicativos. O modelo de documentos funciona bem com casos de uso como catálogos, perfis de usuários e sistemas de gerenciamento de conteúdo, onde cada documento é único e evolui com o passar do tempo. Os bancos de dados de documentos possibilitam uma indexação flexível, consultas ad hoc eficientes e análises de dados em grupos de documentos.</p>
 <p>No exemplo a seguir, um documento semelhante ao JSON descreve um livro.</p>
 <div class="sourceCode" id="cb1"><pre class="sourceCode json code-with-copy"><code class="sourceCode json"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="ot">[</span></span>
@@ -303,15 +302,22 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a>        <span class="fu">}</span></span>
 <span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a>    <span class="fu">}</span></span>
 <span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a><span class="ot">]</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<section id="casos-de-uso" class="level4">
+<h4 class="anchored" data-anchor-id="casos-de-uso"><strong>Casos de uso</strong></h4>
+<p><strong>Gerenciamento de conteúdo</strong></p>
+<p>Um banco de dados de documentos é uma ótima opção para aplicativos de gerenciamento de conteúdo, como blogs e plataformas de vídeo. Com um banco de dados de documentos, cada entidade que o aplicativo rastrear pode ser armazenado como um documento único.&nbsp;Um desenvolvedor consegue atualizar um aplicativo de maneira mais intuitiva no banco de dados de documentos, à medida que as exigências evoluem. Além disso, se o modelo de dados precisar mudar, somente os documentos afetados precisarão ser atualizados. Nenhuma atualização de esquema é exigida e nenhum tempo de inatividade de banco de dados é necessário para fazer as alterações.&nbsp;</p>
+<p><strong>Catálogos</strong></p>
+<p>Bancos de dados de documentos são eficientes e eficazes para o armazenamento de informações de catálogo.&nbsp;Por exemplo, em um aplicativo de comércio eletrônico, diferentes produtos costumam ter números de atributos diferentes. Gerenciar milhares de atributos em bancos de dados relacionais é ineficiente e afeta a performance de leitura. Ao usar um banco de dados de documentos, os atributos de cada produto podem ser descritos em um único documento para gerenciamento fácil e maior velocidade de leitura. Alterar os atributos de um produto não afetará os outros.</p>
 </section>
-<section id="o-que-é-um-banco-de-dados-de-grafos" class="level3">
-<h3 class="anchored" data-anchor-id="o-que-é-um-banco-de-dados-de-grafos"><a href="https://aws.amazon.com/pt/nosql/graph/"><strong>O que é um banco de dados de grafos?</strong></a></h3>
+</section>
+<section id="o-que-é-um-banco-de-dados-de-grafos" class="level2">
+<h2 class="anchored" data-anchor-id="o-que-é-um-banco-de-dados-de-grafos"><a href="https://aws.amazon.com/pt/nosql/graph/"><strong>O que é um banco de dados de grafos?</strong></a></h2>
 <section id="definição-do-banco-de-dados-de-grafos" class="level4">
 <h4 class="anchored" data-anchor-id="definição-do-banco-de-dados-de-grafos"><strong>Definição do banco de dados de grafos</strong></h4>
 <p>Os bancos de dados de grafos foram criados especificamente para possibilitar o armazenamento de relacionamentos e a navegação por eles. Os relacionamentos são elementos distintos que agregam a maior parte do valor para os bancos de dados de grafos. Os bancos de dados de grafos usam nós para armazenar entidades de dados e arestas para armazenar os relacionamentos entre as entidades. Uma aresta tem sempre um nó inicial, um nó final, um tipo e um direcionamento, o que possibilita a descrição dos relacionamentos entre pais e filhos, das ações, das propriedades e assim por diante. A quantidade e os tipos de relacionamentos que um nó pode ter são ilimitados.<br>
 </p>
 <p>Um grafo em um banco de dados de grafos pode ser cruzado com tipos de arestas específicos ou por todo o grafo. Nos bancos de dados de grafos, o cruzamento das associações ou dos relacionamentos ocorre muito rapidamente, uma vez que os relacionamentos entre os nós não são calculados no momento das consultas, mas persistem no banco de dados. Os bancos de dados de grafos são vantajosos em casos de uso como redes sociais, mecanismos de recomendação e detecção de fraudes, em que é necessário criar relacionamentos entre os dados e consultar rapidamente esses relacionamentos.</p>
-<p>O grafo a seguir é um exemplo de grafo de rede social. Considerando as pessoas (nós) e seus relacionamentos (arestas), é possível descobrir quem são os "amigos dos amigos" de uma pessoa específica, por exemplo, os amigos dos amigos de Howard.&nbsp; <img src="images/bd_grafos.png" class="img-fluid" width="440"></p>
+<p>O grafo a seguir é um exemplo de grafo de rede social. Considerando as pessoas (nós) e seus relacionamentos (arestas), é possível descobrir quem são os “amigos dos amigos” de uma pessoa específica, por exemplo, os amigos dos amigos de Howard.&nbsp; <img src="images/bd_grafos.png" class="img-fluid" width="440"></p>
 <p><strong>Casos de uso</strong></p>
 <p><strong>Detecção de fraudes</strong></p>
 <p>Os bancos de dados de grafos podem fazer uma prevenção sofisticada contra fraudes. Com os bancos de dados de grafos, você pode usar relacionamentos para processar transações financeiras e de compras praticamente em tempo real. Com consultas de grafos rápidas, você pode detectar, por exemplo, se um possível comprador está usando o mesmo endereço de e-mail e cartão de crédito que o usado em um caso de fraude conhecido. Os bancos de dados de grafos também podem ajudá-lo a detectar facilmente padrões de relacionamento, como várias pessoas associadas a um endereço de e-mail pessoal ou várias pessoas compartilhando o mesmo endereço IP, mas residentes em endereços físicos diferentes.&nbsp;</p>
@@ -323,7 +329,6 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <p>https://aws.amazon.com/pt/nosql/graph/</p>
 
 
-</section>
 </section>
 </section>
 
