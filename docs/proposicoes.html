@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Concurso BRDE - Conceitos de Transação, concorrência…</title>
+<title>Concurso BRDE - Proposições e conectivos e Operações</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -218,7 +218,8 @@ ul.task-list li input[type="checkbox"] {
   <ul>
   <li><a href="#itens-do-edital" id="toc-itens-do-edital" class="nav-link active" data-scroll-target="#itens-do-edital">Itens do Edital:</a>
   <ul class="collapse">
-  <li><a href="#transação" id="toc-transação" class="nav-link" data-scroll-target="#transação">Transação</a></li>
+  <li><a href="#lógica-matemática" id="toc-lógica-matemática" class="nav-link" data-scroll-target="#lógica-matemática"><strong>Lógica Matemática</strong></a></li>
+  <li><a href="#operações-da-lógica-proposicional" id="toc-operações-da-lógica-proposicional" class="nav-link" data-scroll-target="#operações-da-lógica-proposicional"><strong>Operações da Lógica Proposicional</strong></a></li>
   </ul></li>
   </ul>
 </nav>
@@ -228,7 +229,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Conceitos de Transação, concorrência…</h1>
+<h1 class="title">Proposições e conectivos e Operações</h1>
 </div>
 
 
@@ -245,19 +246,14 @@ ul.task-list li input[type="checkbox"] {
 
 <section id="itens-do-edital" class="level2">
 <h2 class="anchored" data-anchor-id="itens-do-edital">Itens do Edital:</h2>
-<p>b) <strong>Fundamentos de Banco de Dados</strong>: Conceito de transação, concorrência, recuperação, integridade</p>
-<section id="transação" class="level3">
-<h3 class="anchored" data-anchor-id="transação">Transação</h3>
-<p>Coleções de operações que formam uma única unidade lógica de trabalho são chamadas transações. Um sistema de banco de dados precisa garantir a execução apropriada de transações apesar das falhas – a transação inteira é executada ou nenhuma parte dela é executada. Além do mais, ele precisa gerenciar a execução simultânea de transações de modo a evitar a introdução da inconsistência.</p>
-<p><strong>Conceito de transação:</strong> Uma transação é uma unidade de execução do programa que acessa e, possivelmente, atualiza vários itens de dados. Uma transação é delimitada pelas instruções (ou chamadas de função) na forma begin transaction e end transaction. A transação consiste em todas as operações executadas entre o <strong>begin transaction e o end transaction</strong>.</p>
-<p>Esse conjunto de operações precisa aparecer ao usuário como uma única unidade, indivisível. Como uma transação é indivisível, ela é executada em sua totalidade ou não é executada. Assim, se uma transação começa a ser executada, mas falha por um motivo qualquer, quaisquer mudanças no banco de dados que a transação possa ter feito são desfeitas. Essa propriedade “tudo ou nada” é conhecida como atomicidade.</p>
-<p>É necessário que o sistema de banco de dados mantenha as seguintes propriedades das transações:</p>
-<p>•<strong>Atomicidade.</strong> Todas as operações da transação são refletidas corretamente no banco de dados, ou nenhuma delas.</p>
-<p>•<strong>Consistência.</strong> A execução de uma transação isolada (ou seja, sem nenhuma outra transação executando simultaneamente) preserva a consistência do banco de dados.</p>
-<p>•<strong>Isolamento.</strong> Embora várias transações possam ser executadas simultaneamente, o sistema garante que, para cada par de transações Ti e Tj, parece para Ti ou Tj terminou a execução antes que Ti começasse, ou Tj iniciou a execução depois que Ti terminou. Assim, cada transação não está ciente das outras transações sendo executadas simultaneamente no sistema.</p>
-<p>•<strong>Durabilidade</strong>. Depois que uma transação for completada com sucesso, as mudanças que ela fez no banco de dados persistem, mesmo se houver falhas no sistema.</p>
-<hr>
-<p>Fontes: Sistema de Banco de Dados - Abraham Silberschatz</p>
+<ol type="1">
+<li>Proposições e conectivos: Conceito de proposição, valores lógicos das proposições, proposições simples, proposições compostas. Operações lógicas sobre proposições: Negação, conjunção, disjunção, disjunção exclusiva, condicional, bicondicional.</li>
+</ol>
+<section id="lógica-matemática" class="level3">
+<h3 class="anchored" data-anchor-id="lógica-matemática"><a href="https://www.todamateria.com.br/logica-matematica/"><strong>Lógica Matemática</strong></a></h3>
+</section>
+<section id="operações-da-lógica-proposicional" class="level3">
+<h3 class="anchored" data-anchor-id="operações-da-lógica-proposicional"><a href="https://www.infoescola.com/matematica/operacoes-da-logica-proposicional/"><strong>Operações da Lógica Proposicional</strong></a></h3>
 
 
 </section>

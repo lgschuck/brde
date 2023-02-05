@@ -1,0 +1,15 @@
+---
+title: "Raciocínio Lógico/Analítico/Quantitativo"
+---
+
+## Itens do Edital:
+
+Estrutura lógica de relações arbitrárias entre pessoas, lugares, objetos ou eventos fictícios; deduzir novas informações das relações fornecidas e avaliar as condições usadas para estabelecer a estrutura daquelas relações. Diagramas lógicos.
+
+1.  Proposições e conectivos: Conceito de proposição, valores lógicos das proposições, proposições simples, proposições compostas. Operações lógicas sobre proposições: Negação, conjunção, disjunção, disjunção exclusiva, condicional, bicondicional.
+
+2.  Construção de tabelas-verdade. Tautologias, contradições e contingências. Implicação lógica, equivalência lógica, Leis De Morgan. Argumentação e dedução lógica.
+
+3.  Sentenças abertas, operações lógicas sobre sentenças abertas. Quantificador universal, quantificador existencial, negação de proposições quantificadas.
+
+4.  Argumentos Lógicos Dedutivos; Argumentos Categóricos.

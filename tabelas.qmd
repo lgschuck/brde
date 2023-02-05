@@ -1,0 +1,13 @@
+---
+title: "Construção de tabelas-verdade"
+---
+
+## Itens do Edital:
+
+3.  Construção de tabelas-verdade. Tautologias, contradições e contingências. Implicação lógica, equivalência lógica, Leis De Morgan. Argumentação e dedução lógica.
+
+### [Tautologia](https://www.estrategiaconcursos.com.br/blog/tautologia/)
+
+### [Tautologias, contradições e contingências](https://filosofianaescola.com/logica/tautologia-contradicao-e-contingencia/)
+
+### [Leis de Morgan](https://segredosdeconcurso.com.br/leis-de-morgan/)

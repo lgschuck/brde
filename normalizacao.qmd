@@ -1,7 +1,15 @@
 ---
-title: "Banco de Dados"
+title: "Normalização"
 ---
 
 ## Itens do Edital:
 
 a\) **Banco de Dados**: Fundamentos de administração de dados: Segurança; Modelagem de dados: Modelo entidade-relacionamento (entidades, atributos, chaves e relacionamentos) e Normalização;
+
+## Normalização
+
+{{< video https://youtu.be/eRaAMNjCFYw >}}
+
+{{< video https://youtu.be/6ER9lWOk-cY >}}
+
+{{< video https://youtu.be/usA8QKvEHWw >}}

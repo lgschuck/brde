@@ -8,29 +8,36 @@ website:
     left:
       - href: banco_dados.qmd
         text: Banco de Dados
+      - menu:
+          - normalizacao.qmd
       - href: fundamentos_bd.qmd
-        text: Fundamentos de Banco de Dados
+        text: Fund. Banco de Dados
       - menu:
           - bd_transacao.qmd
           - integracao_dados.qmd
           - bd_diferenciacao.qmd
       - href: analise_dados.qmd
-        text: Análise de Dados e Informação
+        text: Análise de Dados
       - menu:
           - dado_info.qmd
           - conceitos_bi.qmd
           - olap.qmd
           - data_warehouse.qmd
       - href: gerenciamento_projetos.qmd
-        text: Gerenciamento de Projetos
+        text: Ger. Projetos
       - menu:
           - scrum.qmd
           - pmbok.qmd
       - href: governanca_ti.qmd
-        text: Governança de TI
+        text: Gov. TI
       - menu:
           - itil.qmd
           - itil_praticas.qmd
+      - href: rac_logico.qmd
+        text: Rac. Lógico
+      - menu:
+          -  proposicoes.qmd
+          -  tabelas.qmd
 
 format:
   html:

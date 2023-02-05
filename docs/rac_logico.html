@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Concurso BRDE - Conceitos de Transação, concorrência…</title>
+<title>Concurso BRDE - Raciocínio Lógico/Analítico/Quantitativo</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -183,7 +183,7 @@ ul.task-list li input[type="checkbox"] {
     </ul>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="./rac_logico.html">
+    <a class="nav-link active" href="./rac_logico.html" aria-current="page">
  <span class="menu-text">Rac. Lógico</span></a>
   </li>  
   <li class="nav-item dropdown ">
@@ -216,10 +216,7 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#itens-do-edital" id="toc-itens-do-edital" class="nav-link active" data-scroll-target="#itens-do-edital">Itens do Edital:</a>
-  <ul class="collapse">
-  <li><a href="#transação" id="toc-transação" class="nav-link" data-scroll-target="#transação">Transação</a></li>
-  </ul></li>
+  <li><a href="#itens-do-edital" id="toc-itens-do-edital" class="nav-link active" data-scroll-target="#itens-do-edital">Itens do Edital:</a></li>
   </ul>
 </nav>
     </div>
@@ -228,7 +225,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Conceitos de Transação, concorrência…</h1>
+<h1 class="title">Raciocínio Lógico/Analítico/Quantitativo</h1>
 </div>
 
 
@@ -245,22 +242,15 @@ ul.task-list li input[type="checkbox"] {
 
 <section id="itens-do-edital" class="level2">
 <h2 class="anchored" data-anchor-id="itens-do-edital">Itens do Edital:</h2>
-<p>b) <strong>Fundamentos de Banco de Dados</strong>: Conceito de transação, concorrência, recuperação, integridade</p>
-<section id="transação" class="level3">
-<h3 class="anchored" data-anchor-id="transação">Transação</h3>
-<p>Coleções de operações que formam uma única unidade lógica de trabalho são chamadas transações. Um sistema de banco de dados precisa garantir a execução apropriada de transações apesar das falhas – a transação inteira é executada ou nenhuma parte dela é executada. Além do mais, ele precisa gerenciar a execução simultânea de transações de modo a evitar a introdução da inconsistência.</p>
-<p><strong>Conceito de transação:</strong> Uma transação é uma unidade de execução do programa que acessa e, possivelmente, atualiza vários itens de dados. Uma transação é delimitada pelas instruções (ou chamadas de função) na forma begin transaction e end transaction. A transação consiste em todas as operações executadas entre o <strong>begin transaction e o end transaction</strong>.</p>
-<p>Esse conjunto de operações precisa aparecer ao usuário como uma única unidade, indivisível. Como uma transação é indivisível, ela é executada em sua totalidade ou não é executada. Assim, se uma transação começa a ser executada, mas falha por um motivo qualquer, quaisquer mudanças no banco de dados que a transação possa ter feito são desfeitas. Essa propriedade “tudo ou nada” é conhecida como atomicidade.</p>
-<p>É necessário que o sistema de banco de dados mantenha as seguintes propriedades das transações:</p>
-<p>•<strong>Atomicidade.</strong> Todas as operações da transação são refletidas corretamente no banco de dados, ou nenhuma delas.</p>
-<p>•<strong>Consistência.</strong> A execução de uma transação isolada (ou seja, sem nenhuma outra transação executando simultaneamente) preserva a consistência do banco de dados.</p>
-<p>•<strong>Isolamento.</strong> Embora várias transações possam ser executadas simultaneamente, o sistema garante que, para cada par de transações Ti e Tj, parece para Ti ou Tj terminou a execução antes que Ti começasse, ou Tj iniciou a execução depois que Ti terminou. Assim, cada transação não está ciente das outras transações sendo executadas simultaneamente no sistema.</p>
-<p>•<strong>Durabilidade</strong>. Depois que uma transação for completada com sucesso, as mudanças que ela fez no banco de dados persistem, mesmo se houver falhas no sistema.</p>
-<hr>
-<p>Fontes: Sistema de Banco de Dados - Abraham Silberschatz</p>
+<p>Estrutura lógica de relações arbitrárias entre pessoas, lugares, objetos ou eventos fictícios; deduzir novas informações das relações fornecidas e avaliar as condições usadas para estabelecer a estrutura daquelas relações. Diagramas lógicos.</p>
+<ol type="1">
+<li><p>Proposições e conectivos: Conceito de proposição, valores lógicos das proposições, proposições simples, proposições compostas. Operações lógicas sobre proposições: Negação, conjunção, disjunção, disjunção exclusiva, condicional, bicondicional.</p></li>
+<li><p>Construção de tabelas-verdade. Tautologias, contradições e contingências. Implicação lógica, equivalência lógica, Leis De Morgan. Argumentação e dedução lógica.</p></li>
+<li><p>Sentenças abertas, operações lógicas sobre sentenças abertas. Quantificador universal, quantificador existencial, negação de proposições quantificadas.</p></li>
+<li><p>Argumentos Lógicos Dedutivos; Argumentos Categóricos.</p></li>
+</ol>
 
 
-</section>
 </section>
 
 </main> <!-- /main -->

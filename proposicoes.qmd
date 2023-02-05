@@ -1,0 +1,11 @@
+---
+title: "Proposições e conectivos e Operações"
+---
+
+## Itens do Edital:
+
+1.  Proposições e conectivos: Conceito de proposição, valores lógicos das proposições, proposições simples, proposições compostas. Operações lógicas sobre proposições: Negação, conjunção, disjunção, disjunção exclusiva, condicional, bicondicional.
+
+### [**Lógica Matemática**](https://www.todamateria.com.br/logica-matematica/)
+
+### [**Operações da Lógica Proposicional**](https://www.infoescola.com/matematica/operacoes-da-logica-proposicional/)

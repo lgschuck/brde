@@ -61,5 +61,17 @@
   },
   "pmbok.qmd": {
     "pmbok.html": "a3b4565d"
+  },
+  "proposicoes.qmd": {
+    "proposicoes.html": "6c5ff9e6"
+  },
+  "rac_logico.qmd": {
+    "rac_logico.html": "8b5dc561"
+  },
+  "tabelas.qmd": {
+    "tabelas.html": "456e54b1"
+  },
+  "normalizacao.qmd": {
+    "normalizacao.html": "1c355e45"
   }
 }

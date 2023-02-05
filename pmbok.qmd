@@ -6,13 +6,9 @@ title: "PMBOK 7ª Edição"
 
 f\) **Gerenciamento de Projetos**: Conceitos básicos do PMBOK 7ª Edição, Metodologia SCRUM;
 
-## Princípios PMBOK 7
+## [Princípios PMBOK 7 - PMI](https://www.pmi.org/-/media/pmi/documents/public/pdf/pmbok-standards/12-project-management-principles.pdf)
 
-[PMI](https://www.pmi.org/-/media/pmi/documents/public/pdf/pmbok-standards/12-project-management-principles.pdf)
-
-## PMBOK 7: princípios, mudanças e como ficam as certificações
-
-<https://fia.com.br/blog/pmbok/>
+## [PMBOK 7: princípios, mudanças e como ficam as certificações](https://fia.com.br/blog/pmbok/)
 
 ## **PMBOK 7 - Youtube**
 
