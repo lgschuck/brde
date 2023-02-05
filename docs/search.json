@@ -259,11 +259,25 @@
     "text": "f) Gerenciamento de Projetos: Conceitos básicos do PMBOK 7ª Edição, Metodologia SCRUM;"
   },
   {
+    "objectID": "pmbok.html#princípios-pmbok-7",
+    "href": "pmbok.html#princípios-pmbok-7",
+    "title": "PMBOK 7ª Edição",
+    "section": "Princípios PMBOK 7",
+    "text": "Princípios PMBOK 7\nPMI"
+  },
+  {
     "objectID": "pmbok.html#pmbok-7-princípios-mudanças-e-como-ficam-as-certificações",
     "href": "pmbok.html#pmbok-7-princípios-mudanças-e-como-ficam-as-certificações",
     "title": "PMBOK 7ª Edição",
     "section": "PMBOK 7: princípios, mudanças e como ficam as certificações",
-    "text": "PMBOK 7: princípios, mudanças e como ficam as certificações\nhttps://fia.com.br/blog/pmbok/\nPMBOK 7 - Youtube"
+    "text": "PMBOK 7: princípios, mudanças e como ficam as certificações\nhttps://fia.com.br/blog/pmbok/"
+  },
+  {
+    "objectID": "pmbok.html#pmbok-7---youtube",
+    "href": "pmbok.html#pmbok-7---youtube",
+    "title": "PMBOK 7ª Edição",
+    "section": "PMBOK 7 - Youtube",
+    "text": "PMBOK 7 - Youtube"
   },
   {
     "objectID": "scrum.html",
@@ -271,6 +285,13 @@
     "title": "Metodologia SCRUM",
     "section": "",
     "text": "f) Gerenciamento de Projetos: Metodologia SCRUM;"
+  },
+  {
+    "objectID": "scrum.html#scrum-guide---pt-br",
+    "href": "scrum.html#scrum-guide---pt-br",
+    "title": "Metodologia SCRUM",
+    "section": "Scrum Guide - PT-BR",
+    "text": "Scrum Guide - PT-BR"
   },
   {
     "objectID": "scrum.html#glossário-scrum",
@@ -284,6 +305,6 @@
     "href": "scrum.html#resumo-scrum",
     "title": "Metodologia SCRUM",
     "section": "Resumo Scrum",
-    "text": "Resumo Scrum\n\n\n\n\n\n\n3 Funções:\nProduct Owner\nScrum Master\nIntegrante de Equipe\n\n\n5 Eventos:\nSprint\nPlanejamento do Sprint\nDaily Scrum: reunião diária de 15 minutos, no mesmo horário e local.\nRevisão do Sprint\nRetrospectiva do Sprint\n\n\n3 Artefatos:\nBacklog do produto\nBacklog do sprint\nIncrementos\n\n\n5 Valores:\nComprometimento\nCoragem\nFoco\nRespeito\nTransparência\n\nFontes:\nhttps://www.scrum.org/resources/what-is-scrum\nhttps://pt.wikipedia.org/wiki/Scrum\nScrum Guia Prático - J.J. Sutherland, editora Sextante, 2020."
+    "text": "Resumo Scrum\n\n\n\n\n\n\n3 Funções:\nProduct Owner\nScrum Master\nIntegrante de Equipe\n\n\n5 Eventos:\nSprint\nPlanejamento do Sprint\nDaily Scrum: reunião diária de 15 minutos, no mesmo horário e local.\nRevisão do Sprint\nRetrospectiva do Sprint\n\n\n3 Artefatos:\nBacklog do produto\nBacklog do sprint\nIncrementos\n\n\n5 Valores:\nComprometimento\nCoragem\nFoco\nRespeito\nTransparência\n\nFontes:\nhttps://scrumguides.org/\nhttps://www.scrum.org/resources/what-is-scrum\nhttps://pt.wikipedia.org/wiki/Scrum\nScrum Guia Prático - J.J. Sutherland, editora Sextante, 2020."
   }
 ]

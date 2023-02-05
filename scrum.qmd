@@ -6,6 +6,8 @@ title: "Metodologia SCRUM"
 
 f\) **Gerenciamento de Projetos**: Metodologia SCRUM;
 
+## [Scrum Guide - PT-BR](https://scrumguides.org/docs/scrumguide/v2020/2020-Scrum-Guide-PortugueseBR-3.0.pdf)
+
 ## [Glossário Scrum](https://www.scrum.org/resources/scrum-glossary)
 
 ## Resumo Scrum
@@ -55,6 +57,8 @@ Transparência
 ------------------------------------------------------------------------
 
 **Fontes:**
+
+https://scrumguides.org/
 
 https://www.scrum.org/resources/what-is-scrum
 
