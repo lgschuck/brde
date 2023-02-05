@@ -25,6 +25,7 @@ website:
         text: Gerenciamento de Projetos
       - menu:
           - scrum.qmd
+          - pmbok.qmd
       - href: governanca_ti.qmd
         text: Governança de TI
       - menu:

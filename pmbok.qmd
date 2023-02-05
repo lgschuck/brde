@@ -1,0 +1,19 @@
+---
+title: "PMBOK 7ª Edição"
+---
+
+## Itens do Edital:
+
+f\) **Gerenciamento de Projetos**: Conceitos básicos do PMBOK 7ª Edição, Metodologia SCRUM;
+
+## PMBOK 7: princípios, mudanças e como ficam as certificações
+
+<https://fia.com.br/blog/pmbok/>
+
+**PMBOK 7 - Youtube**
+
+{{< video https://youtu.be/r0sPz8cpaPo >}}
+
+{{< https://youtu.be/tYXGfChVV28 >}}
+
+{{< video https://youtu.be/iSkhx00QQBA >}}
