@@ -329,10 +329,59 @@
     "text": "Resumo Scrum\n\n\n\n\n\n\n3 Funções:\nProduct Owner\nScrum Master\nIntegrante de Equipe\n\n\n5 Eventos:\nSprint\nPlanejamento do Sprint\nDaily Scrum: reunião diária de 15 minutos, no mesmo horário e local.\nRevisão do Sprint\nRetrospectiva do Sprint\n\n\n3 Artefatos:\nBacklog do produto\nBacklog do sprint\nIncrementos\n\n\n5 Valores:\nComprometimento\nCoragem\nFoco\nRespeito\nTransparência\n\nFontes:\nhttps://scrumguides.org/\nhttps://www.scrum.org/resources/what-is-scrum\nhttps://pt.wikipedia.org/wiki/Scrum\nScrum Guia Prático - J.J. Sutherland, editora Sextante, 2020."
   },
   {
+    "objectID": "seguranca_bd.html",
+    "href": "seguranca_bd.html",
+    "title": "Segurança",
+    "section": "",
+    "text": "a) Banco de Dados: Fundamentos de administração de dados: Segurança; Modelagem de dados: Modelo entidade-relacionamento (entidades, atributos, chaves e relacionamentos) e Normalização;"
+  },
+  {
+    "objectID": "seguranca_bd.html#section",
+    "href": "seguranca_bd.html#section",
+    "title": "Segurança",
+    "section": "",
+    "text": "Segurança"
+  },
+  {
     "objectID": "tabelas.html",
     "href": "tabelas.html",
     "title": "Construção de tabelas-verdade",
     "section": "",
     "text": "Construção de tabelas-verdade. Tautologias, contradições e contingências. Implicação lógica, equivalência lógica, Leis De Morgan. Argumentação e dedução lógica."
+  },
+  {
+    "objectID": "visoes.html",
+    "href": "visoes.html",
+    "title": "Procedimentos, Funções, Visões e gatilhos",
+    "section": "",
+    "text": "b) Fundamentos de Banco de Dados: Conceitos: Sistemas de gerência de banco de dados (SGBD), Arquitetura, modelos lógicos e representação física; Organização física e métodos de acesso; Conceito de transação, concorrência, recuperação, integridade; Linguagens de definição (DDL) e manipulação de dados (DML) em SGBDs relacionais; Procedimentos (stored procedures), funções (functions), visões (views), visões materializadas (materialized views) e gatilhos (triggers), Linguagem de consulta estruturada (SQL, Avaliação de modelos de dados, Técnicas de engenharia reversa para criação e atualização de modelos de dados, Integração dos dados (ETL, Transferência de Arquivos e Integração via Base de Dados, Data Lakes e Soluções para Big Data, Diferenciação entre bancos relacionais, multidimensionais, documentos e grafos."
+  },
+  {
+    "objectID": "visoes.html#stored-procedures",
+    "href": "visoes.html#stored-procedures",
+    "title": "Procedimentos, Funções, Visões e gatilhos",
+    "section": "Stored Procedures",
+    "text": "Stored Procedures"
+  },
+  {
+    "objectID": "visoes.html#views",
+    "href": "visoes.html#views",
+    "title": "Procedimentos, Funções, Visões e gatilhos",
+    "section": "Views",
+    "text": "Views"
+  },
+  {
+    "objectID": "visoes.html#funções",
+    "href": "visoes.html#funções",
+    "title": "Procedimentos, Funções, Visões e gatilhos",
+    "section": "Funções",
+    "text": "Funções"
+  },
+  {
+    "objectID": "visoes.html#section",
+    "href": "visoes.html#section",
+    "title": "Procedimentos, Funções, Visões e gatilhos",
+    "section": "",
+    "text": "Triggers"
   }
 ]

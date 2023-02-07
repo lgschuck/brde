@@ -10,9 +10,11 @@ website:
         text: Banco de Dados
       - menu:
           - normalizacao.qmd
+          - seguranca_bd.qmd
       - href: fundamentos_bd.qmd
         text: Fund. Banco de Dados
       - menu:
+          - visoes.qmd
           - bd_transacao.qmd
           - integracao_dados.qmd
           - bd_diferenciacao.qmd
