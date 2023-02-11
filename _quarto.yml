@@ -26,6 +26,7 @@ website:
           - conceitos_bi.qmd
           - olap.qmd
           - data_warehouse.qmd
+          - dados_faltantes.qmd
       - href: gerenciamento_projetos.qmd
         text: Ger. Projetos
       - menu:

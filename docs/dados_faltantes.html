@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.2.242">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Concurso BRDE - Dados Faltantes</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1.6em;
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit"
+  }
+}</script>
+
+
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container">
+    <a class="navbar-brand" href="./index.html">
+    <span class="navbar-title">Concurso BRDE</span>
+    </a>
+  </div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="./banco_dados.html">
+ <span class="menu-text">Banco de Dados</span></a>
+  </li>  
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text"></span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-">    
+        <li>
+    <a class="dropdown-item" href="./normalizacao.html">
+ <span class="dropdown-text">Normalização</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./seguranca_bd.html">
+ <span class="dropdown-text">Segurança</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="./fundamentos_bd.html">
+ <span class="menu-text">Fund. Banco de Dados</span></a>
+  </li>  
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu--1" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text"></span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu--1">    
+        <li>
+    <a class="dropdown-item" href="./visoes.html">
+ <span class="dropdown-text">Procedimentos, Funções, Visões e gatilhos</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./bd_transacao.html">
+ <span class="dropdown-text">Conceitos de Transação, concorrência…</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./integracao_dados.html">
+ <span class="dropdown-text">Integração de Dados</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./grafos.html">
+ <span class="dropdown-text">Grafos</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./documentos.html">
+ <span class="dropdown-text">Documentos</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="./analise_dados.html">
+ <span class="menu-text">Análise de Dados</span></a>
+  </li>  
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu--2" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text"></span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu--2">    
+        <li>
+    <a class="dropdown-item" href="./dado_info.html">
+ <span class="dropdown-text">Dado, informação, conhecimento e Inteligência</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./conceitos_bi.html">
+ <span class="dropdown-text">Conceitos de BI</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./olap.html">
+ <span class="dropdown-text">Conceitos de OLAP</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./data_warehouse.html">
+ <span class="dropdown-text">Conceitos de Data Warehouse</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./dados_faltantes.html">
+ <span class="dropdown-text">Dados Faltantes</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="./gerenciamento_projetos.html">
+ <span class="menu-text">Ger. Projetos</span></a>
+  </li>  
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu--3" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text"></span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu--3">    
+        <li>
+    <a class="dropdown-item" href="./scrum.html">
+ <span class="dropdown-text">Metodologia SCRUM</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./pmbok.html">
+ <span class="dropdown-text">PMBOK 7ª Edição</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="./governanca_ti.html">
+ <span class="menu-text">Gov.&nbsp;TI</span></a>
+  </li>  
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu--4" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text"></span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu--4">    
+        <li>
+    <a class="dropdown-item" href="./itil.html">
+ <span class="dropdown-text">ITIL 4</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./itil_praticas.html">
+ <span class="dropdown-text">Práticas ITIL</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="./rac_logico.html">
+ <span class="menu-text">Rac. Lógico</span></a>
+  </li>  
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu--5" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text"></span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu--5">    
+        <li>
+    <a class="dropdown-item" href="./proposicoes.html">
+ <span class="dropdown-text">Proposições e conectivos e Operações</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./tabelas.html">
+ <span class="dropdown-text">Construção de tabelas-verdade</span></a>
+  </li>  
+    </ul>
+  </li>
+</ul>
+              <div id="quarto-search" class="" title="Search"></div>
+          </div> <!-- /navcollapse -->
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#itens-do-edital" id="toc-itens-do-edital" class="nav-link active" data-scroll-target="#itens-do-edital">Itens do Edital:</a></li>
+  <li><a href="#a-prevenção-e-o-tratamento-dos-dados-ausentes" id="toc-a-prevenção-e-o-tratamento-dos-dados-ausentes" class="nav-link" data-scroll-target="#a-prevenção-e-o-tratamento-dos-dados-ausentes">A prevenção e o tratamento dos dados ausentes</a>
+  <ul class="collapse">
+  <li><a href="#tipos-de-dados-ausentes" id="toc-tipos-de-dados-ausentes" class="nav-link" data-scroll-target="#tipos-de-dados-ausentes">Tipos de dados ausentes</a></li>
+  <li><a href="#técnicas-para-lidar-com-os-dados-ausentes" id="toc-técnicas-para-lidar-com-os-dados-ausentes" class="nav-link" data-scroll-target="#técnicas-para-lidar-com-os-dados-ausentes">Técnicas para lidar com os dados ausentes</a></li>
+  <li><a href="#última-observação-realizada" id="toc-última-observação-realizada" class="nav-link" data-scroll-target="#última-observação-realizada">Última observação realizada</a></li>
+  </ul></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Dados Faltantes</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+</header>
+
+<section id="itens-do-edital" class="level2">
+<h2 class="anchored" data-anchor-id="itens-do-edital">Itens do Edital:</h2>
+<p>c) <strong>Análise de dados e informações</strong>: Tratamento de dados faltantes</p>
+</section>
+<section id="a-prevenção-e-o-tratamento-dos-dados-ausentes" class="level2">
+<h2 class="anchored" data-anchor-id="a-prevenção-e-o-tratamento-dos-dados-ausentes"><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3668100/">A prevenção e o tratamento dos dados ausentes</a></h2>
+<p>Dados ausentes (ou valores ausentes) são definidos como o valor de dados que não é armazenado para uma variável na observação de interesse.</p>
+<p>A falta de dados apresenta vários problemas. Primeiro, a ausência de dados <strong>reduz o poder estatístico</strong>, que se refere à probabilidade de o teste rejeitar a hipótese nula quando ela é falsa. Em segundo lugar, os dados perdidos podem c<strong>ausar viés na estimativa dos parâmetros</strong>. Em terceiro lugar, <strong>pode reduzir a representatividade das amostras</strong>. Em quarto lugar, <strong>pode complicar a análise do estudo</strong>. Cada uma dessas distorções pode <strong>ameaçar a validade dos ensaios e pode levar a conclusões inválidas</strong>.</p>
+<section id="tipos-de-dados-ausentes" class="level3">
+<h3 class="anchored" data-anchor-id="tipos-de-dados-ausentes">Tipos de dados ausentes</h3>
+<section id="faltando-completamente-ao-acaso" class="level4">
+<h4 class="anchored" data-anchor-id="faltando-completamente-ao-acaso">Faltando completamente ao acaso</h4>
+<p>Faltando completamente ao acaso (MCAR) é definido como quando a probabilidade de que os dados estejam faltando não está relacionada ao valor específico que se supõe ser obtido ou ao conjunto de respostas observadas. MCAR é uma suposição ideal, mas irracional, para muitos estudos realizados no campo da anestesiologia. No entanto, se os dados estiverem faltando por projeto, devido a uma falha do equipamento ou porque as amostras foram perdidas em trânsito ou tecnicamente insatisfatórias, tais dados são considerados MCAR.</p>
+<p>A vantagem estatística dos dados que são MCAR é que a análise permanece imparcial. A energia pode ser perdida no projeto, mas os parâmetros estimados não são influenciados pela ausência dos dados.</p>
+</section>
+<section id="faltando-ao-acaso" class="level4">
+<h4 class="anchored" data-anchor-id="faltando-ao-acaso">Faltando ao acaso</h4>
+<p>Missing at random (MAR) é uma suposição mais realista para os estudos realizados no campo anestésico. Os dados são considerados MAR quando a probabilidade de que as respostas estejam ausentes depende do conjunto de respostas observadas, mas não está relacionada aos valores ausentes específicos que se espera obter.</p>
+<p>Como tendemos a considerar a aleatoriedade como não produzindo viés, podemos pensar que o MAR não apresenta um problema. No entanto, MAR não significa que os dados ausentes possam ser ignorados. Se uma variável de abandono for MAR, podemos esperar que a probabilidade de abandono da variável em cada caso seja condicionalmente independente da variável, que é obtida atualmente e que se espera obter no futuro, dado o histórico da variável obtida antes a esse caso.</p>
+</section>
+<section id="faltando-não-ao-acaso" class="level4">
+<h4 class="anchored" data-anchor-id="faltando-não-ao-acaso">Faltando não ao acaso</h4>
+<p>Se os caracteres dos dados não atenderem aos de MCAR ou MAR, eles se enquadram na categoria de falta não aleatória (MNAR).</p>
+<p>Os casos de dados MNAR são problemáticos. A única maneira de obter uma estimativa imparcial dos parâmetros em tal caso é modelar os dados ausentes. O modelo pode então ser incorporado a um modelo mais complexo para estimar os valores ausentes.</p>
+</section>
+</section>
+<section id="técnicas-para-lidar-com-os-dados-ausentes" class="level3">
+<h3 class="anchored" data-anchor-id="técnicas-para-lidar-com-os-dados-ausentes">Técnicas para lidar com os dados ausentes</h3>
+<section id="listwise-ou-exclusão-de-caso" class="level4">
+<h4 class="anchored" data-anchor-id="listwise-ou-exclusão-de-caso">Listwise ou exclusão de caso</h4>
+<p>De longe, a abordagem mais comum para os dados ausentes é simplesmente omitir os casos com os dados ausentes e analisar os dados restantes. Essa abordagem é conhecida como análise de caso completo (ou caso disponível) ou exclusão de lista.</p>
+<p>A exclusão Listwise é o método usado com mais frequência para lidar com dados ausentes e, portanto, tornou-se a opção padrão para análise na maioria dos pacotes de software estatístico. Alguns pesquisadores insistem que isso pode introduzir viés na estimativa dos parâmetros. No entanto, se a suposição de MCAR for satisfeita, sabe-se que uma exclusão de lista produz estimativas imparciais e resultados conservadores. Quando os dados não cumprem a suposição de MCAR, a exclusão listwise pode causar viés nas estimativas dos parâmetros.</p>
+<p>Se houver uma amostra grande o suficiente, onde a potência não é um problema e a suposição de MCAR for satisfeita, a exclusão de lista pode ser uma estratégia razoável. No entanto, quando não há uma amostra grande ou a suposição de MCAR não é satisfeita, a exclusão de lista não é a estratégia ideal.</p>
+</section>
+<section id="exclusão-de-pares" class="level4">
+<h4 class="anchored" data-anchor-id="exclusão-de-pares">Exclusão de pares</h4>
+<p>A exclusão de pares elimina informações apenas quando o ponto de dados específico necessário para testar uma suposição específica está ausente. Se houver dados ausentes em outro lugar no conjunto de dados, os valores existentes serão usados no teste estatístico. Como uma exclusão pairwise usa todas as informações observadas, ela preserva mais informações do que a exclusão listwise, que pode excluir o caso com quaisquer dados ausentes. Esta abordagem apresenta os seguintes problemas: 1) os parâmetros do modelo estarão em diferentes conjuntos de dados com diferentes estatísticas, como tamanho da amostra e erros padrão; e 2) pode produzir uma matriz de intercorrelação que não é positiva definida, o que provavelmente impedirá uma análise mais aprofundada.</p>
+<p>A exclusão de pares é conhecida por ser menos tendenciosa para os dados MCAR ou MAR, e os mecanismos apropriados são incluídos como covariáveis. No entanto, se houver muitas observações ausentes, a análise será deficiente.</p>
+</section>
+<section id="substituição-média" class="level4">
+<h4 class="anchored" data-anchor-id="substituição-média">Substituição média</h4>
+<p>Em uma substituição média, o valor médio de uma variável é usado no lugar do valor de dados ausentes para essa mesma variável. Isso permite que os pesquisadores utilizem os dados coletados em um conjunto de dados incompleto. O fundamento teórico da substituição da média é que a média é uma estimativa razoável para uma observação selecionada aleatoriamente de uma distribuição normal. No entanto, com valores ausentes que não são estritamente aleatórios, especialmente na presença de uma grande desigualdade no número de valores ausentes para as diferentes variáveis, o método de substituição de média pode levar a um viés inconsistente. Além disso, esta abordagem não adiciona novas informações, mas apenas aumenta o tamanho da amostra e leva a uma subestimação dos erros. Assim, a substituição média não é geralmente aceita.</p>
+</section>
+<section id="imputação-de-regressão" class="level4">
+<h4 class="anchored" data-anchor-id="imputação-de-regressão">Imputação de regressão</h4>
+<p>A imputação é o processo de substituir os dados perdidos por valores estimados. Em vez de excluir qualquer caso que tenha algum valor ausente, essa abordagem preserva todos os casos substituindo os dados ausentes por um valor provável estimado por outras informações disponíveis. Após todos os valores ausentes terem sido substituídos por esta abordagem, o conjunto de dados é analisado usando as técnicas padrão para dados completos.</p>
+<p>Na imputação de regressão, as variáveis existentes são usadas para fazer uma previsão e, em seguida, o valor previsto é substituído como se fosse um valor real obtido. Essa abordagem tem várias vantagens, porque a imputação retém uma grande quantidade de dados sobre a exclusão de lista ou de pares e evita alterar significativamente o desvio padrão ou a forma da distribuição. No entanto, como em uma substituição de média, enquanto uma imputação de regressão substitui um valor que é previsto de outras variáveis, nenhuma informação nova é adicionada, enquanto o tamanho da amostra foi aumentado e o erro padrão foi reduzido.</p>
+</section>
+</section>
+<section id="última-observação-realizada" class="level3">
+<h3 class="anchored" data-anchor-id="última-observação-realizada">Última observação realizada</h3>
+<p>No campo da pesquisa em anestesiologia, muitos estudos são realizados com a abordagem longitudinal ou de séries temporais, nas quais os sujeitos são medidos repetidamente em uma série de pontos no tempo. Um dos métodos de imputação mais amplamente utilizados nesse caso é a última observação realizada (LOCF). Este método substitui cada valor ausente pelo último valor observado do mesmo assunto. Sempre que faltar um valor, este é substituído pelo último valor observado.</p>
+<p>Este método é vantajoso, pois é fácil de entender e comunicar entre os estatísticos e os clínicos ou entre um patrocinador e o pesquisador.</p>
+<p>Embora simples, esse método assume fortemente que o valor do resultado permanece inalterado pelos dados ausentes, o que parece improvável em muitos cenários (especialmente nas tentativas anestésicas). Produz uma estimativa enviesada do efeito do tratamento e subestima a variabilidade do resultado estimado. Consequentemente, a Academia Nacional de Ciências recomendou contra o uso acrítico da imputação simples, incluindo LOCF e a observação de linha de base realizada, afirmando que:</p>
+<p>Métodos de imputação única, como a última observação realizada e a observação da linha de base, não devem ser usados como a abordagem principal para o tratamento de dados ausentes, a menos que as suposições subjacentes sejam cientificamente justificadas.</p>
+<section id="probabilidade-máxima" class="level4">
+<h4 class="anchored" data-anchor-id="probabilidade-máxima">Probabilidade máxima</h4>
+<p>Existem várias estratégias que usam o método de máxima verossimilhança para lidar com os dados ausentes. Neles, a suposição de que os dados observados são uma amostra extraída de uma distribuição normal multivariada é relativamente fácil de entender. Depois que os parâmetros são estimados usando os dados disponíveis, os dados ausentes são estimados com base nos parâmetros que acabaram de ser estimados.</p>
+<p>Quando há dados ausentes, mas relativamente completos, as estatísticas que explicam as relações entre as variáveis podem ser calculadas usando o método de máxima verossimilhança. Ou seja, os dados perdidos podem ser estimados usando a distribuição condicional das outras variáveis.</p>
+</section>
+<section id="expectativa-maximização" class="level4">
+<h4 class="anchored" data-anchor-id="expectativa-maximização">Expectativa-Maximização</h4>
+<p>Expectation-Maximization (EM) é um tipo de método de máxima verossimilhança que pode ser usado para criar um novo conjunto de dados, no qual todos os valores ausentes são imputados com valores estimados pelos métodos de máxima verossimilhança. Essa abordagem começa com a etapa de expectativa, durante a qual os parâmetros (por exemplo, variâncias, covariâncias e médias) são estimados, talvez usando a exclusão listwise. Essas estimativas são usadas para criar uma equação de regressão para prever os dados ausentes. A etapa de maximização usa essas equações para preencher os dados ausentes. A etapa de expectativa é então repetida com os novos parâmetros, onde as novas equações de regressão são determinadas para “preencher” os dados ausentes. As etapas de expectativa e maximização são repetidas até que o sistema se estabilize, quando a matriz de covariância para a iteração subsequente é virtualmente a mesma da iteração anterior.</p>
+<p>Uma característica importante da imputação de maximização de expectativa é que, quando o novo conjunto de dados sem valores ausentes é gerado, um termo de perturbação aleatório para cada valor imputado é incorporado para refletir a incerteza associada à imputação. No entanto, a imputação de maximização de expectativa tem algumas desvantagens. Essa abordagem pode levar muito tempo para convergir, especialmente quando há uma grande fração de dados ausentes, e é muito complexa para ser aceita por alguns estatísticos excepcionais. Essa abordagem pode levar a estimativas de parâmetros enviesadas e subestimar o erro padrão.</p>
+<p>Para o método de imputação de maximização de expectativa, um valor predito com base nas variáveis disponíveis para cada caso é substituído pelos dados ausentes. Como uma única imputação omite as possíveis diferenças entre as múltiplas imputações, uma única imputação tenderá a subestimar os erros padrão e, assim, superestimar o nível de precisão. Assim, uma única imputação dá ao pesquisador mais poder aparente do que os dados na realidade.</p>
+</section>
+<section id="imputação-múltipla" class="level4">
+<h4 class="anchored" data-anchor-id="imputação-múltipla">Imputação múltipla</h4>
+<p>A imputação múltipla é outra estratégia útil para lidar com os dados ausentes. Em uma imputação múltipla, em vez de substituir um único valor para cada dado ausente, os valores ausentes são substituídos por um conjunto de valores plausíveis que contêm a variabilidade natural e a incerteza dos valores corretos.</p>
+<p>Esta abordagem começa com uma previsão dos dados perdidos usando os dados existentes de outras variáveis . Os valores ausentes são substituídos pelos valores previstos e um conjunto de dados completo chamado conjunto de dados imputados é criado. Este processo itera a repetibilidade e cria vários conjuntos de dados imputados (daí o termo “imputação múltipla”). Cada conjunto de dados imputados múltiplos produzido é então analisado usando os procedimentos de análise estatística padrão para dados completos e fornece resultados de análises múltiplas. Posteriormente, combinando esses resultados de análise, um único resultado de análise geral é produzido.</p>
+<p>O benefício da imputação múltipla é que, além de restaurar a variabilidade natural dos valores ausentes, ela incorpora a incerteza devido aos dados ausentes, o que resulta em uma inferência estatística válida. Restaurar a variabilidade natural dos dados ausentes pode ser obtido substituindo os dados ausentes pelos valores imputados que são previstos usando as variáveis correlacionadas com os dados ausentes. A incorporação da incerteza é feita produzindo diferentes versões dos dados ausentes e observando a variabilidade entre os conjuntos de dados imputados.</p>
+<p>Foi demonstrado que a imputação múltipla produz inferência estatística válida que reflete a incerteza associada à estimativa dos dados ausentes. Além disso, a imputação múltipla revela-se robusta à violação dos pressupostos de normalidade e produz resultados adequados mesmo na presença de um pequeno tamanho amostral ou de um elevado número de dados perdidos.</p>
+<p>Com o desenvolvimento de novos softwares estatísticos, embora os princípios estatísticos da imputação múltipla possam ser difíceis de entender, a abordagem pode ser utilizada facilmente.</p>
+</section>
+<section id="análise-sensitiva" class="level4">
+<h4 class="anchored" data-anchor-id="análise-sensitiva">Análise sensitiva</h4>
+<p>A análise de sensibilidade é definida como o estudo que define como a incerteza na saída de um modelo pode ser alocada para as diferentes fontes de incerteza em suas entradas.</p>
+<p>Ao analisar os dados ausentes, suposições adicionais sobre os motivos dos dados ausentes são feitas e essas suposições geralmente são aplicáveis à análise primária. No entanto, as suposições não podem ser definitivamente validadas quanto à correção. Portanto, o National Research Council propôs que a análise de sensibilidade fosse realizada para avaliar a robustez dos resultados aos desvios da suposição MAR.</p>
+<hr>
+<p>Fontes: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3668100/</p>
+
+
+</section>
+</section>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    target: function(trigger) {
+      return trigger.previousElementSibling;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+</body></html>
