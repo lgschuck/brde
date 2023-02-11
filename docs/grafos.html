@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.2.242">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Concurso BRDE - Grafos</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1.6em;
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit"
+  }
+}</script>
+
+
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container">
+    <a class="navbar-brand" href="./index.html">
+    <span class="navbar-title">Concurso BRDE</span>
+    </a>
+  </div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="./banco_dados.html">
+ <span class="menu-text">Banco de Dados</span></a>
+  </li>  
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text"></span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-">    
+        <li>
+    <a class="dropdown-item" href="./normalizacao.html">
+ <span class="dropdown-text">Normalização</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./seguranca_bd.html">
+ <span class="dropdown-text">Segurança</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="./fundamentos_bd.html">
+ <span class="menu-text">Fund. Banco de Dados</span></a>
+  </li>  
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu--1" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text"></span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu--1">    
+        <li>
+    <a class="dropdown-item" href="./visoes.html">
+ <span class="dropdown-text">Procedimentos, Funções, Visões e gatilhos</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./bd_transacao.html">
+ <span class="dropdown-text">Conceitos de Transação, concorrência…</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./integracao_dados.html">
+ <span class="dropdown-text">Integração de Dados</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./grafos.html">
+ <span class="dropdown-text">Grafos</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./documentos.html">
+ <span class="dropdown-text">Documentos</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="./analise_dados.html">
+ <span class="menu-text">Análise de Dados</span></a>
+  </li>  
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu--2" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text"></span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu--2">    
+        <li>
+    <a class="dropdown-item" href="./dado_info.html">
+ <span class="dropdown-text">Dado, informação, conhecimento e Inteligência</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./conceitos_bi.html">
+ <span class="dropdown-text">Conceitos de BI</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./olap.html">
+ <span class="dropdown-text">Conceitos de OLAP</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./data_warehouse.html">
+ <span class="dropdown-text">Conceitos de Data Warehouse</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="./gerenciamento_projetos.html">
+ <span class="menu-text">Ger. Projetos</span></a>
+  </li>  
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu--3" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text"></span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu--3">    
+        <li>
+    <a class="dropdown-item" href="./scrum.html">
+ <span class="dropdown-text">Metodologia SCRUM</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./pmbok.html">
+ <span class="dropdown-text">PMBOK 7ª Edição</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="./governanca_ti.html">
+ <span class="menu-text">Gov.&nbsp;TI</span></a>
+  </li>  
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu--4" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text"></span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu--4">    
+        <li>
+    <a class="dropdown-item" href="./itil.html">
+ <span class="dropdown-text">ITIL 4</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./itil_praticas.html">
+ <span class="dropdown-text">Práticas ITIL</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="./rac_logico.html">
+ <span class="menu-text">Rac. Lógico</span></a>
+  </li>  
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu--5" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text"></span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu--5">    
+        <li>
+    <a class="dropdown-item" href="./proposicoes.html">
+ <span class="dropdown-text">Proposições e conectivos e Operações</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./tabelas.html">
+ <span class="dropdown-text">Construção de tabelas-verdade</span></a>
+  </li>  
+    </ul>
+  </li>
+</ul>
+              <div id="quarto-search" class="" title="Search"></div>
+          </div> <!-- /navcollapse -->
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#itens-do-edital" id="toc-itens-do-edital" class="nav-link active" data-scroll-target="#itens-do-edital">Itens do Edital:</a></li>
+  <li><a href="#estrutura-de-dados---aula-23---grafos---conceitos-básicos" id="toc-estrutura-de-dados---aula-23---grafos---conceitos-básicos" class="nav-link" data-scroll-target="#estrutura-de-dados---aula-23---grafos---conceitos-básicos"><strong>Estrutura de Dados - Aula 23 - Grafos - Conceitos básicos</strong></a></li>
+  <li><a href="#banco-de-dados-de-grafos-definido" id="toc-banco-de-dados-de-grafos-definido" class="nav-link" data-scroll-target="#banco-de-dados-de-grafos-definido">Banco de dados de grafos definido</a>
+  <ul class="collapse">
+  <li><a href="#tipos-de-banco-de-dados-de-grafos" id="toc-tipos-de-banco-de-dados-de-grafos" class="nav-link" data-scroll-target="#tipos-de-banco-de-dados-de-grafos"><strong>Tipos de banco de dados de grafos</strong></a></li>
+  <li><a href="#como-grafos-e-bancos-de-dados-de-grafos-funcionam" id="toc-como-grafos-e-bancos-de-dados-de-grafos-funcionam" class="nav-link" data-scroll-target="#como-grafos-e-bancos-de-dados-de-grafos-funcionam"><strong>Como grafos e bancos de dados de grafos funcionam</strong></a></li>
+  <li><a href="#vantagens-de-bancos-de-dados-de-grafos" id="toc-vantagens-de-bancos-de-dados-de-grafos" class="nav-link" data-scroll-target="#vantagens-de-bancos-de-dados-de-grafos"><strong>Vantagens de bancos de dados de grafos</strong></a></li>
+  <li><a href="#como-funcionam-bancos-de-dados-de-grafos-e-análise-de-grafos" id="toc-como-funcionam-bancos-de-dados-de-grafos-e-análise-de-grafos" class="nav-link" data-scroll-target="#como-funcionam-bancos-de-dados-de-grafos-e-análise-de-grafos"><strong>Como funcionam bancos de dados de grafos e análise de grafos</strong></a></li>
+  <li><a href="#caso-de-uso-do-banco-de-dados-de-grafos-lavagem-de-dinheiro" id="toc-caso-de-uso-do-banco-de-dados-de-grafos-lavagem-de-dinheiro" class="nav-link" data-scroll-target="#caso-de-uso-do-banco-de-dados-de-grafos-lavagem-de-dinheiro"><strong>Caso de uso do banco de dados de grafos: lavagem de dinheiro</strong></a></li>
+  <li><a href="#caso-de-uso-do-banco-de-dados-de-grafos-análise-de-mídia-social" id="toc-caso-de-uso-do-banco-de-dados-de-grafos-análise-de-mídia-social" class="nav-link" data-scroll-target="#caso-de-uso-do-banco-de-dados-de-grafos-análise-de-mídia-social"><strong>Caso de uso do banco de dados de grafos: análise de mídia social</strong></a></li>
+  <li><a href="#caso-de-uso-do-banco-de-dados-de-grafos-fraude-com-cartão-de-crédito" id="toc-caso-de-uso-do-banco-de-dados-de-grafos-fraude-com-cartão-de-crédito" class="nav-link" data-scroll-target="#caso-de-uso-do-banco-de-dados-de-grafos-fraude-com-cartão-de-crédito"><strong>Caso de uso do banco de dados de grafos: fraude com cartão de crédito</strong></a></li>
+  <li><a href="#o-futuro-de-bancos-de-dados-de-grafos" id="toc-o-futuro-de-bancos-de-dados-de-grafos" class="nav-link" data-scroll-target="#o-futuro-de-bancos-de-dados-de-grafos"><strong>O futuro de bancos de dados de grafos</strong></a></li>
+  </ul></li>
+  <li><a href="#o-que-é-um-banco-de-dados-de-grafos" id="toc-o-que-é-um-banco-de-dados-de-grafos" class="nav-link" data-scroll-target="#o-que-é-um-banco-de-dados-de-grafos"><strong>O que é um banco de dados de grafos?</strong></a>
+  <ul class="collapse">
+  <li><a href="#definição-do-banco-de-dados-de-grafos" id="toc-definição-do-banco-de-dados-de-grafos" class="nav-link" data-scroll-target="#definição-do-banco-de-dados-de-grafos"><strong>Definição do banco de dados de grafos</strong></a></li>
+  <li><a href="#casos-de-uso" id="toc-casos-de-uso" class="nav-link" data-scroll-target="#casos-de-uso"><strong>Casos de uso</strong></a></li>
+  </ul></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Grafos</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+</header>
+
+<section id="itens-do-edital" class="level2">
+<h2 class="anchored" data-anchor-id="itens-do-edital">Itens do Edital:</h2>
+<p>b) <strong>Fundamentos de Banco de Dados</strong>: Diferenciação entre bancos relacionais, multidimensionais, documentos e grafos.</p>
+</section>
+<section id="estrutura-de-dados---aula-23---grafos---conceitos-básicos" class="level2">
+<h2 class="anchored" data-anchor-id="estrutura-de-dados---aula-23---grafos---conceitos-básicos"><strong>Estrutura de Dados - Aula 23 - Grafos - Conceitos básicos</strong></h2>
+<div class="quarto-video ratio ratio-16x9"><iframe src="https://www.youtube.com/embed/MC0u4f334mI" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
+</section>
+<section id="banco-de-dados-de-grafos-definido" class="level2">
+<h2 class="anchored" data-anchor-id="banco-de-dados-de-grafos-definido"><a href="https://www.oracle.com/br/autonomous-database/what-is-graph-database/">Banco de dados de grafos definido</a></h2>
+<p>Um <a href="https://www.oracle.com/br/database/graph/">banco de dados de grafos</a> é definido como uma plataforma especializada e de uso único para criar e manipular grafos. Os grafos contêm nós, arestas e propriedades, todos usados para representar e armazenar dados de uma forma que os bancos de dados relacionais não estão equipados a fazer.</p>
+<p>Análise de grafos é outro termo comumente usado e se refere especificamente ao processo de análise de dados em um formato de gráfico usando pontos de dados como nós e relacionamentos como arestas. A análise de grafos requer um banco de dados com suporte a formatos de grafos; pode ser um banco de dados de grafos dedicado ou um banco de dados convergente com suporte a vários modelos de dados, incluindo grafos.</p>
+<p><a href="https://apexapps.oracle.com/pls/apex/r/dbpm/livelabs/view-workshop?wid=770"><strong>Aprenda a usar grafos com um workshop passo a passo</strong></a></p>
+<section id="tipos-de-banco-de-dados-de-grafos" class="level3">
+<h3 class="anchored" data-anchor-id="tipos-de-banco-de-dados-de-grafos"><strong>Tipos de banco de dados de grafos</strong></h3>
+<p>Há dois modelos populares de bancos de dados de grafos: grafos de propriedades e grafos RDF. O grafo de propriedades foca análises e consultas, enquanto o grafo RDF enfatiza a integração de dados. Ambos os tipos de grafos consistem em uma coleção de pontos (vértices) e nas conexões entre esses pontos (bordas). Mas também existem diferenças.</p>
+<section id="gráficos-de-propriedades" class="level4">
+<h4 class="anchored" data-anchor-id="gráficos-de-propriedades"><strong>Gráficos de propriedades</strong></h4>
+<p>Os grafos de propriedades são usados para modelar relacionamentos entre dados e permitem a consulta e a análise de dados com base nesses relacionamentos. Um grafo de propriedades tem vértices que podem conter informações detalhadas sobre um assunto e bordas que denotam a relação entre os vértices. Os vértices e bordas podem ter atributos, chamados propriedades, com os quais estão associados.</p>
+<p>Neste exemplo, um conjunto de colegas e seus relacionamentos são representados como um grafo de propriedades.</p>
+<p><img src="images/image-1719998831.png" class="img-fluid"></p>
+<p>Graças à sua versatilidade, os grafos de propriedades são usados em várias indústrias e setores, como finanças, manufatura, segurança pública, varejo e muitos outros.</p>
+</section>
+<section id="grafos-rdf" class="level4">
+<h4 class="anchored" data-anchor-id="grafos-rdf"><strong>Grafos RDF</strong></h4>
+<p>Os grafos RDF (RDF significa Resource Description Framework) cumprem um conjunto de padrões W3C (Worldwide Web Consortium) criados para representar instruções e são ideias para representar metadados complexos e dados mestre. Eles costumam ser usados para dados vinculados, integração de dados e grafos de conhecimento. Eles podem representar conceitos complexos em um domínio ou fornecer semântica avançada e inferência de dados.</p>
+<p>No modelo RDF uma declaração é representada por três elementos: dois vértices conectados por uma borda refletindo o assunto, o predicado e o objeto de uma frase - isso é conhecido como um triplo RDF. Cada vértice e borda são identificados por um URI único, ou Identificador de Recurso Único. O modelo RDF fornece uma maneira de publicar dados em um formato padrão com semântica bem definida, permitindo a troca de informações. Agências de estatísticas governamentais, empresas farmacêuticas e organizações de saúde adotaram amplamente os grafos RDF.</p>
+</section>
+</section>
+<section id="como-grafos-e-bancos-de-dados-de-grafos-funcionam" class="level3">
+<h3 class="anchored" data-anchor-id="como-grafos-e-bancos-de-dados-de-grafos-funcionam"><strong>Como grafos e bancos de dados de grafos funcionam</strong></h3>
+<p>Grafos e bancos de dados de grafos fornecem modelos de grafos para representar relacionamentos nos dados. Eles permitem que os usuários executem consultas de travessia com base em conexões e apliquem algoritmos de grafos para encontrar padrões, caminhos, comunidades, influenciadores, pontos únicos de falha e outros relacionamentos, resultando em uma análise mais eficiente em escala em grandes volumes de dados. O poder dos grafos está na análise, nos insights que fornecem e na capacidade de vincular fontes de dados diferentes.</p>
+<p>Quando se trata de analisar grafos, os algoritmos exploram os caminhos e distâncias entre os vértices, a importância dos vértices e o clustering dos vértices. Por exemplo, para determinar a importância, os algoritmos costumam examinar bordas de entrada, a importância de vértices vizinhos e outros indicadores.</p>
+<p>Algoritmos de gráfico, operações projetadas especificamente para analisar relacionamentos e comportamentos entre dados em gráficos, tornam possível entender coisas que são difíceis de ver com outros métodos. Quando se trata de analisar grafos, os algoritmos exploram os caminhos e distâncias entre os vértices, a importância dos vértices e o clustering dos vértices. Os algoritmos costumam examinar bordas de entrada, a importância de vértices vizinhos e outros indicadores para ajudar a determinar a importância. Por exemplo, algoritmos de grafos podem identificar qual indivíduo ou item está mais conectado a outros nas redes sociais ou processos comerciais. Os algoritmos podem identificar comunidades, anomalias, padrões comuns e caminhos que conectam indivíduos ou transações relacionadas.</p>
+<p>Como os bancos de dados de grafos armazenam relacionamentos de forma explícita, as consultas e os algoritmos que utilizam a conectividade entre vértices podem ser executados em subsegundos em vez de horas ou dias. Os usuários não precisam executar inúmeras junções e os dados podem ser usados com mais facilidade para análise e aprendizado de máquina para descobrir mais sobre o mundo ao nosso redor.</p>
+</section>
+<section id="vantagens-de-bancos-de-dados-de-grafos" class="level3">
+<h3 class="anchored" data-anchor-id="vantagens-de-bancos-de-dados-de-grafos"><strong>Vantagens de bancos de dados de grafos</strong></h3>
+<p>O formato de grafo fornece uma plataforma mais flexível para encontrar conexões distantes ou analisar dados com base em aspectos como força ou qualidade do relacionamento. Os grafos permitem que você explore e descubra conexões e padrões em redes sociais, IoT, big data, data warehouses e também dados de transações complexas para vários casos de uso de negócios, incluindo detecção de fraude em bancos, descoberta de conexões em redes sociais e cliente 360. Hoje, grafos são cada vez mais usados como parte da ciência de dados para tornar as conexões em relacionamentos mais claras.</p>
+<p>Como os bancos de dados de grafos armazenam os relacionamentos de forma explícita, as consultas e os algoritmos que utilizam a conectividade entre vértices podem ser executados em subsegundos em vez de horas ou dias. Os usuários não precisam executar inúmeras junções e os dados podem ser usados com mais facilidade para análise e aprendizado de máquina para descobrir mais sobre o mundo ao nosso redor.</p>
+<p>Os bancos de dados de grafos são uma ferramenta extremamente flexível e poderosa. Devido ao formato do grafo, relacionamentos complexos podem ser determinados para insights mais profundos com muito menos esforço. Os bancos de dados de grafos geralmente executam consultas em linguagens como Property Graph Query Language (PGQL). O exemplo abaixo mostra a mesma consulta em PGQL e SQL.</p>
+<p><img src="images/image-1127902318.png" class="img-fluid"></p>
+<p>Como visto no exemplo acima, o código PGQL é mais simples e muito mais eficiente. Como os grafos enfatizam as relações entre os dados, eles são ideais para vários tipos diferentes de análises. Em particular, os bancos de dados de grafos se destacam em:</p>
+<ul>
+<li><p>Encontrar o caminho mais curto entre dois nós</p></li>
+<li><p>Determinar os nós que criam a maior atividade/influência</p></li>
+<li><p>Analisar a conectividade para identificar os pontos mais fracos de uma rede</p></li>
+<li><p>Analisar o estado da rede ou comunidade com base na distância/densidade de conexão em um grupo</p></li>
+</ul>
+</section>
+<section id="como-funcionam-bancos-de-dados-de-grafos-e-análise-de-grafos" class="level3">
+<h3 class="anchored" data-anchor-id="como-funcionam-bancos-de-dados-de-grafos-e-análise-de-grafos"><strong>Como funcionam bancos de dados de grafos e análise de grafos</strong></h3>
+<p>Um exemplo simples de análise de grafos em ação é a imagem abaixo, que mostra uma representação visual do popular jogo de festa “Six Degrees of Kevin Bacon”. Para os novatos, este jogo envolve a criação de conexões entre Kevin Bacon e outro ator com base em uma cadeia de filmes mútuos. Essa ênfase nos relacionamentos se torna a maneira ideal de demonstrar a análise de grafos.</p>
+<p>Imagine um conjunto de dados com duas categorias de nós: cada filme já feito e cada ator que esteve nesses filmes. Em seguida, usando o grafo, executamos uma consulta pedindo para conectar Kevin Bacon ao ícone Muppet, Miss Piggy. O resultado seria o seguinte:</p>
+<p><img src="images/image-2030209464.png" class="img-fluid"></p>
+<p>Neste exemplo, os nós disponíveis (vértices) são atores e filmes e os relacionamentos (arestas) são o status de “atuado”. A partir daqui, a consulta retorna os seguintes resultados:</p>
+<ul>
+<li><p>Kevin Bacon atuou em The River Wild com Meryl Streep.</p></li>
+<li><p>Meryl Streep atuou em Lemony Snicket’s A Series of Unfortunate Events, com Billy Connolly.</p></li>
+<li><p>Billy Connolly atuou em Muppet Treasure Island com Miss Piggy.</p></li>
+</ul>
+<p>Os bancos de dados de grafos podem consultar muitos relacionamentos diferentes para este exemplo de Kevin Bacon, como:</p>
+<ul>
+<li><p>“Qual é a corrente mais curta para conectar Kevin Bacon a Miss Piggy?” (análise do caminho mais curto, conforme usado no jogo Six Degrees acima)</p></li>
+<li><p>“Quem trabalhou com o maior número de atores?” (grau de centralidade)</p></li>
+<li><p>“Qual é a distância média entre Kevin Bacon e todos os outros atores?” (centralidade de proximidade)</p></li>
+</ul>
+<p>Este é, obviamente, um exemplo mais divertido do que a maioria dos usos de análise de grafos. Mas essa abordagem funciona em quase todos os big data - qualquer situação em que um grande número de registros mostre uma conectividade natural entre si. Algumas das formas mais populares de usar a análise de grafos são para analisar redes sociais, redes de comunicação, tráfego e uso do site, dados de estradas do mundo real, e transações e contas financeiras.</p>
+</section>
+<section id="caso-de-uso-do-banco-de-dados-de-grafos-lavagem-de-dinheiro" class="level3">
+<h3 class="anchored" data-anchor-id="caso-de-uso-do-banco-de-dados-de-grafos-lavagem-de-dinheiro"><strong>Caso de uso do banco de dados de grafos: lavagem de dinheiro</strong></h3>
+<p><img src="images/image-809229843.png" class="img-fluid"></p>
+<p>Conceitualmente, a lavagem de dinheiro é simples. O dinheiro sujo é repassado para misturá-lo com fundos legítimos e, depois, transformá-lo em ativos tangíveis. Esse é o tipo de processo usado na análise dos Panama Papers.</p>
+<p>Especificamente, uma transferência de dinheiro circular envolve um criminoso que envia grandes quantias de dinheiro obtidas de forma fraudulenta para si mesmo, mas oculta isso por meio de uma longa e complexa série de transferências válidas entre contas “normais”. Essas contas “normais” são, na verdade, contas criadas com identidades sintéticas. Eles normalmente compartilham certas informações semelhantes porque são geradas a partir de identidades roubadas (endereços de email, endereços etc.) e são essas informações relacionadas que tornam a análise de grafos tão boa para fazê-las revelar suas origens fraudulentas.</p>
+<p>Para simplificar a detecção de fraude, os usuários podem criar um grafo de transações entre entidades e entidades que compartilham algumas informações, incluindo os endereços de email, senhas, endereços e muito mais. Após a criação de um grafo, uma consulta simples encontrará todos os clientes com contas com informações semelhantes e revelará quais contas enviam dinheiro entre si.</p>
+</section>
+<section id="caso-de-uso-do-banco-de-dados-de-grafos-análise-de-mídia-social" class="level3">
+<h3 class="anchored" data-anchor-id="caso-de-uso-do-banco-de-dados-de-grafos-análise-de-mídia-social"><strong>Caso de uso do banco de dados de grafos: análise de mídia social</strong></h3>
+<p>Os bancos de dados de grafos podem ser usados em muitos cenários diferentes, mas são comumente usados para analisar redes sociais. Na verdade, as redes sociais são o caso de uso ideal, pois envolvem um grande volume de nós (contas de usuário) e conexões multidimensionais (engajamentos em muitas direções diferentes). Uma análise de grafos de uma rede social pode determinar:</p>
+<ul>
+<li><p>Quão ativos são os usuários? (número de nós)</p></li>
+<li><p>Quais usuários têm maior influência? (densidade de conexões)</p></li>
+<li><p>Quem tem o engajamento mais bidirecional? (direção e densidade de conexões)</p></li>
+</ul>
+<p>No entanto, essa informação é inútil se tiver sido distorcida de maneira não natural por bots. Felizmente, a análise de grafos pode fornecer um meio excelente para identificar e filtrar bots.</p>
+<p>Em um caso de uso do mundo real, a equipe Oracle usou o Oracle Marketing Cloud para avaliar a publicidade e a tração nas mídias sociais, especificamente, para identificar contas de bot falsas que distorcem os dados. O comportamento mais comum desses bots envolvia retuitar contas-alvo, aumentando artificialmente sua popularidade. Uma análise de padrão simples permitiu uma olhada usando a contagem de retuítes e densidade de conexões com os vizinhos. Naturalmente, contas populares mostraram relacionamentos diferentes com os vizinhos em comparação com contas controladas por bot.</p>
+<p>Esta imagem mostra contas naturalmente populares.</p>
+<p><img src="images/image-1533079331.png" class="img-fluid"></p>
+<p>E esta imagem mostra o comportamento de uma conta controlada por bot.</p>
+<p><img src="images/image-1302397261.png" class="img-fluid"></p>
+<p>A chave aqui é usar o poder da análise de grafos para identificar um padrão natural versus um padrão de bot. A partir daí, é tão simples quanto filtrar essas contas, embora também seja possível cavar mais fundo para examinar, por exemplo, a relação entre bots e contas retuitadas.</p>
+<p>As plataformas de redes sociais fazem o melhor para eliminar contas de bot, pois afetam a experiência geral da base de usuários. Para verificar se esse processo de detecção de bot estava correto, contas sinalizadas foram verificadas após um mês. Os resultados foram os seguintes:</p>
+<ul>
+<li><p>Suspenso: 89%</p></li>
+<li><p>Excluído: 2,2%</p></li>
+<li><p>Ainda ativo: 8,8%</p></li>
+</ul>
+<p>Essa porcentagem extremamente alta de contas punidas (91,2%) mostrou a precisão tanto da identificação do padrão quanto do processo de limpeza. Isso levaria muito mais tempo em um banco de dados tabular padrão, mas com a análise de grafos, é possível identificar padrões complexos rapidamente.</p>
+</section>
+<section id="caso-de-uso-do-banco-de-dados-de-grafos-fraude-com-cartão-de-crédito" class="level3">
+<h3 class="anchored" data-anchor-id="caso-de-uso-do-banco-de-dados-de-grafos-fraude-com-cartão-de-crédito"><strong>Caso de uso do banco de dados de grafos: fraude com cartão de crédito</strong></h3>
+<p>Os bancos de dados de grafos se tornaram uma ferramenta poderosa no setor financeiro como meio de detecção de fraudes. Apesar dos avanços na tecnologia antifraude, como o uso de chips embutidos em cartões, a fraude ainda pode ocorrer de várias maneiras. Dispositivos de leitura podem roubar detalhes de fitas magnéticas, uma técnica comumente usada em locais que ainda não instalaram leitores de chip. Depois que esses detalhes são armazenados, eles podem ser carregados em um cartão falsificado para fazer compras ou sacar dinheiro.</p>
+<p>Como meio de detecção de fraude, a identificação de padrões costuma ser a primeira linha de defesa. Os padrões de compra esperados são baseados na localização, frequência, tipos de lojas e outras coisas que se enquadram no perfil do usuário. Quando algo parece totalmente anormal, por exemplo, uma pessoa que fica a maior parte do tempo na área da baía de San Francisco, na Califórnia, repentinamente faz compras noturnas na Flórida, isso sinaliza como potencialmente fraudulento.</p>
+<p>O poder de computação necessário para isso é simplificado significativamente com a análise de grafos. A análise de grafos se destaca no estabelecimento de padrões entre nós, neste caso, as categorias de nós são definidas como contas (titulares de cartão), locais de compra, categoria de compra, transações e terminais. É fácil identificar padrões de comportamento naturais; por exemplo, em um determinado mês, uma pessoa poderia:</p>
+<ul>
+<li><p>Comprar ração (categoria de compra) em diferentes lojas de animais (terminais)</p></li>
+<li><p>Pagar por restaurantes nos finais de semana (metadados de transações) na região (locais de compra)</p></li>
+<li><p>Comprar equipamento de reparo (categoria de compra) em uma loja de local de reparo (local da conta, local da compra)</p></li>
+</ul>
+<p>A detecção de fraude é normalmente tratada com machine learning (aprendizado de máquina), mas a análise de grafos pode complementar esse esforço para criar um processo mais preciso e eficiente. Graças ao foco nos relacionamentos, os resultados se tornaram indicadores eficazes na determinação e sinalização de registros fraudulentos, realizando curadoria e preparando os dados antes que eles possam ser realmente usados.</p>
+<p><a href="https://www.oracle.com/br/a/ocom/docs/graph-db-use-cases-ebook.pdf"><strong>Para saber mais sobre outros casos de uso de banco de dados de grafos, baixe o ebook gratuito (PDF)</strong></a></p>
+</section>
+<section id="o-futuro-de-bancos-de-dados-de-grafos" class="level3">
+<h3 class="anchored" data-anchor-id="o-futuro-de-bancos-de-dados-de-grafos"><strong>O futuro de bancos de dados de grafos</strong></h3>
+<p><a href="https://www.oracle.com/br/database/technologies/spatialandgraph/property-graph-features.html">Bancos de dados de grafos e técnicas de grafos</a> acompanharam o aumento do poder de computação e de <a href="https://www.oracle.com/br/big-data/guide/what-is-big-data.html">big data</a> na última década. Na verdade, está ficando cada vez mais claro que eles se tornarão a ferramenta padrão para analisar um admirável mundo novo de relacionamentos de dados complexos. À medida que as empresas e organizações continuam promovendo os recursos de big data e análise, a capacidade de derivar insights de maneiras cada vez mais complexas, torna os bancos de dados de grafos essenciais para as necessidades de hoje e os sucessos de amanhã.</p>
+<p>A Oracle facilita a adoção de tecnologias de grafos. O Oracle Database e o Oracle Autonomous Database incluem um banco de dados de grafos e um mecanismo de análise de grafos para que os usuários possam descobrir mais insights sobre dados usando o poder dos algoritmos de grafos, consultas de correspondência de padrões e visualização. Grafos fazem parte do banco de dados convergente da Oracle, que oferece suporte a requisitos de multimodelo, multicarga de trabalho e multilocatário – tudo em um único mecanismo de banco de dados.</p>
+<p>Embora todos os bancos de dados de grafos aleguem seu alto desempenho, as ofertas de grafos da Oracle são eficientes tanto em desempenho quanto em algoritmos de consulta, além de serem estreitamente integradas ao banco de dados da Oracle. Isso facilita para os desenvolvedores a adição de análises de grafos aos aplicativos existentes e o uso da escalabilidade, consistência, recuperação, controle de acesso e segurança oferecidos pelo banco de dados por padrão.</p>
+</section>
+</section>
+<section id="o-que-é-um-banco-de-dados-de-grafos" class="level2">
+<h2 class="anchored" data-anchor-id="o-que-é-um-banco-de-dados-de-grafos"><a href="https://aws.amazon.com/pt/nosql/graph/"><strong>O que é um banco de dados de grafos?</strong></a></h2>
+<section id="definição-do-banco-de-dados-de-grafos" class="level3">
+<h3 class="anchored" data-anchor-id="definição-do-banco-de-dados-de-grafos"><strong>Definição do banco de dados de grafos</strong></h3>
+<p>Os bancos de dados de grafos foram criados especificamente para possibilitar o armazenamento de relacionamentos e a navegação por eles. Os relacionamentos são elementos distintos que agregam a maior parte do valor para os bancos de dados de grafos. Os bancos de dados de grafos usam nós para armazenar entidades de dados e arestas para armazenar os relacionamentos entre as entidades. Uma aresta tem sempre um nó inicial, um nó final, um tipo e um direcionamento, o que possibilita a descrição dos relacionamentos entre pais e filhos, das ações, das propriedades e assim por diante. A quantidade e os tipos de relacionamentos que um nó pode ter são ilimitados.<br>
+</p>
+<p>Um grafo em um banco de dados de grafos pode ser cruzado com tipos de arestas específicos ou por todo o grafo. Nos bancos de dados de grafos, o cruzamento das associações ou dos relacionamentos ocorre muito rapidamente, uma vez que os relacionamentos entre os nós não são calculados no momento das consultas, mas persistem no banco de dados. Os bancos de dados de grafos são vantajosos em casos de uso como redes sociais, mecanismos de recomendação e detecção de fraudes, em que é necessário criar relacionamentos entre os dados e consultar rapidamente esses relacionamentos.</p>
+<p>O grafo a seguir é um exemplo de grafo de rede social. Considerando as pessoas (nós) e seus relacionamentos (arestas), é possível descobrir quem são os “amigos dos amigos” de uma pessoa específica, por exemplo, os amigos dos amigos de Howard.&nbsp;</p>
+</section>
+<section id="casos-de-uso" class="level3">
+<h3 class="anchored" data-anchor-id="casos-de-uso"><strong>Casos de uso</strong></h3>
+<section id="detecção-de-fraudes" class="level4">
+<h4 class="anchored" data-anchor-id="detecção-de-fraudes"><strong>Detecção de fraudes</strong></h4>
+<p>Os bancos de dados de grafos podem fazer uma prevenção sofisticada contra fraudes. Com os bancos de dados de grafos, você pode usar relacionamentos para processar transações financeiras e de compras praticamente em tempo real. Com consultas de grafos rápidas, você pode detectar, por exemplo, se um possível comprador está usando o mesmo endereço de e-mail e cartão de crédito que o usado em um caso de fraude conhecido. Os bancos de dados de grafos também podem ajudá-lo a detectar facilmente padrões de relacionamento, como várias pessoas associadas a um endereço de e-mail pessoal ou várias pessoas compartilhando o mesmo endereço IP, mas residentes em endereços físicos diferentes.&nbsp;</p>
+</section>
+<section id="mecanismos-de-recomendação" class="level4">
+<h4 class="anchored" data-anchor-id="mecanismos-de-recomendação"><strong>Mecanismos de recomendação</strong></h4>
+<p>Os bancos de dados de grafos são uma boa opção para aplicativos de recomendação. Com os bancos de dados de grafos, você pode armazenar em um grafo os relacionamentos entre as categorias de informação, como os interesses, os amigos e o histórico de compras dos clientes. Você pode usar um banco de dados de grafos altamente disponível para fazer recomendações de produtos a um usuário com base em quais produtos foram comprados por outras pessoas que seguem o mesmo esporte e têm histórico de compras similar. Além disso, é possível identificar pessoas com um amigo em comum, mas que ainda não se conhecem, para fazer uma recomendação de amizade.&nbsp;</p>
+<hr>
+<p>Fontes</p>
+<p>https://www.oracle.com/br/autonomous-database/what-is-graph-database/</p>
+<p>https://aws.amazon.com/pt/nosql/graph/</p>
+
+
+</section>
+</section>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    target: function(trigger) {
+      return trigger.previousElementSibling;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+</body></html>

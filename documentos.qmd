@@ -1,10 +1,14 @@
 ---
-title: "Diferenciação entre bancos..."
+title: "Documentos"
 ---
 
 ## Itens do Edital:
 
 b\) **Fundamentos de Banco de Dados**: Diferenciação entre bancos relacionais, multidimensionais, documentos e grafos.
+
+## **Banco de Dados - Introdução a Bancos de Dados Não Relacionais - NoSQL**
+
+{{< video https://youtu.be/QV9c5t0BDwc >}}
 
 ## [**O que é um banco de dados de documentos?**](https://aws.amazon.com/pt/nosql/document/)
 
@@ -48,30 +52,8 @@ Um banco de dados de documentos é uma ótima opção para aplicativos de gerenc
 
 Bancos de dados de documentos são eficientes e eficazes para o armazenamento de informações de catálogo. Por exemplo, em um aplicativo de comércio eletrônico, diferentes produtos costumam ter números de atributos diferentes. Gerenciar milhares de atributos em bancos de dados relacionais é ineficiente e afeta a performance de leitura. Ao usar um banco de dados de documentos, os atributos de cada produto podem ser descritos em um único documento para gerenciamento fácil e maior velocidade de leitura. Alterar os atributos de um produto não afetará os outros.
 
-## [**O que é um banco de dados de grafos?**](https://aws.amazon.com/pt/nosql/graph/)
-
-#### **Definição do banco de dados de grafos**
-
-Os bancos de dados de grafos foram criados especificamente para possibilitar o armazenamento de relacionamentos e a navegação por eles. Os relacionamentos são elementos distintos que agregam a maior parte do valor para os bancos de dados de grafos. Os bancos de dados de grafos usam nós para armazenar entidades de dados e arestas para armazenar os relacionamentos entre as entidades. Uma aresta tem sempre um nó inicial, um nó final, um tipo e um direcionamento, o que possibilita a descrição dos relacionamentos entre pais e filhos, das ações, das propriedades e assim por diante. A quantidade e os tipos de relacionamentos que um nó pode ter são ilimitados.\
-
-Um grafo em um banco de dados de grafos pode ser cruzado com tipos de arestas específicos ou por todo o grafo. Nos bancos de dados de grafos, o cruzamento das associações ou dos relacionamentos ocorre muito rapidamente, uma vez que os relacionamentos entre os nós não são calculados no momento das consultas, mas persistem no banco de dados. Os bancos de dados de grafos são vantajosos em casos de uso como redes sociais, mecanismos de recomendação e detecção de fraudes, em que é necessário criar relacionamentos entre os dados e consultar rapidamente esses relacionamentos.
-
-O grafo a seguir é um exemplo de grafo de rede social. Considerando as pessoas (nós) e seus relacionamentos (arestas), é possível descobrir quem são os "amigos dos amigos" de uma pessoa específica, por exemplo, os amigos dos amigos de Howard.  ![](images/bd_grafos.png){width="440"}
-
-**Casos de uso**
-
-**Detecção de fraudes**
-
-Os bancos de dados de grafos podem fazer uma prevenção sofisticada contra fraudes. Com os bancos de dados de grafos, você pode usar relacionamentos para processar transações financeiras e de compras praticamente em tempo real. Com consultas de grafos rápidas, você pode detectar, por exemplo, se um possível comprador está usando o mesmo endereço de e-mail e cartão de crédito que o usado em um caso de fraude conhecido. Os bancos de dados de grafos também podem ajudá-lo a detectar facilmente padrões de relacionamento, como várias pessoas associadas a um endereço de e-mail pessoal ou várias pessoas compartilhando o mesmo endereço IP, mas residentes em endereços físicos diferentes. 
-
-**Mecanismos de recomendação**
-
-Os bancos de dados de grafos são uma boa opção para aplicativos de recomendação. Com os bancos de dados de grafos, você pode armazenar em um grafo os relacionamentos entre as categorias de informação, como os interesses, os amigos e o histórico de compras dos clientes. Você pode usar um banco de dados de grafos altamente disponível para fazer recomendações de produtos a um usuário com base em quais produtos foram comprados por outras pessoas que seguem o mesmo esporte e têm histórico de compras similar. Além disso, é possível identificar pessoas com um amigo em comum, mas que ainda não se conhecem, para fazer uma recomendação de amizade. 
-
 ------------------------------------------------------------------------
 
 Fontes:
 
 https://aws.amazon.com/pt/nosql/document/
-
-https://aws.amazon.com/pt/nosql/graph/

@@ -17,7 +17,8 @@ website:
           - visoes.qmd
           - bd_transacao.qmd
           - integracao_dados.qmd
-          - bd_diferenciacao.qmd
+          - grafos.qmd
+          - documentos.qmd
       - href: analise_dados.qmd
         text: Análise de Dados
       - menu:
