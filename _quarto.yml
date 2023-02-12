@@ -24,6 +24,7 @@ website:
       - menu:
           - dado_info.qmd
           - conceitos_bi.qmd
+          - dados_estruturados.qmd
           - olap.qmd
           - data_warehouse.qmd
           - dados_faltantes.qmd

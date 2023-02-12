@@ -49,6 +49,27 @@
     "text": "5. ETAPAS, TÉCNICAS E CARACTERÍSTICAS DE BI\nO BI, como em qualquer projeto a ser implementando possuem suas etapas, que nem sempre precisam ser seguidas a riscas, mas facilitam no processo, pois assim, um modelo de projeto possa ser utilizado por outras organizações ou em implementações futuras.\nComumente, uma implementação de um projeto BI não se difere de outros projetos, no que diz respeito na forma como são levantadas as necessidades, porém, possuem suas particularidades. Abaixo, encontra-se um modelo para o desenvolvimento que pode ser a base para qualquer projeto.\n\nDefinição de requisitos\n\nPrimeira etapa, onde se deve entender a forma como o desenvolvimento vai acontecer e o resultado a ser alcançado.\n\nEstrutura do Data Warehouse\n\nDesenhar a estrutura necessária para o DW (ver seção 4.1), assim como a centralização das informações que são pertinentes, é onde também, se necessário, estruturar o Data Mart (ver seção 4.1.4).\n\nDefinição do ETL\n\nApós estruturar o DW, é necessário vincular a fonte de dados original, esse processo pode ser demorado então é de suma importância que sua implementação seja bastante consolidada (ver seção 4.1.6).\n\nEstrutura do cubo OLAP\n\nApós a estrutura do DW pronta, o ETL carregando essas informações, é necessário a criação de um cubo OLAP, que tem como finalidade agilizar a criação de relatórios, os detalhes estão na seção 4.2.\n\nDashboards\n\nApós o projeto finalizado, irão ser utilizados softwares que serão conectados ao Cubo OLAP e que possuem a característica de gerar Dashboards, ou gráficos para a análise e tomada de decisão na organização."
   },
   {
+    "objectID": "dados_estruturados.html",
+    "href": "dados_estruturados.html",
+    "title": "Dados estruturados e dados não estruturados",
+    "section": "",
+    "text": "c) Análise de dados e informações: Dados estruturados e dados não estruturados"
+  },
+  {
+    "objectID": "dados_estruturados.html#dados-estruturados-e-não-estruturados---universidade-tecnologia",
+    "href": "dados_estruturados.html#dados-estruturados-e-não-estruturados---universidade-tecnologia",
+    "title": "Dados estruturados e dados não estruturados",
+    "section": "Dados Estruturados e Não Estruturados - Universidade tecnologia",
+    "text": "Dados Estruturados e Não Estruturados - Universidade tecnologia"
+  },
+  {
+    "objectID": "dados_estruturados.html#dados-estruturados-e-não-estruturados-o-que-são-e-quais-suas-diferenças---xp-educação",
+    "href": "dados_estruturados.html#dados-estruturados-e-não-estruturados-o-que-são-e-quais-suas-diferenças---xp-educação",
+    "title": "Dados estruturados e dados não estruturados",
+    "section": "Dados estruturados e não estruturados: o que são e quais suas diferenças? - XP Educação",
+    "text": "Dados estruturados e não estruturados: o que são e quais suas diferenças? - XP Educação"
+  },
+  {
     "objectID": "dados_faltantes.html",
     "href": "dados_faltantes.html",
     "title": "Dados Faltantes",
