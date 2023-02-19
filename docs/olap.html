@@ -242,6 +242,14 @@ ul.task-list li input[type="checkbox"] {
   <ul class="collapse">
   <li><a href="#operações" id="toc-operações" class="nav-link" data-scroll-target="#operações"><strong>5.3. Operações</strong></a></li>
   </ul></li>
+  <li><a href="#estratégia-concursos" id="toc-estratégia-concursos" class="nav-link" data-scroll-target="#estratégia-concursos">Estratégia Concursos</a>
+  <ul class="collapse">
+  <li><a href="#conceito" id="toc-conceito" class="nav-link" data-scroll-target="#conceito"><strong>Conceito</strong></a></li>
+  <li><a href="#olap-x-oltp" id="toc-olap-x-oltp" class="nav-link" data-scroll-target="#olap-x-oltp"><strong>OLAP x OLTP</strong></a></li>
+  <li><a href="#diferenças" id="toc-diferenças" class="nav-link" data-scroll-target="#diferenças"><strong>Diferenças</strong></a></li>
+  <li><a href="#variações-de-olap" id="toc-variações-de-olap" class="nav-link" data-scroll-target="#variações-de-olap"><strong>Variações de OLAP</strong></a></li>
+  <li><a href="#operações-olap" id="toc-operações-olap" class="nav-link" data-scroll-target="#operações-olap"><strong>Operações OLAP</strong></a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
@@ -304,6 +312,135 @@ ul.task-list li input[type="checkbox"] {
 <section id="drill-through" class="level4">
 <h4 class="anchored" data-anchor-id="drill-through"><strong>5.3.3. Drill Through</strong></h4>
 <p>Possui o funcionamento parecido com o Drill Down, porém, tem como característica a possibilidade buscar os dados, ou informações, fora da estrutura principal. Por exemplo, após alcançar o nível máximo de detalhe em uma tabela fato, tem necessidade de se obter mais detalhe sobre determinada célula, como a nota fiscal, por exemplo, com o Drill Through é possível acessar o arquivo de origem dessa informação, diminuindo a granularidade, aumentando o nível de detalhe e saindo da estrutura principal do DW ou de um Data Mart.</p>
+</section>
+</section>
+</section>
+<section id="estratégia-concursos" class="level2">
+<h2 class="anchored" data-anchor-id="estratégia-concursos"><a href="https://www.estrategiaconcursos.com.br/blog/o-que-e-olap/">Estratégia Concursos</a></h2>
+<p><a href="https://www.estrategiaconcursos.com.br/blog/o-que-e-olap/"><strong>O que é OLAP e como ele é utilizado na Tecnologia da Informação</strong></a></p>
+<section id="conceito" class="level3">
+<h3 class="anchored" data-anchor-id="conceito"><strong>Conceito</strong></h3>
+<p>O <strong>OLAP</strong> (On-Line Analytical Processing / Processamento Analítico On-line) é uma importante ferramenta utilizada para realizar <strong>análises</strong> em grandes quantidades de dados, geralmente armazenados em Data Warehouses, sendo comumente utilizado em <strong>modelos dimensionais</strong>.</p>
+<p>Esta ferramenta é muito aplicada no ambiente <strong>empresarial</strong>, sendo que, através da sua utilização, é possível realizar o fornecimento de informações a respeito do <strong>comportamento dos negócios do usuário</strong>, podendo identificar <strong>tendências</strong> do mercado, condutas dos clientes, entre outras vantagens.</p>
+<p>A <strong>análise multidimensional</strong> é a grande característica do OLAP. Mas o que isso quer dizer? Bom, este tipo de análise é baseado em <strong>cubos</strong> de informações, na qual é possível que sejam realizados estudos por meio de <strong>diferentes variáveis (dimensões)</strong>, simultaneamente. Vamos ilustrar? Observe a figura abaixo:</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/coceitos_olap1.png" class="img-fluid figure-img" alt="Cubo de dados"></p>
+<p></p><figcaption class="figure-caption">Cubo de dados</figcaption><p></p>
+</figure>
+</div>
+<p>As <strong>informações</strong> do banco de dados são <strong>distribuídas</strong> em <strong>dimensões</strong> (Tempo, Região e Produto), dentro de um <strong>cubo</strong>. Desse modo, por exemplo, através do OLAP, é possível analisar os dados das vendas de determinado <strong>produto P1</strong>, na <strong>região R3</strong>, durante o período de <strong>tempo T2</strong>.</p>
+<p>Vamos dar <strong>nomes</strong> a essas variáveis, de modo a clarear o raciocínio. Suponha-se que determinada <strong>empresa</strong>, que iniciou suas operações em <strong>2018</strong> e está em operação <strong>atualmente</strong>, comercialize os seguintes <strong>produtos</strong>: <strong>caminhões, carros, motos e bicicletas</strong>, sendo que ela realiza vendas em diversas <strong>regiões</strong> do Brasil, como a região <strong>Sul, Norte, Nordeste e Sudeste</strong>. Assim, através da análise por meio do OLAP, é possível identificar quantos <strong>carros</strong> foram vendidos na região <strong>Nordeste</strong> no ano de <strong>2019</strong>, de maneira fácil e rápida.</p>
+<p>Mais adiante explicaremos os diversos tipos de operações que podem ser realizadas utilizando o cubo de dados.</p>
+</section>
+<section id="olap-x-oltp" class="level3">
+<h3 class="anchored" data-anchor-id="olap-x-oltp"><strong>OLAP x OLTP</strong></h3>
+<section id="oltp" class="level4">
+<h4 class="anchored" data-anchor-id="oltp"><strong>OLTP</strong></h4>
+<p>Os bancos de dados <strong>tradicionais</strong> também possuem suporte para o processamento de <strong>transações</strong> de um negócio, sendo que, para isto, é utilizada a ferramenta <strong>OLTP (On-Line Transaction Processing / Processamento de Transações On-Line)</strong>.</p>
+<p>O OLTP é focado em realizar <strong>transações rotineiras e cotidianas</strong> em <strong>tempo real</strong>, com muita <strong>agilidade</strong>, através de <strong>inserções, exclusões e atualizações</strong> de informações, sendo também possível realizar <strong>consultas</strong> dos dados armazenados.</p>
+</section>
+</section>
+<section id="diferenças" class="level3">
+<h3 class="anchored" data-anchor-id="diferenças"><strong>Diferenças</strong></h3>
+<p>Um ponto que precisa estar fixado na mente do estudante é que o <strong>OLTP</strong> é focado em <strong>transações cotidianas e rotineiras</strong>, sendo processado de maneira <strong>mais rápida</strong> do que o OLAP, enquanto que o OLAP é focado em <strong>análises</strong>, de maneira a subsidiar <strong>decisões gerenciais e estratégicas</strong> na empresa, não realizando alterações na base de dados, como o OLTP, apenas o carregamento e a consulta das informações.</p>
+<p>Além disso, os dados a serem analisados pelo <strong>OLTP</strong> geralmente são estruturados em <strong>bancos de dados relacionais</strong> com características <strong>transacionais</strong>, sendo que o <strong>OLAP</strong> é focado em dados estruturados em <strong>modelos multidimensionais</strong>.</p>
+<p><strong>PARA FIXAR:</strong></p>
+<p><strong>OLAP</strong> -&gt; foco em <strong>análise</strong>; modelo <strong>multidimensional</strong>; <strong>carga e consulta</strong> de dados; mais <strong>lento</strong>.</p>
+<p><strong>OLTP</strong> -&gt; foco em <strong>transações</strong> rotineiras; modelo <strong>relacional</strong> de uso transacional; <strong>inclusão e exclusão</strong> de dados, mais <strong>rápido</strong>.</p>
+</section>
+<section id="variações-de-olap" class="level3">
+<h3 class="anchored" data-anchor-id="variações-de-olap"><strong>Variações de OLAP</strong></h3>
+<p>O OLAP pode ser dividido de acordo com a <strong>estrutura de armazenamento dos dados</strong> e de acordo com a <strong>origem da consulta</strong> de informações.</p>
+<section id="estrutura-de-armazenamento" class="level4">
+<h4 class="anchored" data-anchor-id="estrutura-de-armazenamento"><strong>Estrutura de armazenamento</strong></h4>
+<ul>
+<li><strong>MOLAP (Processamento Analítico Multidimensional On-Line)</strong></li>
+</ul>
+<p>Nesta estrutura, são realizadas <strong>consultas multidimensionais</strong> diretamente em <strong>dados armazenados</strong> em <strong>bancos</strong> também <strong>multidimensionais</strong>, possuindo um <strong>alto desempenho</strong>. Além disso, o MOLAP possui como característica a <strong>limitação</strong> da quantidade de informações que pode ser analisada simultaneamente <strong>(baixa escalabilidade)</strong>.</p>
+<ul>
+<li><strong>ROLAP (Processamento Analítico Relacional On-line)</strong></li>
+</ul>
+<p>Já no ROLAP, os dados utilizados para as <strong>operações multidimensionais</strong> estão <strong>armazenados</strong> em <strong>bases de dados relacionais</strong>, através de tabelas formadas por linhas e colunas, possuindo um <strong>baixo desempenho</strong> de consulta. De maneira contrária ao MOLAP, não há restrições quanto à quantidade de dados a ser analisada, possuindo, assim, uma <strong>alta escalabilidade.</strong></p>
+<ul>
+<li><strong>HOLAP (Processamento Analítico On-Line Híbrido)</strong></li>
+</ul>
+<p>Esse é o modelo híbrido de OLAP, ou seja, ele é uma <strong>combinação</strong> dos modelos <strong>MOLAP e ROLAP,</strong> possuindo, simultaneamente, um <strong>bom desempenho</strong> em consultas, bem como uma <strong>boa escalabilidade</strong>.</p>
+</section>
+<section id="origem-da-consulta" class="level4">
+<h4 class="anchored" data-anchor-id="origem-da-consulta"><strong>Origem da consulta</strong></h4>
+<ul>
+<li><strong>DOLAP (Desktop On-Line Analytical Processing)</strong></li>
+</ul>
+<p>Neste modelo, a <strong>consulta</strong> é realizada por meio de uma <strong>estação cliente</strong> diretamente a um servidor, retornando o cubo de informações solicitadas. Desse modo, o tráfego na rede é reduzido, melhorando o desempenho do servidor.</p>
+<ul>
+<li><strong>WOLAP (Web On-Line Analytical Processing)</strong></li>
+</ul>
+<p>No WOLAP, a <strong>consulta</strong> é realizada por meio de um <strong>navegador web</strong> a um servidor, retornando ao usuário o cubo de dados solicitados.</p>
+</section>
+</section>
+<section id="operações-olap" class="level3">
+<h3 class="anchored" data-anchor-id="operações-olap"><strong>Operações OLAP</strong></h3>
+<p>Como já introduzimos no início do artigo, o OLAP é capaz de realizar <strong>análises</strong> através de <strong>cubos de informações</strong> com diversas <strong>dimensões</strong>.</p>
+<p>As <strong>operações</strong> OLAP permitem que sejam visualizados <strong>subconjuntos</strong> específicos dentro do cubo de dados, ou seja, dentro do universo da base de informações, sendo possível <strong>solicitar e receber</strong> apenas aqueles dados de <strong>interesse</strong> do usuário. Vamos analisar os principais tipos de operações.</p>
+<section id="slice" class="level4">
+<h4 class="anchored" data-anchor-id="slice"><strong>Slice</strong></h4>
+<p>Esta operação é caracterizada pela <strong>fixação</strong> de <strong>um valor</strong> para <strong>uma das dimensões</strong>, obtendo, assim, uma <strong>fatia</strong> (slice em inglês) do cubo de dados.</p>
+<p>De modo a exemplificar esta situação, vamos supor, na figura abaixo, que as variáveis correspondem aos seguintes nomes:</p>
+<p>T1, T2, T3 e T4 -&gt; 2018, 2019, 2020 e 2021.</p>
+<p>R1, R2, R3 e R4 -&gt; Sul, Norte, Sudeste e Nordeste.</p>
+<p>P1, P2, P3 e P4 -&gt; Caminhão, Carro, Moto e Bicicleta.</p>
+<p>Desse modo, realizando a operação Slice, vamos <strong>fixar o produto Carro</strong> da dimensão Produto:</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/coceitos_olap2.png" class="img-fluid figure-img" alt="Operações OLAP - SLICE"></p>
+<p></p><figcaption class="figure-caption">Operações OLAP – SLICE</figcaption><p></p>
+</figure>
+</div>
+<p>Assim, temos uma <strong>fatia</strong> do cubo, obtendo as <strong>informações</strong> de <strong>vendas</strong> de <strong>carros</strong> durante <strong>todo o período</strong> de tempo (2018 a 2021) em <strong>todas as regiões</strong> (Sul, Sudeste, Norte e Nordeste).</p>
+</section>
+<section id="dice" class="level4">
+<h4 class="anchored" data-anchor-id="dice"><strong>Dice</strong></h4>
+<p>A operação Dice é realizada através da <strong>seleção de dois ou mais valores das dimensões</strong>, de modo a formar um <strong>subcubo</strong> de informações, como podemos ver abaixo:</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/coceitos_olap3.png" class="img-fluid figure-img" alt="DICE"></p>
+<p></p><figcaption class="figure-caption">Operações OLAP – DICE</figcaption><p></p>
+</figure>
+</div>
+<p>De acordo com o desenho acima, foi retornada a <strong>quantidade de vendas</strong> de <strong>motos e bicicletas</strong> (P3 e P4), nas regiões <strong>Sul e Norte</strong> (R1 e R2), durante o período de <strong>2018 e 2019</strong> (T1 e T2).</p>
+</section>
+<section id="pivot-rotate" class="level4">
+<h4 class="anchored" data-anchor-id="pivot-rotate"><strong>Pivot (Rotate)</strong></h4>
+<p>O Pivot realiza a <strong>rotação do cubo</strong>, de modo a <strong>alterar a posição das dimensões</strong>, sendo utilizado para realizar uma apresentação <strong>alternativa</strong> das informações da base de dados multidimensional, como podemos ver abaixo:</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/coceitos_olap4.png" class="img-fluid figure-img" alt="PIVOT"></p>
+<p></p><figcaption class="figure-caption">Operações OLAP – PIVOT</figcaption><p></p>
+</figure>
+</div>
+</section>
+<section id="drill-down-roll-down" class="level4">
+<h4 class="anchored" data-anchor-id="drill-down-roll-down"><strong>Drill Down (Roll Down)</strong></h4>
+<p>Outra importante operação OLAP é o Drill Down. Ele é utilizado quando o usuário necessita de <strong>informações mais detalhadas</strong>, sendo isto realizado através da <strong>redução de granularidade</strong> da análise. Não entendeu? Vamos exemplificar.</p>
+<p>Vamos supor que o usuário não queira as informações baseadas em <strong>anos</strong>, mas em <strong>meses</strong> (ou seja, ele quer um <strong>maior detalhamento</strong> das informações). Desse modo, haverá uma <strong>redução</strong> da hierarquia da dimensão Tempo (ou seja, <strong>redução da granularidade</strong>). Assim, em vez de analisar o ano, irá ser analisado o mês, que é um conjunto <strong>menor</strong> da respectiva dimensão. Dizemos, assim, que houve a <strong>redução do grão Tempo</strong>, de ano para mês, sendo possível diminuir ainda mais, como a análise por dia.</p>
+<p>Outro exemplo é em relação às <strong>regiões</strong>, em que pode haver a necessidade do cliente em <strong>aumentar o detalhamento</strong> da análise dos dados desta dimensão, sendo que, em vez de obter os dados das vendas da região Sul, ele queira o desmembramento dela, de modo a obter os dados individuais dos <strong>estados</strong> que compõem esta região, como o <strong>Paraná, Santa Catarina e Rio Grande do Sul.</strong></p>
+</section>
+<section id="drill-up-roll-up" class="level4">
+<h4 class="anchored" data-anchor-id="drill-up-roll-up"><strong>Drill Up (Roll Up)</strong></h4>
+<p>Este é o <strong>inverso</strong> do <strong>Drill Down,</strong> sendo utilizado quando o usuário necessita de <strong>menos detalhes</strong>, havendo um <strong>aumento da granularidade</strong>. Por exemplo, caso os dados sejam exibidos por mês, é possível utilizar o Drill Up e aumentar a granularidade da dimensão tempo, de maneira a visualizar os dados por ano.</p>
+<p><strong>PARA FIXAR:</strong></p>
+<p><strong>DRILL DOWN</strong>: <strong>Aumenta</strong> o <strong>detalhamento, diminuindo</strong> a <strong>granularidade</strong>.</p>
+<p><strong>DRILL UP</strong>: <strong>Diminui</strong> o <strong>detalhamento, aumentando</strong> a <strong>granularidade</strong>.</p>
+</section>
+<section id="drill-across" class="level4">
+<h4 class="anchored" data-anchor-id="drill-across"><strong>Drill Across</strong></h4>
+<p>Este processo navega entre os dados, realizando <strong>saltos</strong> entre os <strong>níveis</strong> dentro de uma <strong>mesma dimensão</strong>, sem a necessidade de passar pelos níveis intermediários.</p>
+<p>Por exemplo, suponha que dentro da <strong>dimensão Região</strong> haja os <strong>níveis Regiões, Estados e Municípios</strong>. Sendo assim, é possível navegar dentro da consulta do nível Região para o nível Município, sem a necessidade de entrar no nível Estado.</p>
+</section>
+<section id="drill-through-1" class="level4">
+<h4 class="anchored" data-anchor-id="drill-through-1"><strong>Drill Through</strong></h4>
+<p>Já no Drill Through, há a <strong>mudança de dimensões</strong> durante a consulta. Por exemplo, o usuário pode estar navegando na dimensão região e, após, analisar os dados da dimensão tempo.</p>
 
 
 </section>
