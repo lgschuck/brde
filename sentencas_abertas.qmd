@@ -1,0 +1,9 @@
+---
+title: "Sentenças Abertas"
+---
+
+## Itens do Edital:
+
+Sentenças abertas, operações lógicas sobre sentenças abertas. Quantificador universal, quantificador existencial, negação de proposições quantificadas.
+
+{{< video https://youtu.be/AhdmJmHxDjk >}}

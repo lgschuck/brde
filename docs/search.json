@@ -413,6 +413,13 @@
     "text": "Segurança"
   },
   {
+    "objectID": "sentencas_abertas.html",
+    "href": "sentencas_abertas.html",
+    "title": "Sentenças Abertas",
+    "section": "",
+    "text": "Sentenças abertas, operações lógicas sobre sentenças abertas. Quantificador universal, quantificador existencial, negação de proposições quantificadas."
+  },
+  {
     "objectID": "tabelas.html",
     "href": "tabelas.html",
     "title": "Construção de tabelas-verdade",
