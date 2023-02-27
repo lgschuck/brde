@@ -43,7 +43,7 @@ website:
       - menu:
           -  proposicoes.qmd
           -  tabelas.qmd
-          -  sentecas_abertas.qmd
+          -  sentencas_abertas.qmd
 
 format:
   html:
