@@ -7,3 +7,5 @@ title: "Sentenças Abertas"
 Sentenças abertas, operações lógicas sobre sentenças abertas. Quantificador universal, quantificador existencial, negação de proposições quantificadas.
 
 {{< video https://youtu.be/AhdmJmHxDjk >}}
+
+{{< video https://youtu.be/vOiVfsmFW6Y >}}
