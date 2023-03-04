@@ -44,6 +44,7 @@ website:
           -  proposicoes.qmd
           -  tabelas.qmd
           -  sentencas_abertas.qmd
+          -  argumentos_dedutivos.qmd
 
 format:
   html:

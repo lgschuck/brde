@@ -1,0 +1,9 @@
+---
+title: "Argumentos Dedutivos e Sentenças Abertas"
+---
+
+## Itens do Edital:
+
+4.  Argumentos Lógicos Dedutivos
+
+{{< video  https://youtu.be/jIWHPQxrSO8 >}}
